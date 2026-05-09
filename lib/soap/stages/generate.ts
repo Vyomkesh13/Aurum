@@ -1,6 +1,7 @@
 /**
  * Stage 3 — Sequential SOAP generation.
  * Generates S → O → A → P, each conditioned on previous outputs + keywords.
+ * RAG-grounded: retrieves relevant medical references before generation.
  */
 
 import { getLLM } from '@/lib/llm'
@@ -10,17 +11,33 @@ import {
   ASSESSMENT_PROMPT,
   PLAN_PROMPT,
 } from '../prompts'
+import { retrieve, formatChunksForPrompt } from '@/lib/rag/retrieve'
 import type { SoapNote } from '../types'
 
-const MODEL = 'gemini-2.5-flash'  // reasoning-critical: use Pro
+const MODEL = 'gemini-2.5-flash'
 
 export async function generateSoap(params: {
   deidentifiedTranscript: string
   keywords: string[]
-}): Promise<{ note: SoapNote; tokensUsed: number; latencyMs: number }> {
+}): Promise<{
+  note: SoapNote
+  tokensUsed: number
+  latencyMs: number
+  chunksRetrieved: number
+}> {
   const { deidentifiedTranscript, keywords } = params
   const llm = getLLM()
   const keywordsLine = `Keywords for focus: ${keywords.join(', ')}`
+
+  // ---- RAG: retrieve relevant medical knowledge ----
+  const retrievalQuery = keywords.length
+    ? keywords.slice(0, 8).join(', ')
+    : deidentifiedTranscript.slice(0, 500)
+
+  const chunks = await retrieve(retrievalQuery, { topK: 3, minSimilarity: 0.5 })
+  const groundingContext = chunks.length
+    ? `\n\nRELEVANT MEDICAL REFERENCES (use to ground claims; do not invent beyond these):\n${formatChunksForPrompt(chunks)}`
+    : ''
 
   let totalTokens = 0
   let totalLatency = 0
@@ -30,7 +47,7 @@ export async function generateSoap(params: {
     [
       {
         role: 'user',
-        content: `${keywordsLine}\n\nTranscript:\n${deidentifiedTranscript}`,
+        content: `${keywordsLine}${groundingContext}\n\nTranscript:\n${deidentifiedTranscript}`,
       },
     ],
     {
@@ -50,7 +67,7 @@ export async function generateSoap(params: {
       {
         role: 'user',
         content:
-          `${keywordsLine}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
+          `${keywordsLine}${groundingContext}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
           `Subjective (already written):\n${subjective}`,
       },
     ],
@@ -71,7 +88,7 @@ export async function generateSoap(params: {
       {
         role: 'user',
         content:
-          `${keywordsLine}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
+          `${keywordsLine}${groundingContext}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
           `Subjective:\n${subjective}\n\n` +
           `Objective:\n${objective}`,
       },
@@ -93,7 +110,7 @@ export async function generateSoap(params: {
       {
         role: 'user',
         content:
-          `${keywordsLine}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
+          `${keywordsLine}${groundingContext}\n\nTranscript:\n${deidentifiedTranscript}\n\n` +
           `Subjective:\n${subjective}\n\n` +
           `Objective:\n${objective}\n\n` +
           `Assessment:\n${assessment}`,
@@ -114,5 +131,6 @@ export async function generateSoap(params: {
     note: { subjective, objective, assessment, plan },
     tokensUsed: totalTokens,
     latencyMs: totalLatency,
+    chunksRetrieved: chunks.length,
   }
 }

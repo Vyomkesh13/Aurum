@@ -1,0 +1,212 @@
+[
+  {
+    "source": "who_essential_medicines",
+    "category": "antibiotic",
+    "title": "Amoxicillin",
+    "content": "Broad-spectrum penicillin antibiotic. Indications: respiratory tract infections, otitis media, sinusitis, urinary tract infections, dental infections, H. pylori eradication. Adult dose: 500mg PO TID or 875mg BID for 7-10 days. Pediatric: 25-50 mg/kg/day divided TID. Contraindications: penicillin allergy. Monitor for rash, diarrhea, anaphylaxis.",
+    "metadata": {"atc_code": "J01CA04", "who_section": "6.2.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "antibiotic",
+    "title": "Azithromycin",
+    "content": "Macrolide antibiotic. Indications: community-acquired pneumonia, atypical pneumonia, pertussis, chlamydia, alternative for penicillin-allergic patients. Adult dose: 500mg PO day 1, then 250mg daily x 4 days. Pediatric: 10mg/kg day 1 then 5mg/kg daily. Contraindications: macrolide allergy, QT prolongation. Monitor for GI upset, hepatotoxicity.",
+    "metadata": {"atc_code": "J01FA10", "who_section": "6.2.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "antibiotic",
+    "title": "Ciprofloxacin",
+    "content": "Fluoroquinolone antibiotic. Indications: complicated UTI, pyelonephritis, gram-negative infections, anthrax. Adult dose: 500mg PO BID for 7-14 days. Avoid in children, pregnant women, elderly. Black box warning: tendinopathy, peripheral neuropathy, CNS effects. Contraindications: tendon disorders, myasthenia gravis. Caution: QT prolongation.",
+    "metadata": {"atc_code": "J01MA02", "who_section": "6.2.4"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "antibiotic",
+    "title": "Nitrofurantoin",
+    "content": "Urinary antiseptic. Indications: uncomplicated lower UTI in women. Adult dose: 100mg PO BID for 5-7 days. Avoid: pyelonephritis, men, CrCl <30, third trimester pregnancy. Contraindications: G6PD deficiency, severe renal impairment. Monitor for pulmonary fibrosis with long-term use.",
+    "metadata": {"atc_code": "J01XE01", "who_section": "6.2.4"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "antibiotic",
+    "title": "Ceftriaxone",
+    "content": "Third-generation cephalosporin. Indications: meningitis, sepsis, severe pneumonia, gonorrhea, complicated UTI, surgical prophylaxis. Adult dose: 1-2g IV/IM daily. Pediatric: 50-100 mg/kg/day. Contraindications: cephalosporin allergy, neonates with hyperbilirubinemia. Caution: cross-reactivity with penicillin allergy in <2% of patients.",
+    "metadata": {"atc_code": "J01DD04", "who_section": "6.2.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "analgesic",
+    "title": "Paracetamol (Acetaminophen)",
+    "content": "Non-opioid analgesic and antipyretic. Indications: mild-moderate pain, fever. Adult dose: 500-1000mg PO every 4-6 hours, max 4g/day (3g/day if liver disease or chronic alcohol use). Pediatric: 10-15 mg/kg every 4-6 hours. Contraindications: severe hepatic impairment. Monitor: hepatotoxicity in overdose. First-line for pain in pregnancy.",
+    "metadata": {"atc_code": "N02BE01", "who_section": "2.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "analgesic",
+    "title": "Ibuprofen",
+    "content": "NSAID. Indications: mild-moderate pain, inflammation, fever, dysmenorrhea. Adult dose: 400-600mg PO every 6-8 hours, max 2400mg/day. Contraindications: active GI bleed, severe heart failure, third trimester pregnancy, severe renal impairment, NSAID allergy. Caution: HTN, CVD, peptic ulcer history. Monitor: BP, renal function, GI bleeding.",
+    "metadata": {"atc_code": "M01AE01", "who_section": "2.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "analgesic",
+    "title": "Morphine",
+    "content": "Strong opioid analgesic. Indications: severe acute pain, cancer pain, palliative care, MI pain. Adult dose: 5-10mg IV/IM every 4 hours; oral 10-30mg every 4 hours. Contraindications: respiratory depression, paralytic ileus, head injury without monitoring. Monitor: respiratory rate, sedation, BP. Risk: addiction, dependence, tolerance, constipation.",
+    "metadata": {"atc_code": "N02AA01", "who_section": "2.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Aspirin (low-dose)",
+    "content": "Antiplatelet. Indications: secondary prevention of MI/stroke, suspected ACS (load 162-325mg, then 75-100mg daily), primary prevention in selected high-risk patients. Adult dose: 75-100mg PO daily. Contraindications: active bleeding, severe asthma, children with viral illness (Reye syndrome). Monitor: bleeding signs.",
+    "metadata": {"atc_code": "B01AC06", "who_section": "10.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Atorvastatin",
+    "content": "HMG-CoA reductase inhibitor (statin). Indications: hyperlipidemia, primary and secondary CV prevention, post-ACS. Adult dose: 10-80mg PO daily, typically 40-80mg post-MI. Contraindications: active liver disease, pregnancy. Monitor: LFTs, CK if myalgia, lipid panel. Side effects: myalgia, rare rhabdomyolysis.",
+    "metadata": {"atc_code": "C10AA05", "who_section": "10.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Lisinopril",
+    "content": "ACE inhibitor. Indications: hypertension, heart failure, post-MI, diabetic nephropathy. Adult dose: 10-40mg PO daily, start 5-10mg. Contraindications: pregnancy, bilateral renal artery stenosis, hyperkalemia, history of angioedema. Monitor: BP, K, creatinine 1-2 weeks after initiation. Side effects: dry cough, hyperkalemia, angioedema.",
+    "metadata": {"atc_code": "C09AA03", "who_section": "12.3"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Metoprolol",
+    "content": "Beta-1 selective blocker. Indications: HTN, angina, post-MI, heart failure (succinate), AF rate control. Adult dose: tartrate 25-100mg BID; succinate 25-200mg daily. Contraindications: severe bradycardia, decompensated heart failure, second/third-degree AV block, severe asthma. Monitor: HR, BP. Avoid abrupt discontinuation.",
+    "metadata": {"atc_code": "C07AB02", "who_section": "12.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Furosemide",
+    "content": "Loop diuretic. Indications: heart failure, pulmonary edema, ascites, hypertension with volume overload. Adult dose: 20-80mg PO/IV, titrate to response. Contraindications: anuria, severe hypokalemia, hypovolemia. Monitor: electrolytes (K, Na, Mg), BUN, creatinine, BP. Side effects: hypokalemia, ototoxicity (rapid IV), hypotension.",
+    "metadata": {"atc_code": "C03CA01", "who_section": "16"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "cardiovascular",
+    "title": "Warfarin",
+    "content": "Vitamin K antagonist anticoagulant. Indications: AF stroke prevention, VTE treatment/prevention, mechanical heart valves. Adult dose: individualized, start 5mg daily, target INR 2-3 (2.5-3.5 for mechanical mitral valve). Contraindications: pregnancy, active bleeding, recent surgery. Monitor: INR weekly until stable, then monthly. Many drug and food interactions.",
+    "metadata": {"atc_code": "B01AA03", "who_section": "10.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "endocrine",
+    "title": "Metformin",
+    "content": "First-line oral agent for type 2 diabetes. Indications: T2DM, prediabetes, PCOS. Adult dose: start 500mg BID with meals, titrate to 1000mg BID, max 2550mg/day. Contraindications: eGFR <30, acute heart failure, severe hepatic impairment, contrast IV (hold). Monitor: B12 annually, renal function. Side effects: GI upset, rare lactic acidosis.",
+    "metadata": {"atc_code": "A10BA02", "who_section": "18.5"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "endocrine",
+    "title": "Insulin (regular and NPH)",
+    "content": "Indications: T1DM (mandatory), T2DM uncontrolled on orals, DKA, HHS, gestational diabetes. Regular: rapid onset 30 min, peak 2-3 hr, duration 6-8 hr. NPH: onset 1-2 hr, peak 4-12 hr, duration 18-24 hr. Adult dose: individualized; typical T2DM start 0.1-0.2 units/kg/day basal. Monitor: glucose, HbA1c, hypoglycemia signs. Risk: hypoglycemia, weight gain.",
+    "metadata": {"atc_code": "A10AB01", "who_section": "18.5"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "endocrine",
+    "title": "Levothyroxine",
+    "content": "Synthetic T4 thyroid hormone. Indications: primary and secondary hypothyroidism, myxedema coma. Adult dose: 1.6 mcg/kg/day; start lower in elderly or CVD (25-50 mcg). Take on empty stomach 30-60 min before food. Monitor: TSH 6-8 weeks after dose change, then annually. Contraindications: thyrotoxicosis. Caution: arrhythmias, osteoporosis with overtreatment.",
+    "metadata": {"atc_code": "H03AA01", "who_section": "18.8"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "respiratory",
+    "title": "Salbutamol (Albuterol)",
+    "content": "Short-acting beta-2 agonist (SABA). Indications: acute asthma, COPD exacerbation, exercise-induced bronchospasm. Adult dose: 100-200 mcg (1-2 puffs) MDI every 4-6 hours PRN; nebulizer 2.5-5mg every 20 min in acute exacerbation. Contraindications: hypersensitivity. Monitor: HR, K, tremor. Overuse signals poor asthma control.",
+    "metadata": {"atc_code": "R03AC02", "who_section": "25.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "respiratory",
+    "title": "Beclomethasone (inhaled)",
+    "content": "Inhaled corticosteroid. Indications: persistent asthma, COPD with frequent exacerbations. Adult dose: 200-800 mcg/day in 2 divided doses. Onset: gradual, max benefit 4-6 weeks. Contraindications: acute bronchospasm. Side effects: oral candidiasis (rinse mouth after use), hoarseness. Long-term: rare adrenal suppression, growth velocity reduction in children.",
+    "metadata": {"atc_code": "R03BA01", "who_section": "25.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "gi",
+    "title": "Omeprazole",
+    "content": "Proton pump inhibitor (PPI). Indications: GERD, peptic ulcer, H. pylori eradication, NSAID gastropathy prophylaxis, Zollinger-Ellison. Adult dose: 20-40mg PO daily, typically 30-60 min before breakfast. Long-term risks: B12 deficiency, hypomagnesemia, increased fracture risk, C. diff infection. Avoid prolonged use without indication.",
+    "metadata": {"atc_code": "A02BC01", "who_section": "17.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "gi",
+    "title": "Ondansetron",
+    "content": "5-HT3 receptor antagonist antiemetic. Indications: chemotherapy-induced nausea, postoperative nausea, hyperemesis gravidarum. Adult dose: 4-8mg PO/IV every 8 hours. Contraindications: long QT syndrome, concurrent apomorphine. Caution: QT prolongation, especially with electrolyte abnormalities. Pediatric: 0.15 mg/kg.",
+    "metadata": {"atc_code": "A04AA01", "who_section": "17.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "neurology",
+    "title": "Phenytoin",
+    "content": "Antiepileptic. Indications: focal and generalized tonic-clonic seizures, status epilepticus. Adult dose: 3-5 mg/kg/day; loading 15-20 mg/kg IV. Narrow therapeutic window: 10-20 mcg/mL. Contraindications: heart block, sinus bradycardia. Monitor: levels, LFTs, CBC. Side effects: gingival hyperplasia, hirsutism, ataxia, drug interactions (CYP inducer).",
+    "metadata": {"atc_code": "N03AB02", "who_section": "5"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "neurology",
+    "title": "Diazepam",
+    "content": "Benzodiazepine. Indications: status epilepticus, alcohol withdrawal, severe anxiety, muscle spasm, sedation. Adult dose: 2-10mg PO; status 5-10mg IV every 10-15 min, max 30mg. Contraindications: severe respiratory insufficiency, sleep apnea, myasthenia gravis. Risk: respiratory depression, dependence, paradoxical agitation in elderly.",
+    "metadata": {"atc_code": "N05BA01", "who_section": "5"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "psychiatry",
+    "title": "Sertraline",
+    "content": "SSRI antidepressant. Indications: major depression, generalized anxiety, panic, OCD, PTSD. Adult dose: 50mg daily, titrate to 50-200mg. Onset: 2-4 weeks for full effect. Contraindications: MAOI within 14 days, concurrent pimozide. Black box: increased suicidality in young adults. Monitor: mood, suicidality. Side effects: GI, sexual dysfunction, hyponatremia.",
+    "metadata": {"atc_code": "N06AB06", "who_section": "24.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "psychiatry",
+    "title": "Haloperidol",
+    "content": "First-generation antipsychotic. Indications: psychosis, acute agitation, delirium, Tourette syndrome. Adult dose: 0.5-5mg PO 2-3 times daily; acute agitation 2-10mg IM/IV. Contraindications: Parkinson disease, severe CNS depression. Black box: increased mortality in elderly with dementia. Monitor: extrapyramidal symptoms, QT, NMS.",
+    "metadata": {"atc_code": "N05AD01", "who_section": "24.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "antiviral",
+    "title": "Acyclovir",
+    "content": "Antiviral against herpes simplex and varicella-zoster. Indications: HSV genital, oral, encephalitis; varicella; herpes zoster. Adult dose: HSV 400mg PO TID for 7-10 days; HSV encephalitis 10 mg/kg IV every 8 hours; zoster 800mg PO 5x/day for 7 days. Monitor: renal function (dose adjust). Side effects: nephrotoxicity (ensure hydration), neurotoxicity in elderly.",
+    "metadata": {"atc_code": "J05AB01", "who_section": "6.4.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "anticoagulant",
+    "title": "Heparin (unfractionated)",
+    "content": "Anticoagulant. Indications: VTE treatment, ACS, peri-procedural bridging. Adult dose: weight-based 80 units/kg bolus then 18 units/kg/hr infusion, titrated by aPTT. Contraindications: active bleeding, HIT history, severe thrombocytopenia. Monitor: aPTT every 6 hours initially, platelets (HIT). Antidote: protamine sulfate.",
+    "metadata": {"atc_code": "B01AB01", "who_section": "10.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "anticoagulant",
+    "title": "Enoxaparin",
+    "content": "Low-molecular-weight heparin. Indications: VTE prophylaxis and treatment, ACS. Adult dose: prophylaxis 40mg SC daily; treatment 1 mg/kg SC BID or 1.5 mg/kg daily. Contraindications: active bleeding, severe renal impairment (CrCl <30 — use UFH instead), HIT. Monitor: anti-Xa in obese, renal impairment, pregnancy. Lower HIT risk than UFH.",
+    "metadata": {"atc_code": "B01AB05", "who_section": "10.2"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "corticosteroid",
+    "title": "Prednisolone",
+    "content": "Systemic glucocorticoid. Indications: severe asthma exacerbation, COPD exacerbation, inflammatory/autoimmune diseases, allergic reactions. Adult dose: 30-60mg PO daily; taper if >2 weeks. Side effects: hyperglycemia, HTN, osteoporosis, immunosuppression, weight gain, mood changes. Avoid abrupt discontinuation after prolonged use.",
+    "metadata": {"atc_code": "H02AB06", "who_section": "18.1"}
+  },
+  {
+    "source": "who_essential_medicines",
+    "category": "vaccine",
+    "title": "Tetanus toxoid",
+    "content": "Active immunization. Indications: routine pediatric series, adult booster every 10 years, post-exposure prophylaxis after dirty wound. Adult booster: 0.5mL IM. Wound management: TIG plus tetanus toxoid for tetanus-prone wound if last booster >5 years or unclear immunization. Contraindications: severe allergic reaction to previous dose.",
+    "metadata": {"atc_code": "J07AM01", "who_section": "19.3"}
+  }
+]
