@@ -37,7 +37,8 @@ function parseKeywords(raw: string): string[] {
             return parsed
         }
         return []
-    } catch {
-        return []
+    } catch (e) {
+    console.warn('[KEYWORDS] Parse failed. Raw output:', raw)
+    return []
     }
 }

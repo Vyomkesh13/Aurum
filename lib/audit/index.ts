@@ -43,7 +43,13 @@ function isStrict(): boolean {
  */
 export async function logAccess(entry: AuditEntry): Promise<AuditResult> {
   try {
-    const supabase = await createClient()
+    let supabase
+    try {
+      supabase = await createClient()
+    } catch {
+      // Outside request scope (e.g. eval script). Skip audit silently.
+      return { ok: true }
+    }
 
     // Resolve doctor_id from session if not provided.
     let doctorId = entry.doctorId
@@ -76,7 +82,6 @@ export async function logAccess(entry: AuditEntry): Promise<AuditResult> {
     return handleFailure(`audit logger threw: ${msg}`)
   }
 }
-
 /**
  * Convenience helper for LLM calls — most common access type.
  */

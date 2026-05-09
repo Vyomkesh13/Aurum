@@ -1,0 +1,512 @@
+[
+  {
+    "id": "medqa-0001",
+    "source": "medqa",
+    "category": "cardiology",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "I am seeing Patient Arjun Sharma, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+    "patientContext": {
+      "name": "Arjun Sharma"
+    },
+    "expectedDiagnoses": [
+      "stable angina",
+      "coronary artery disease"
+    ],
+    "expectedPlanItems": [
+      "ECG",
+      "troponin",
+      "aspirin",
+      "cardiology referral"
+    ],
+    "redFlags": [
+      "rule out ACS"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0002",
+    "source": "medqa",
+    "category": "endocrine",
+    "difficulty": "easy",
+    "uncertaintyInjected": false,
+    "transcript": "I’m seeing Patient Priya Verma today, a 45-year-old female presenting with a two-week history of increased urinary frequency, excessive thirst, and generalized fatigue. She reports urinating approximately 8-10 times a day, including 2-3 times overnight, which is a significant increase from her usual pattern. She describes her thirst as constant and unquenchable, leading her to consume large volumes of water throughout the day. The fatigue is described as a persistent lack of energy, impacting her daily activities and making it difficult to concentrate. She denies any chest pain, shortness of breath, fever, chills, or vision changes. Patient Verma has a known history of Type 2 Diabetes Mellitus, diagnosed five years ago, for which she states she is currently taking metformin. She reports her last HbA1c was \"a few months ago\" and she \"was told it was high.\" She denies any recent changes to her medication regimen or diet. On examination, vital signs are: BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C. Her BMI is calculated at 32 kg/m². Her most recent HbA1c, drawn today, is 11.2%.",
+    "patientContext": {
+      "name": "Priya Verma"
+    },
+    "expectedDiagnoses": [
+      "uncontrolled type 2 diabetes",
+      "hyperglycemia"
+    ],
+    "expectedPlanItems": [
+      "adjust metformin",
+      "add basal insulin",
+      "diabetes education",
+      "HbA1c recheck"
+    ],
+    "redFlags": [
+      "DKA screening"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0003",
+    "source": "medqa",
+    "category": "neurology",
+    "difficulty": "hard",
+    "uncertaintyInjected": true,
+    "transcript": "I entered the room to find Patient Rahul Kumar, a 68-year-old male, seated on the examination table, appearing distressed. He was accompanied by his wife.\n\n\"Mr. Kumar, I'm Dr. [Your Name]. Can you tell me what brought you in today?\" I asked, observing his facial symmetry and speech.\n\nHis wife interjected, \"He suddenly became weak on his right side, and his speech got slurred. It happened about an hour and a half ago, maybe a bit more.\"\n\nI turned back to Mr. Kumar. \"Mr. Kumar, can you tell me in your own words what you're experiencing?\"\n\nHe attempted to speak, but his words were noticeably slurred, making them difficult to fully comprehend. He pointed to his right arm and then his right leg, indicating weakness.\n\n\"So, you're feeling weakness on your right side?\" I clarified. He nodded slowly. \"And when did this start?\"\n\nHe struggled to articulate a precise time, looking to his wife for assistance. His wife reiterated, \"He was fine at breakfast, around 7 AM. Then around 8:30 AM, he started having trouble holding his coffee cup and his words became muddled.\"\n\n\"Okay, so roughly 90 minutes ago, potentially a bit longer,\" I noted. \"Any headache? Numbness or tingling?\"\n\nHe shook his head, indicating no headache or numbness. His wife confirmed, \"Just the weakness and the speech.\"\n\nVitals were taken: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. On neurological exam, I noted right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities. Speech was dysarthric.",
+    "patientContext": {
+      "name": "Rahul Kumar"
+    },
+    "expectedDiagnoses": [
+      "acute ischemic stroke",
+      "TIA"
+    ],
+    "expectedPlanItems": [
+      "stat CT head",
+      "neurology consult",
+      "consider tPA window"
+    ],
+    "redFlags": [
+      "time-sensitive stroke"
+    ],
+    "knownAmbiguities": [
+      "exact onset time"
+    ]
+  },
+  {
+    "id": "medqa-0004",
+    "source": "medqa",
+    "category": "gi",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "\"Come on in, Sneha. Have a seat. What brings you in today?\"\n\n\"Hi Dr. [Doctor's Last Name]. I've been having this pain, here, in my upper right abdomen, for about six months now.\"\n\n\"Okay, can you describe the pain for me? Is it sharp, dull, aching?\"\n\n\"It's more of a cramping or aching pain. And it usually happens after I eat something fatty, like pizza or fried chicken. It can last for a few hours.\"\n\n\"And on a scale of 1 to 10, with 10 being the worst pain imaginable, how would you rate it?\"\n\n\"Usually around a 6 or 7. It's enough to make me uncomfortable and sometimes I have to lie down.\"\n\n\"Any other symptoms accompanying the pain?\"\n\n\"Yes, I often feel nauseous when it happens. I haven't actually vomited, but I feel like I could.\"\n\n\"Have you noticed any changes in your bowel habits, like diarrhea or constipation?\"\n\n\"Not really. My bowel movements seem pretty normal.\"\n\n\"Any fever, chills, or yellowing of your skin or eyes?\"\n\n\"No, none of that.\"\n\n\"Have you had any similar issues in the past?\"\n\n\"No, this is new for me.\"\n\n\"Any significant medical history I should be aware of? Surgeries, chronic conditions?\"\n\n\"I had my appendix out when I was 12, but otherwise, I'm pretty healthy. No other surgeries, no chronic conditions.\"\n\n\"Alright, let's take a look. I'll just palpate your abdomen. Please let me know if anything is tender.\"\n\n[During palpation] \"Right here, Sneha, take a deep breath in.\"\n\n\"Ouch! Yes, that's exactly where it hurts.\"\n\n\"Okay, thank you. Your vitals are stable: BP 120/78, HR 72, RR 16, Temp 98.6°F. I've noted the tenderness in your right upper quadrant, and your inspiratory arrest with palpation there.\"",
+    "patientContext": {
+      "name": "Sneha Iyer"
+    },
+    "expectedDiagnoses": [
+      "cholelithiasis",
+      "cholecystitis"
+    ],
+    "expectedPlanItems": [
+      "RUQ ultrasound",
+      "LFTs",
+      "surgical consult"
+    ],
+    "redFlags": [
+      "acute cholecystitis"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0005",
+    "source": "medqa",
+    "category": "pulmonary",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "\"Good morning, Patient Singh. My name is Dr. [Your Name]. What brings you in today?\"\n\n\"Hi, Doctor. I've been feeling pretty unwell for the past five days. I have this cough that's been getting worse, and I'm bringing up a lot of phlegm. It's yellowish-green.\"\n\n\"Okay, so a productive cough for five days. Have you had any fever?\"\n\n\"Yes, I've had a fever. I took my temperature yesterday, and it was 38.9 degrees Celsius. I also feel really short of breath, especially when I try to do anything.\"\n\n\"Shortness of breath, you said. Have you noticed any chest pain with your breathing or coughing?\"\n\n\"No, not really pain, more just a tightness and like I can't get enough air in.\"\n\n\"Any other symptoms? Headaches, muscle aches, sore throat?\"\n\n\"I've had some general body aches, and I feel very tired, but no sore throat or significant headache.\"\n\n\"Alright. Let's get some vitals and then I'll do a physical exam. Your respiratory rate is 24 breaths per minute, and your oxygen saturation is 92% on room air. On auscultation, I'm hearing crackles at the right lung base. Your heart sounds are regular, and your abdomen is soft and non-tender. Any history of asthma or other lung conditions?\"\n\n\"No, I've always been pretty healthy, never had anything like this before.\"",
+    "patientContext": {
+      "name": "Vikram Singh"
+    },
+    "expectedDiagnoses": [
+      "community-acquired pneumonia"
+    ],
+    "expectedPlanItems": [
+      "chest X-ray",
+      "CBC",
+      "antibiotics",
+      "follow-up 48h"
+    ],
+    "redFlags": [
+      "hypoxemia",
+      "sepsis screen"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0006",
+    "source": "medqa",
+    "category": "psychiatry",
+    "difficulty": "hard",
+    "uncertaintyInjected": true,
+    "transcript": "Today I met with Patient Anjali Patel, a 22-year-old male presenting with a 4-month history of declining academic performance and social withdrawal, as reported by his family. Patient Patel himself reports hearing voices, specifically stating, \"I hear voices telling me I'm not good enough, that I should just give up.\" He denies any intent to harm himself or others, stating the voices are \"just critical, not commanding.\" He describes the voices as male, distinct from his own thoughts, and occurring daily, particularly when he is alone. He reports difficulty concentrating in classes and has stopped attending social gatherings with friends. His family noted a gradual onset, making the exact timeline of symptoms difficult to pinpoint.\n\nVitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. He appeared disheveled, with poor eye contact throughout the interview, and exhibited psychomotor slowing. Speech was coherent but sparse. Affect was restricted. No overt signs of distress were observed. He denied substance use and had no significant past medical history. Family history is notable for a paternal uncle with a history of unspecified psychiatric illness.",
+    "patientContext": {
+      "name": "Anjali Patel"
+    },
+    "expectedDiagnoses": [
+      "first-episode psychosis",
+      "schizophreniform"
+    ],
+    "expectedPlanItems": [
+      "psych referral",
+      "rule out substance",
+      "family education"
+    ],
+    "redFlags": [
+      "safety assessment"
+    ],
+    "knownAmbiguities": [
+      "symptom onset",
+      "family history"
+    ]
+  },
+  {
+    "id": "medqa-0007",
+    "source": "medqa",
+    "category": "infectious",
+    "difficulty": "easy",
+    "uncertaintyInjected": false,
+    "transcript": "\"Good morning, Karthik. My name is Dr. Lee. What brings you in today?\"\n\n\"Hi, Dr. Lee. Karthik has had a really sore throat for the past three days. He's also been running a fever.\"\n\n\"Okay, Karthik, can you point to where it hurts?\"\n\n*Karthik points to his throat.*\n\n\"And how severe would you say the pain is on a scale of 1 to 10, with 10 being the worst?\"\n\n\"It's about a 7, doctor. It really hurts when I swallow.\"\n\n\"I see. And regarding the fever, Mrs. Reddy, what has been the highest temperature you've recorded?\"\n\n\"It was 39 degrees Celsius last night. We've been giving him acetaminophen, which brings it down a bit, but it goes back up.\"\n\n\"Any other symptoms, like a cough, runny nose, or body aches?\"\n\n\"No, just the sore throat and fever. He's been a bit tired, but otherwise, no other complaints.\"\n\n\"Has Karthik been around anyone else who's been sick recently?\"\n\n\"Not that we know of, no.\"\n\n\"Alright, Karthik, let's take a look. Can you open wide and say 'Ahhh' for me?\"\n\n*Upon examination, I observed erythematous and edematous tonsils with white exudates bilaterally. Palpation revealed tender anterior cervical lymphadenopathy.*\n\n\"Okay, Karthik, we're just going to do a quick swab of your throat to check for strep. It might feel a little ticklish.\"\n\n*The rapid strep test was performed and returned positive.*\n\n\"Alright, Karthik, you can sit up now. We've got the results from the swab.\"",
+    "patientContext": {
+      "name": "Karthik Reddy"
+    },
+    "expectedDiagnoses": [
+      "streptococcal pharyngitis"
+    ],
+    "expectedPlanItems": [
+      "amoxicillin 10 days",
+      "symptomatic care",
+      "school exclusion 24h"
+    ],
+    "redFlags": [
+      "rheumatic fever prevention"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0008",
+    "source": "medqa",
+    "category": "renal",
+    "difficulty": "hard",
+    "uncertaintyInjected": false,
+    "transcript": "\"Good morning, Patient Nair. I understand you've been experiencing some issues recently. Can you tell me in your own words what brings you in today?\"\n\n\"Doctor, I haven't been peeing much for the last two days. It's really concerning. And my legs, they're so swollen, especially around my ankles. I've also been feeling quite breathless, even just walking across the room.\"\n\n\"Thank you for sharing that, Patient Nair. To clarify, when you say 'not much,' are we talking about a significant reduction in frequency or volume, or both?\"\n\n\"Both, definitely both. I usually go several times a day, but it's been maybe once or twice, and only a tiny bit each time.\"\n\n\"Understood. And regarding the leg swelling, is it new onset, or have you experienced anything like this before?\"\n\n\"It's new. I've never had my legs swell up like this before. It started around the same time as the decreased urine.\"\n\n\"Have you noticed any changes in your weight recently?\"\n\n\"I haven't weighed myself, but I feel heavier, like I'm retaining fluid.\"\n\n\"Okay. Any chest pain, palpitations, or dizziness with the shortness of breath?\"\n\n\"No, just the breathlessness itself. It's worse when I try to do anything strenuous.\"\n\n\"I see. Are you currently taking any medications, over-the-counter or prescribed?\"\n\n\"Yes, I've been taking ibuprofen pretty regularly for some knee pain for the past week or so. Maybe three times a day.\"\n\n\"Thank you for that important detail. Any known allergies? Any history of heart problems, kidney disease, or diabetes?\"\n\n\"No known allergies. No history of heart or kidney issues. I do have well-controlled hypertension, for which I take lisinopril.\"\n\n\"Alright. Let's get some vitals. Blood pressure is 150/90, heart rate 92, respiratory rate 20, oxygen saturation 94% on room air. On examination, I note bilateral pitting edema to the mid-shin. Lungs are clear to auscultation bilaterally, no crackles or wheezes. Cardiac exam reveals a regular rate and rhythm, no murmurs. Abdomen is soft, non-tender, non-distended.\"",
+    "patientContext": {
+      "name": "Meera Nair"
+    },
+    "expectedDiagnoses": [
+      "acute kidney injury",
+      "NSAID-induced AKI"
+    ],
+    "expectedPlanItems": [
+      "stop NSAIDs",
+      "IV fluids",
+      "nephrology consult",
+      "monitor K"
+    ],
+    "redFlags": [
+      "hyperkalemia",
+      "volume status"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0009",
+    "source": "medqa",
+    "category": "cardiology",
+    "difficulty": "easy",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Rohan Das today, a 60-year-old female presenting with a chief complaint of palpitations for approximately two hours. She describes the palpitations as a fluttering sensation in her chest, which started suddenly this morning. She denies any associated chest pain, shortness of breath, dizziness, syncope, or diaphoresis. She reports no recent illness, fever, or cough.\n\nRegarding her past medical history, she states she has hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin. She denies any history of prior arrhythmias, thyroid disease, or structural heart disease. She reports no recent changes in her medications or new supplements. Social history includes no smoking, occasional alcohol use, and no illicit drug use.\n\nOn examination, her general appearance is comfortable, not in acute distress. Her vital signs are as follows: Blood Pressure 138/82 mmHg, Heart Rate 130 bpm, irregular rhythm; Respiratory Rate 16 breaths per minute, Oxygen Saturation 98% on room air, and temperature 98.6°F (37.0°C). Cardiovascular exam reveals an irregularly irregular rhythm with a rapid rate, no murmurs, rubs, or gallops appreciated. Peripheral pulses are palpable and symmetrical. Lungs are clear to auscultation bilaterally. Abdominal exam is soft, non-tender, with no organomegaly. Neurological exam is grossly intact. Skin is warm and dry with no edema.",
+    "patientContext": {
+      "name": "Rohan Das"
+    },
+    "expectedDiagnoses": [
+      "atrial fibrillation",
+      "rapid ventricular response"
+    ],
+    "expectedPlanItems": [
+      "rate control",
+      "anticoagulation assessment",
+      "CHA2DS2-VASc"
+    ],
+    "redFlags": [
+      "stroke risk",
+      "hemodynamic stability"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0010",
+    "source": "medqa",
+    "category": "endocrine",
+    "difficulty": "medium",
+    "uncertaintyInjected": true,
+    "transcript": "I'm seeing Patient Divya Menon today, a 38-year-old female presenting with a chief complaint of persistent fatigue. She reports feeling unusually tired for the past six months, describing it as a pervasive lack of energy that impacts her daily activities. Concurrently, she notes an unintentional weight gain of approximately 8 kilograms over the same period, despite no significant changes in her dietary habits or activity level.\n\nPatient Menon also reports increased cold intolerance, stating she feels cold even in environments where others are comfortable, and often needs to wear extra layers. She has also experienced a change in bowel habits, reporting chronic constipation with bowel movements occurring every 3-4 days, which is a significant departure from her usual daily pattern. She denies any acute illness, fever, or recent travel.\n\nRegarding her medical history, she denies any known chronic conditions. Surgical history is negative. She is not currently taking any regular medications or supplements. Family history is somewhat vague; she recalls a distant relative on her maternal side having a \"thyroid problem\" but cannot provide further details. Social history is non-contributory.\n\nOn physical examination today, her vitals are: BP 110/70 mmHg, HR 62 bpm, RR 14 breaths/min, Temp 36.5°C (oral). Her BMI is calculated at 28.5 kg/m². Skin appears dry. No obvious goiter or thyroid tenderness on palpation. Deep tendon reflexes are 2+ bilaterally in upper and lower extremities with a delayed relaxation phase noted in the Achilles reflexes. Cardiovascular and respiratory exams are unremarkable. Abdomen is soft, non-tender, with normal bowel sounds.",
+    "patientContext": {
+      "name": "Divya Menon"
+    },
+    "expectedDiagnoses": [
+      "hypothyroidism",
+      "Hashimotos"
+    ],
+    "expectedPlanItems": [
+      "TSH",
+      "free T4",
+      "TPO antibodies",
+      "levothyroxine if confirmed"
+    ],
+    "redFlags": [
+      "myxedema"
+    ],
+    "knownAmbiguities": [
+      "family history",
+      "symptom duration"
+    ]
+  },
+  {
+    "id": "medqa-0011",
+    "source": "medqa",
+    "category": "gi",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Aditya Rao today, a 50-year-old male presenting with a chief complaint of dark stools for approximately one week. He describes the stools as black and tarry, occurring with most bowel movements. He also reports associated fatigue, which he states has been progressively worsening over the past few weeks, impacting his daily activities. He denies any overt hematemesis, melena, or bright red blood per rectum. He reports no recent changes in diet or travel.\n\nRegarding his past medical history, Mr. Rao reports chronic use of over-the-counter NSAIDs for management of osteoarthritis, specifically ibuprofen, which he takes almost daily for joint pain. He estimates he has been taking it for several years. He denies any history of peptic ulcer disease, inflammatory bowel disease, or liver disease. Surgical history is unremarkable. He is a non-smoker and reports occasional alcohol consumption.\n\nOn physical examination, Mr. Rao appears pale and somewhat lethargic. His vital signs are: BP 110/70 mmHg, HR 98 bpm, RR 16 bpm, Temp 98.6°F (oral). Abdominal examination reveals mild epigastric tenderness to palpation, but no guarding or rebound. Bowel sounds are normoactive. Rectal examination reveals dark, melenic stool. Capillary refill is sluggish at 3 seconds.",
+    "patientContext": {
+      "name": "Aditya Rao"
+    },
+    "expectedDiagnoses": [
+      "upper GI bleed",
+      "iron deficiency anemia"
+    ],
+    "expectedPlanItems": [
+      "EGD",
+      "PPI",
+      "stop NSAIDs",
+      "iron supplementation"
+    ],
+    "redFlags": [
+      "hemodynamic stability",
+      "malignancy screening"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0012",
+    "source": "medqa",
+    "category": "neurology",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Kavya Joshi today, a 40-year-old female presenting with a chief complaint of a severe headache. She reports the headache began approximately six hours ago, describing it as unilateral, localized to the right temporal region, and throbbing in nature. She rates the pain as an 8/10 at its peak. Associated symptoms include significant photophobia, prompting her to seek a dark room, and nausea, though she denies emesis.\n\nPatient Joshi states these episodes are not new; she experiences similar headaches approximately once a month, often coinciding with her menstrual cycle, though she notes this current episode is not directly linked to her period. She consistently reports a prodrome characterized by a visual scotoma, which she describes as a \"blind spot\" in her vision, preceding the onset of the headache by about 20-30 minutes. She denies any motor weakness, sensory changes, or speech difficulties during these episodes. She has tried over-the-counter ibuprofen with minimal relief.\n\nHer past medical history is unremarkable. She denies any recent head trauma or fever. Vitals today are stable: BP 120/78, HR 72, RR 16, Temp 98.6°F. Neurological exam is grossly intact at this time.",
+    "patientContext": {
+      "name": "Kavya Joshi"
+    },
+    "expectedDiagnoses": [
+      "migraine with aura"
+    ],
+    "expectedPlanItems": [
+      "triptan acute",
+      "avoid triggers",
+      "consider prophylaxis",
+      "headache diary"
+    ],
+    "redFlags": [
+      "rule out SAH"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0013",
+    "source": "medqa",
+    "category": "pulmonary",
+    "difficulty": "hard",
+    "uncertaintyInjected": true,
+    "transcript": "Patient Manish Gupta, a 65-year-old male, presented today with a chief complaint of chronic cough, hemoptysis, and unintentional weight loss. He reports a persistent cough for \"several months,\" which he describes as productive of clear to yellowish sputum, occurring daily. He states that approximately one week ago, he experienced an episode of hemoptysis, describing it as \"streaks of blood\" mixed with sputum, occurring once. He denies any further episodes since then.\n\nMr. Gupta also reports a significant weight loss over the past three months, estimating it to be around 6 kilograms, stating his clothes feel looser. He attributes this to \"not eating much\" due to a decreased appetite. He denies fever, chills, night sweats, or chest pain. He reports mild dyspnea on exertion, stating he gets \"a bit winded\" climbing stairs, which he feels is a recent change.\n\nRegarding his social history, when questioned about smoking, Mr. Gupta initially minimized his history, stating he \"used to smoke a bit.\" Upon further probing, he admitted to smoking \"on and off for many years,\" but was vague about pack-years and current consumption, stating he \"cut down a lot recently.\" He denies alcohol or illicit drug use. His past medical history is notable only for hypertension, managed with lisinopril.\n\nOn examination, his vitals were: BP 138/86 mmHg, HR 88 bpm, RR 18 bpm, Temp 37.0°C, SpO2 96% on room air. He appeared thin but not acutely distressed. Lung auscultation revealed scattered rhonchi bilaterally, more prominent on the right, with decreased breath sounds at the right base. Cardiovascular exam was unremarkable. Abdominal exam revealed no organomegaly or tenderness. No peripheral edema was noted.",
+    "patientContext": {
+      "name": "Manish Gupta"
+    },
+    "expectedDiagnoses": [
+      "lung cancer",
+      "malignancy"
+    ],
+    "expectedPlanItems": [
+      "CT chest",
+      "pulmonology referral",
+      "PFTs",
+      "staging workup"
+    ],
+    "redFlags": [
+      "malignancy",
+      "metastasis screening"
+    ],
+    "knownAmbiguities": [
+      "smoking history"
+    ]
+  },
+  {
+    "id": "medqa-0014",
+    "source": "medqa",
+    "category": "rheumatology",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "Patient Pooja Bhatt, a 55-year-old female, presents today with a chief complaint of symmetric joint pain. She reports a 4-month history of pain primarily affecting the metacarpophalangeal (MCP) joints and wrists bilaterally. She describes the pain as aching and notes significant morning stiffness lasting greater than one hour, often improving slightly with activity. She denies any history of trauma to the affected joints. She reports no fever, chills, or recent infections. She has tried over-the-counter ibuprofen with minimal relief. Her past medical history is otherwise unremarkable, and she takes no regular medications. Family history is negative for autoimmune conditions.\n\nOn physical examination, vital signs are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. Inspection of the hands reveals mild swelling and erythema over the MCP joints and wrists bilaterally. Palpation elicits tenderness in these areas, and there is noted warmth. Range of motion is limited and painful in flexion and extension of the MCP joints and wrists. No obvious deformities are appreciated at this time. The remainder of the joint examination, including elbows, shoulders, knees, and ankles, is non-contributory. Skin examination is unremarkable. Cardiovascular, pulmonary, and abdominal examinations are within normal limits.",
+    "patientContext": {
+      "name": "Pooja Bhatt"
+    },
+    "expectedDiagnoses": [
+      "rheumatoid arthritis"
+    ],
+    "expectedPlanItems": [
+      "rheumatology referral",
+      "methotrexate",
+      "X-rays",
+      "baseline labs"
+    ],
+    "redFlags": [
+      "joint damage"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0015",
+    "source": "medqa",
+    "category": "pediatric",
+    "difficulty": "easy",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Suresh Pillai today, a 4-year-old male presenting with a 2-day history of right ear pain. His mother reports he has been irritable and had a fever at home, measured at 38.5 degrees Celsius. She denies any ear discharge or recent trauma. He has no reported changes in hearing, but has been pulling at his right ear frequently. His last illness was approximately two months ago, a common cold. Immunizations are up to date per parental report.\n\nOn examination, Suresh is alert but fussy. His temperature is 38.6°C, heart rate 110 bpm, respiratory rate 24 bpm, and oxygen saturation 99% on room air. Otoscopic examination of the right ear reveals a tympanic membrane that is markedly erythematous and bulging, with obscured landmarks. There is no evidence of perforation or purulent discharge in the external auditory canal. The left tympanic membrane appears normal, pearly gray with visible light reflex. Oropharynx is non-erythematous, and cervical lymph nodes are not enlarged. Respiratory and cardiovascular exams are unremarkable.",
+    "patientContext": {
+      "name": "Suresh Pillai"
+    },
+    "expectedDiagnoses": [
+      "acute otitis media"
+    ],
+    "expectedPlanItems": [
+      "amoxicillin",
+      "analgesia",
+      "follow-up 48-72h",
+      "fluid intake"
+    ],
+    "redFlags": [
+      "mastoiditis"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0016",
+    "source": "medqa",
+    "category": "cardiology",
+    "difficulty": "hard",
+    "uncertaintyInjected": true,
+    "transcript": "I am seeing Patient Nisha Kapoor, a 75-year-old male presenting to the ED following a syncopal episode at home earlier today. Patient reports no prodromal symptoms prior to loss of consciousness. He denies dizziness, palpitations, chest pain, or dyspnea preceding the event. Family members present at the scene report witnessing convulsions, though the exact duration is unclear. They describe generalized shaking movements lasting approximately \"a minute or so\" before spontaneous resolution. Patient denies any tongue biting, incontinence, or post-ictal confusion, stating he felt \"normal\" almost immediately upon regaining consciousness. He denies any recent illness, fever, or changes in medication. No history of similar episodes. Medical history is significant for hypertension, well-controlled on lisinopril. No known cardiac history or seizure disorder. Social history: lives independently, non-smoker, occasional alcohol use. On examination, vital signs are stable: BP 130/80 mmHg, HR 72 bpm, RR 16, SpO2 98% on room air. Capillary refill <2 seconds. Cardiac auscultation reveals regular S1/S2, no murmurs, rubs, or gallops. Lungs clear to auscultation bilaterally. Neurological exam is non-focal; alert and oriented x3, cranial nerves intact, motor strength 5/5 bilaterally, sensation intact, reflexes symmetric. An ECG performed in the ED shows normal sinus rhythm with no acute ischemic changes or conduction abnormalities.",
+    "patientContext": {
+      "name": "Nisha Kapoor"
+    },
+    "expectedDiagnoses": [
+      "cardiac syncope",
+      "arrhythmia",
+      "rule out seizure"
+    ],
+    "expectedPlanItems": [
+      "admit telemetry",
+      "echo",
+      "orthostatics",
+      "EEG if seizure suspected"
+    ],
+    "redFlags": [
+      "arrhythmia",
+      "structural heart disease"
+    ],
+    "knownAmbiguities": [
+      "convulsion details"
+    ]
+  },
+  {
+    "id": "medqa-0017",
+    "source": "medqa",
+    "category": "infectious",
+    "difficulty": "medium",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Tarun Mehta today, a 30-year-old female presenting with a 2-day history of dysuria, urinary urgency, and suprapubic discomfort. She describes the dysuria as a burning sensation during urination, and the urgency as a frequent, compelling need to void, often producing only small amounts of urine. The suprapubic pain is constant and described as a dull ache. She denies any associated fever, chills, nausea, vomiting, or flank pain. She reports no recent sexual activity and no history of recurrent UTIs. She is G0P0 and uses oral contraceptives. Her last menstrual period was 2 weeks ago. On examination, vital signs are stable: temperature 98.6°F, heart rate 78 bpm, blood pressure 118/72 mmHg, respiratory rate 16 bpm. Abdominal examination reveals mild suprapubic tenderness to palpation, but no rebound or guarding. Costovertebral angle tenderness is absent bilaterally. A urine dipstick performed in clinic shows positive leukocyte esterase and positive nitrites.",
+    "patientContext": {
+      "name": "Tarun Mehta"
+    },
+    "expectedDiagnoses": [
+      "uncomplicated UTI"
+    ],
+    "expectedPlanItems": [
+      "nitrofurantoin",
+      "increase fluids",
+      "follow-up if symptoms persist"
+    ],
+    "redFlags": [
+      "pyelonephritis"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0018",
+    "source": "medqa",
+    "category": "endocrine",
+    "difficulty": "hard",
+    "uncertaintyInjected": false,
+    "transcript": "I'm seeing Patient Lakshmi Krishnan, a 25-year-old female, presenting to the ED with acute onset of symptoms. She reports experiencing significant nausea and vomiting for the past 12 hours, accompanied by diffuse abdominal pain, which she describes as a constant, cramping sensation. She states she has vomited approximately five times since yesterday evening and has been unable to keep any food or liquids down. She also reports feeling increasingly short of breath, noting that her breathing feels \"fast and deep.\"\n\nPatient Krishnan has a known history of Type 1 Diabetes Mellitus, diagnosed at age 12. She states she typically manages her diabetes with insulin injections but admits to having been \"a bit lax\" with her monitoring and insulin doses over the past few days due to feeling unwell. She denies any recent illness, fever, or exposure to sick contacts. She denies alcohol or illicit drug use.\n\nOn initial assessment, her vital signs are: Temperature 98.6°F, Heart Rate 110 bpm, Respiratory Rate 30 breaths/min, Blood Pressure 100/60 mmHg, Oxygen Saturation 98% on room air. Her capillary blood glucose was 480 mg/dL. Urine dipstick revealed ketones 4+. Arterial blood gas results show a pH of 7.21. Physical examination reveals dry mucous membranes and a fruity odor on her breath. Her abdomen is soft, with mild diffuse tenderness to palpation, but no rebound or guarding. Her breathing is deep and rapid, consistent with Kussmaul respirations.",
+    "patientContext": {
+      "name": "Lakshmi Krishnan"
+    },
+    "expectedDiagnoses": [
+      "diabetic ketoacidosis"
+    ],
+    "expectedPlanItems": [
+      "IV fluids",
+      "insulin drip",
+      "electrolyte monitoring",
+      "identify trigger"
+    ],
+    "redFlags": [
+      "cerebral edema",
+      "hypokalemia"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0019",
+    "source": "medqa",
+    "category": "gi",
+    "difficulty": "easy",
+    "uncertaintyInjected": false,
+    "transcript": "\"Patient Agarwal, Harsh, a 29-year-old male, presents to the emergency department with a chief complaint of lower abdominal pain for approximately 12 hours. He describes the pain as initially diffuse in the periumbilical region, which then migrated and localized to the right lower quadrant over the last 6 hours. He rates the pain as a 7/10 in severity currently. Associated symptoms include anorexia, reporting no desire to eat since the pain began, and a subjective low-grade fever, though he has not taken his temperature at home. He denies nausea, vomiting, diarrhea, or constipation. He reports no significant past medical history and takes no regular medications. Surgical history is negative.\n\nOn physical examination, vital signs were recorded: Temperature 37.8°C, Heart Rate 92 bpm, Blood Pressure 128/78 mmHg, Respiratory Rate 16 bpm, Oxygen Saturation 99% on room air. Abdominal examination reveals tenderness to palpation at McBurney's point with guarding. Rebound tenderness is also elicited in the right lower quadrant. Bowel sounds are present and normoactive. The remainder of the physical exam is unremarkable. A complete blood count was performed, revealing a white blood cell count of 14.0 x 10^9/L with neutrophilic predominance.\"",
+    "patientContext": {
+      "name": "Harsh Agarwal"
+    },
+    "expectedDiagnoses": [
+      "acute appendicitis"
+    ],
+    "expectedPlanItems": [
+      "surgical consult",
+      "CT abdomen",
+      "NPO",
+      "IV fluids",
+      "antibiotics"
+    ],
+    "redFlags": [
+      "perforation"
+    ],
+    "knownAmbiguities": []
+  },
+  {
+    "id": "medqa-0020",
+    "source": "medqa",
+    "category": "neurology",
+    "difficulty": "medium",
+    "uncertaintyInjected": true,
+    "transcript": "I'm seeing Patient Riya Saxena today, a 55-year-old female, accompanied by her husband. Her husband reports a one-year history of progressive memory loss, noting she frequently misplaces items, forgets recent conversations, and occasionally struggles with word-finding. He describes these changes as a noticeable decline from her baseline cognitive function.\n\nWhen I asked Patient Saxena about these concerns, she stated, \"My memory is fine. I just have a lot on my mind these days.\" She denied any significant memory issues, confusion, or difficulty with daily tasks. She maintained good eye contact throughout the interview and her affect was congruent with her denial.\n\nVitals today are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. On physical exam, she is alert and oriented to person, place, and time. Cranial nerves II-XII are intact. Motor strength is 5/5 bilaterally in all extremities. Sensation is intact to light touch and pinprick. Reflexes are 2+ and symmetric. No focal neurological deficits were noted. A Montreal Cognitive Assessment (MoCA) was administered, yielding a score of 22/30. This score indicates mild cognitive impairment. Further workup is warranted to investigate the etiology of her cognitive changes.",
+    "patientContext": {
+      "name": "Riya Saxena"
+    },
+    "expectedDiagnoses": [
+      "mild cognitive impairment",
+      "early dementia"
+    ],
+    "expectedPlanItems": [
+      "cognitive workup",
+      "B12/TSH",
+      "MRI brain",
+      "neuropsych eval"
+    ],
+    "redFlags": [
+      "reversible causes"
+    ],
+    "knownAmbiguities": [
+      "onset",
+      "patient awareness"
+    ]
+  }
+]
