@@ -40,7 +40,8 @@ export type HallucinationType =
 export type Hallucination = {
   type: HallucinationType
   section: 'subjective' | 'objective' | 'assessment' | 'plan'
-  excerpt: string             // the offending text
+  excerpt: string
+  transcriptEvidence: string              // the offending text
   why: string                 // judge's reasoning for the flag
 }
 

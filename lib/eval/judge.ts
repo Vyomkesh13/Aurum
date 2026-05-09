@@ -30,11 +30,17 @@ HIGHER IS BETTER:
 - fluency: clinical writing quality (1=poor, 5=excellent)
 - completeness: covers all relevant info (1=skeletal, 5=comprehensive)
 
-For EACH hallucination found, classify by type:
-- fabricated_fact: claimed something not in transcript
-- misattributed_fact: got fact right but wrong context
-- confidence_without_evidence: firm clinical claim without basis
-- false_reasoning: logic chain doesn't follow
+For EACH hallucination found:
+- type: which category
+- section: which SOAP section
+- excerpt: the SOAP claim that's problematic
+- transcriptEvidence: quote the relevant text from the transcript that supports
+  or contradicts the claim. If the transcript says NOTHING about this claim,
+  write "NONE" — that proves it's a fabrication.
+- why: your reasoning
+
+The transcriptEvidence field is mandatory. If you can't quote evidence, the
+claim is hallucinated. This is non-negotiable.
 
 Coverage checks (boolean):
 - expectedDiagnosesMet: does Assessment include the expected diagnoses?
@@ -55,8 +61,14 @@ Output ONLY valid JSON, no markdown:
   "completeness": <int>,
   "judgeConfidence": <float>,
   "hallucinationsFound": [
-    {"type": "<type>", "section": "<section>", "excerpt": "<text>", "why": "<reasoning>"}
-  ],
+  {
+    "type": "<type>",
+    "section": "<section>",
+    "excerpt": "<text>",
+    "transcriptEvidence": "<quoted text or NONE>",
+    "why": "<reasoning>"
+  }
+]
   "expectedDiagnosesMet": <bool>,
   "expectedPlanItemsMet": <bool>,
   "redFlagsHandled": <bool>,
@@ -180,6 +192,7 @@ function parseHallucinations(arr: unknown): Hallucination[] {
         ? (h.section as Hallucination['section'])
         : 'assessment',
       excerpt: typeof h.excerpt === 'string' ? h.excerpt : '',
+      transcriptEvidence: typeof h.transcriptEvidence === 'string' ? h.transcriptEvidence : '',
       why: typeof h.why === 'string' ? h.why : '',
     }))
 }

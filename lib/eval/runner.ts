@@ -16,6 +16,7 @@ const RATE_LIMIT_DELAY_MS = 13000  // 5 RPM safe — 13s between cases
 export async function runEvaluation(params: {
   cases: EvalCase[]
   onProgress?: (current: number, total: number, caseId: string) => void
+  checkpointPath?: string
 }): Promise<{ summary: EvalRunSummary; results: EvalRunCase[] }> {
   const { cases, onProgress } = params
   const results: EvalRunCase[] = []
@@ -41,7 +42,6 @@ export async function runEvaluation(params: {
 
       const totalLatencyMs = Date.now() - pipelineStart
       const totalTokensUsed = pipelineResult.trace.tokensUsed + judgeResp.tokensUsed
-
       const judgeAggregateScore = computeAggregateScore(judgeResp.judgeResult)
 
       results.push({
@@ -63,6 +63,17 @@ export async function runEvaluation(params: {
         totalTokensUsed,
         errored: false,
       })
+
+      if (params.checkpointPath) {
+        try {
+          const fs = await import('fs')
+          fs.writeFileSync(
+            params.checkpointPath,
+            JSON.stringify(results, null, 2)
+          )
+        } catch {}
+      }
+
       await new Promise((r) => setTimeout(r, RATE_LIMIT_DELAY_MS))
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err)
@@ -79,7 +90,17 @@ export async function runEvaluation(params: {
         errored: true,
         errorMessage: message,
       })
-      // Back off harder on error (likely rate-limit)
+
+      if (params.checkpointPath) {
+        try {
+          const fs = await import('fs')
+          fs.writeFileSync(
+            params.checkpointPath,
+            JSON.stringify(results, null, 2)
+          )
+        } catch {}
+      }
+
       await new Promise((r) => setTimeout(r, 30000))
     }
   }
