@@ -1,0 +1,103 @@
+[
+  {
+    "full_name": "Raj Patel",
+    "date_of_birth": "1985-03-15",
+    "gender": "male",
+    "phone": "+91 98765 43210",
+    "blood_type": "B+",
+    "allergies": ["Penicillin"],
+    "archetype": "T2DM with cardiac risk",
+    "conditions": [
+      { "condition_name": "Type 2 Diabetes Mellitus", "icd10_code": "E11.9", "status": "active", "severity": "moderate", "onset_date": "2019-08-10" },
+      { "condition_name": "Essential Hypertension", "icd10_code": "I10", "status": "active", "severity": "moderate", "onset_date": "2020-02-14" }
+    ],
+    "encounters": [
+      { "type": "follow_up", "complaint": "Diabetes follow-up; HbA1c review", "days_ago": 45, "vitals": { "systolic_bp": 138, "diastolic_bp": 86, "heart_rate": 76, "spo2": 98, "weight_kg": 82.5, "height_cm": 175 } },
+      { "type": "in_person", "complaint": "Substernal chest pain on exertion", "days_ago": 7, "vitals": { "systolic_bp": 142, "diastolic_bp": 88, "heart_rate": 78, "spo2": 98, "weight_kg": 82.0, "height_cm": 175 } }
+    ],
+    "prescriptions": [
+      { "medication": "Metformin", "dosage": "500mg", "frequency": "BID", "status": "active" },
+      { "medication": "Aspirin", "dosage": "81mg", "frequency": "daily", "status": "active" }
+    ]
+  },
+  {
+    "full_name": "Priya Singh",
+    "date_of_birth": "1992-07-22",
+    "gender": "female",
+    "phone": "+91 87654 32109",
+    "blood_type": "A+",
+    "allergies": ["Sulfa drugs"],
+    "archetype": "Asthma exacerbation",
+    "conditions": [
+      { "condition_name": "Persistent Asthma", "icd10_code": "J45.40", "status": "active", "severity": "moderate", "onset_date": "2010-05-01" }
+    ],
+    "encounters": [
+      { "type": "urgent", "complaint": "Acute asthma exacerbation, increased SABA use", "days_ago": 3, "vitals": { "systolic_bp": 118, "diastolic_bp": 74, "heart_rate": 102, "respiratory_rate": 24, "spo2": 93, "weight_kg": 58.0, "height_cm": 162 } },
+      { "type": "follow_up", "complaint": "Asthma control review", "days_ago": 90, "vitals": { "systolic_bp": 116, "diastolic_bp": 72, "heart_rate": 78, "respiratory_rate": 16, "spo2": 98, "weight_kg": 57.5, "height_cm": 162 } }
+    ],
+    "prescriptions": [
+      { "medication": "Salbutamol", "dosage": "100mcg", "frequency": "PRN q4-6h", "status": "active" },
+      { "medication": "Beclomethasone", "dosage": "200mcg", "frequency": "BID", "status": "active" }
+    ]
+  },
+  {
+    "full_name": "Arjun Mehta",
+    "date_of_birth": "1958-11-05",
+    "gender": "male",
+    "phone": "+91 76543 21098",
+    "blood_type": "O+",
+    "allergies": [],
+    "archetype": "Post-MI on anticoagulation",
+    "conditions": [
+      { "condition_name": "Atrial Fibrillation", "icd10_code": "I48.91", "status": "active", "severity": "moderate", "onset_date": "2022-09-12" },
+      { "condition_name": "Coronary Artery Disease s/p MI", "icd10_code": "I25.10", "status": "active", "severity": "severe", "onset_date": "2022-09-12" }
+    ],
+    "encounters": [
+      { "type": "follow_up", "complaint": "Anticoagulation monitoring; INR check", "days_ago": 14, "vitals": { "systolic_bp": 132, "diastolic_bp": 80, "heart_rate": 72, "spo2": 97, "weight_kg": 78.0, "height_cm": 170 } }
+    ],
+    "prescriptions": [
+      { "medication": "Warfarin", "dosage": "5mg", "frequency": "daily", "status": "active" },
+      { "medication": "Atorvastatin", "dosage": "40mg", "frequency": "daily", "status": "active" },
+      { "medication": "Metoprolol", "dosage": "50mg", "frequency": "BID", "status": "active" }
+    ]
+  },
+  {
+    "full_name": "Sneha Iyer",
+    "date_of_birth": "2018-04-30",
+    "gender": "female",
+    "phone": "+91 99887 76543",
+    "blood_type": "A-",
+    "allergies": [],
+    "archetype": "Pediatric — recurrent otitis media",
+    "conditions": [
+      { "condition_name": "Recurrent Acute Otitis Media", "icd10_code": "H66.006", "status": "active", "severity": "mild" }
+    ],
+    "encounters": [
+      { "type": "in_person", "complaint": "Right ear pain, fever 38.5C, irritable", "days_ago": 2, "vitals": { "heart_rate": 110, "respiratory_rate": 22, "temperature_celsius": 38.5, "spo2": 98, "weight_kg": 16.5, "height_cm": 102 } }
+    ],
+    "prescriptions": [
+      { "medication": "Amoxicillin", "dosage": "25 mg/kg", "frequency": "BID", "status": "active" }
+    ]
+  },
+  {
+    "full_name": "Lakshmi Krishnan",
+    "date_of_birth": "1976-09-12",
+    "gender": "female",
+    "phone": "+91 90123 45678",
+    "blood_type": "AB+",
+    "allergies": ["Latex"],
+    "archetype": "Hypothyroidism + depression",
+    "conditions": [
+      { "condition_name": "Primary Hypothyroidism", "icd10_code": "E03.9", "status": "active", "severity": "mild", "onset_date": "2018-11-22" },
+      { "condition_name": "Major Depressive Disorder, recurrent", "icd10_code": "F33.1", "status": "active", "severity": "moderate", "onset_date": "2021-03-08" }
+    ],
+    "encounters": [
+      { "type": "telehealth", "complaint": "Mood follow-up; sertraline dose review", "days_ago": 21, "vitals": { "systolic_bp": 122, "diastolic_bp": 78, "heart_rate": 80, "spo2": 98, "weight_kg": 65.0, "height_cm": 158 } },
+      { "type": "follow_up", "complaint": "Annual thyroid panel review", "days_ago": 120, "vitals": { "systolic_bp": 120, "diastolic_bp": 76, "heart_rate": 78, "weight_kg": 64.0, "height_cm": 158 } }
+    ],
+    "prescriptions": [
+      { "medication": "Levothyroxine", "dosage": "75mcg", "frequency": "daily", "status": "active" },
+      { "medication": "Sertraline", "dosage": "100mg", "frequency": "daily", "status": "active" }
+    ]
+  }
+]
