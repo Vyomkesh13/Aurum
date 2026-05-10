@@ -10,6 +10,7 @@ export function loadEvalCases(filter?: {
   category?: string
   difficulty?: 'easy' | 'medium' | 'hard'
   uncertaintyOnly?: boolean
+  skip?: number
   limit?: number
 }): EvalCase[] {
   const path = join(process.cwd(), 'data', 'eval-cases.json')
@@ -24,6 +25,9 @@ export function loadEvalCases(filter?: {
   }
   if (filter?.uncertaintyOnly) {
     cases = cases.filter((c) => c.uncertaintyInjected)
+  }
+  if (filter?.skip) {
+  cases = cases.slice(filter.skip)
   }
   if (filter?.limit) {
     cases = cases.slice(0, filter.limit)

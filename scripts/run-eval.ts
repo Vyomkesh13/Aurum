@@ -8,12 +8,14 @@ config({ path: '.env.local' })
 
 import { loadEvalCases, runEvaluation, writeReports, printSummary } from '../lib/eval'
 
-function parseArgs(): { limit?: number; difficulty?: 'easy' | 'medium' | 'hard' } {
+function parseArgs(): { limit?: number; skip?: number; difficulty?: 'easy' | 'medium' | 'hard' } {
   const args = process.argv.slice(2)
-  const out: { limit?: number; difficulty?: 'easy' | 'medium' | 'hard' } = {}
+  const out: { limit?: number; skip?: number; difficulty?: 'easy' | 'medium' | 'hard' } = {}
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--limit' && args[i + 1]) {
       out.limit = parseInt(args[++i], 10)
+    } else if (args[i] === '--skip' && args[i + 1]) {
+      out.skip = parseInt(args[++i], 10)
     } else if (args[i] === '--difficulty' && args[i + 1]) {
       const d = args[++i]
       if (d === 'easy' || d === 'medium' || d === 'hard') out.difficulty = d
