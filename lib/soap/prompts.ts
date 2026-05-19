@@ -1,6 +1,7 @@
 /**
  * System prompts for each SOAP pipeline stage.
- * Iterate these based on evaluation harness results.
+ * v2: Hardened against hallucination based on eval findings.
+ * Key change: explicit "only state facts in transcript" constraint on all generation prompts.
  */
 
 export const KEYWORD_EXTRACTION_PROMPT = `You are a medical scribe assistant. Extract 5-10 medically relevant keywords from the doctor-patient transcript below.
@@ -14,11 +15,13 @@ Example output: ["chest pain", "diabetes", "metformin", "HbA1c", "shortness of b
 
 export const SUBJECTIVE_PROMPT = `You are a medical scribe writing the SUBJECTIVE section of a SOAP note.
 
-The Subjective section captures what the patient reports in their own words: chief complaint, history of present illness, relevant past history, symptoms.
+The Subjective section captures what the patient reports: chief complaint, history of present illness, relevant past history, symptoms.
 
 Rules:
 - Use clinical language, third-person ("Patient reports...", "Denies...").
-- Stay strictly grounded in the transcript. Do not invent symptoms.
+- CRITICAL: Only state facts explicitly present in the transcript or provided medical references. If information is absent, write "not reported" rather than inferring.
+- Do NOT invent symptoms, history, or context not stated in the transcript.
+- If the patient's history on a topic is unclear or absent, write "history not reported."
 - 3-6 sentences typical. Keep concise.
 - Use the provided keywords as guidance for what to focus on.
 
@@ -29,9 +32,10 @@ export const OBJECTIVE_PROMPT = `You are a medical scribe writing the OBJECTIVE 
 The Objective section captures observable, measurable findings: vital signs, physical exam findings, lab results, imaging.
 
 Rules:
-- Only include findings explicitly mentioned in the transcript or context.
+- CRITICAL: Only include findings explicitly mentioned in the transcript. Do not infer or assume findings not stated.
+- If a finding is not mentioned, omit it entirely — do not write "normal" or "unremarkable" unless the transcript says so.
 - If no objective data is available, write: "No objective findings recorded in this encounter."
-- Use clinical shorthand where appropriate (BP, HR, etc.).
+- Use clinical shorthand where appropriate (BP, HR, SpO2, etc.).
 - 1-4 sentences typical.
 
 Output ONLY the Objective section text.`
@@ -41,10 +45,10 @@ export const ASSESSMENT_PROMPT = `You are a medical scribe writing the ASSESSMEN
 The Assessment is the clinician's clinical reasoning: diagnoses (confirmed and differential), problem list, severity.
 
 Rules:
-- Synthesize from the Subjective and Objective sections provided.
+- Synthesize ONLY from the Subjective and Objective sections provided and the transcript.
+- CRITICAL: Do not state a diagnosis as confirmed unless the transcript explicitly confirms it. Use "suspected," "rule out," or "differential includes" for unconfirmed diagnoses.
+- If uncertainty exists, explicitly state it: "Cannot be determined from available history," "Differential includes X pending Y."
 - Use ICD-10-style language where appropriate but write in prose.
-- Distinguish confirmed diagnoses from suspected/differential.
-- If uncertainty exists, state it ("Differential includes...", "Rule out...").
 - 2-5 sentences typical.
 
 Output ONLY the Assessment section text.`
@@ -54,10 +58,12 @@ export const PLAN_PROMPT = `You are a medical scribe writing the PLAN section of
 The Plan describes next steps: medications, tests ordered, referrals, follow-up, patient education.
 
 Rules:
+- CRITICAL: Only include plan items explicitly discussed in the transcript. Do not add tests, medications, or referrals not mentioned.
 - Plan must address the Assessment's diagnoses.
+- If a medication is mentioned, include dosage and frequency exactly as stated — do not infer or adjust.
+- If follow-up timing was discussed, include it. If not, omit it.
+- For cases with incomplete history or ambiguous presentation, explicitly note: "Further history needed regarding [topic] before finalizing plan."
 - Use bullet-style structure within prose if multiple items.
-- Include medication names with dosage if mentioned.
-- Specify follow-up timing if discussed.
 
 Output ONLY the Plan section text.`
 
@@ -79,6 +85,9 @@ HIGHER IS BETTER:
 Also provide:
 - confidence: overall confidence the SOAP is clinically sound (0.0-1.0)
 - flags: array of specific issues found (empty if none)
+
+IMPORTANT: Be skeptical and rigorous. Your job is to find problems, not validate. 
+Flag any claim in the SOAP that is not directly supported by the transcript text.
 
 Output ONLY valid JSON with this exact shape:
 {

@@ -4,209 +4,978 @@
     "category": "antibiotic",
     "title": "Amoxicillin",
     "content": "Broad-spectrum penicillin antibiotic. Indications: respiratory tract infections, otitis media, sinusitis, urinary tract infections, dental infections, H. pylori eradication. Adult dose: 500mg PO TID or 875mg BID for 7-10 days. Pediatric: 25-50 mg/kg/day divided TID. Contraindications: penicillin allergy. Monitor for rash, diarrhea, anaphylaxis.",
-    "metadata": {"atc_code": "J01CA04", "who_section": "6.2.1"}
+    "metadata": {
+      "atc_code": "J01CA04",
+      "who_section": "6.2.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "antibiotic",
     "title": "Azithromycin",
     "content": "Macrolide antibiotic. Indications: community-acquired pneumonia, atypical pneumonia, pertussis, chlamydia, alternative for penicillin-allergic patients. Adult dose: 500mg PO day 1, then 250mg daily x 4 days. Pediatric: 10mg/kg day 1 then 5mg/kg daily. Contraindications: macrolide allergy, QT prolongation. Monitor for GI upset, hepatotoxicity.",
-    "metadata": {"atc_code": "J01FA10", "who_section": "6.2.2"}
+    "metadata": {
+      "atc_code": "J01FA10",
+      "who_section": "6.2.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "antibiotic",
     "title": "Ciprofloxacin",
     "content": "Fluoroquinolone antibiotic. Indications: complicated UTI, pyelonephritis, gram-negative infections, anthrax. Adult dose: 500mg PO BID for 7-14 days. Avoid in children, pregnant women, elderly. Black box warning: tendinopathy, peripheral neuropathy, CNS effects. Contraindications: tendon disorders, myasthenia gravis. Caution: QT prolongation.",
-    "metadata": {"atc_code": "J01MA02", "who_section": "6.2.4"}
+    "metadata": {
+      "atc_code": "J01MA02",
+      "who_section": "6.2.4"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "antibiotic",
     "title": "Nitrofurantoin",
     "content": "Urinary antiseptic. Indications: uncomplicated lower UTI in women. Adult dose: 100mg PO BID for 5-7 days. Avoid: pyelonephritis, men, CrCl <30, third trimester pregnancy. Contraindications: G6PD deficiency, severe renal impairment. Monitor for pulmonary fibrosis with long-term use.",
-    "metadata": {"atc_code": "J01XE01", "who_section": "6.2.4"}
+    "metadata": {
+      "atc_code": "J01XE01",
+      "who_section": "6.2.4"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "antibiotic",
     "title": "Ceftriaxone",
     "content": "Third-generation cephalosporin. Indications: meningitis, sepsis, severe pneumonia, gonorrhea, complicated UTI, surgical prophylaxis. Adult dose: 1-2g IV/IM daily. Pediatric: 50-100 mg/kg/day. Contraindications: cephalosporin allergy, neonates with hyperbilirubinemia. Caution: cross-reactivity with penicillin allergy in <2% of patients.",
-    "metadata": {"atc_code": "J01DD04", "who_section": "6.2.1"}
+    "metadata": {
+      "atc_code": "J01DD04",
+      "who_section": "6.2.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "analgesic",
     "title": "Paracetamol (Acetaminophen)",
     "content": "Non-opioid analgesic and antipyretic. Indications: mild-moderate pain, fever. Adult dose: 500-1000mg PO every 4-6 hours, max 4g/day (3g/day if liver disease or chronic alcohol use). Pediatric: 10-15 mg/kg every 4-6 hours. Contraindications: severe hepatic impairment. Monitor: hepatotoxicity in overdose. First-line for pain in pregnancy.",
-    "metadata": {"atc_code": "N02BE01", "who_section": "2.1"}
+    "metadata": {
+      "atc_code": "N02BE01",
+      "who_section": "2.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "analgesic",
     "title": "Ibuprofen",
     "content": "NSAID. Indications: mild-moderate pain, inflammation, fever, dysmenorrhea. Adult dose: 400-600mg PO every 6-8 hours, max 2400mg/day. Contraindications: active GI bleed, severe heart failure, third trimester pregnancy, severe renal impairment, NSAID allergy. Caution: HTN, CVD, peptic ulcer history. Monitor: BP, renal function, GI bleeding.",
-    "metadata": {"atc_code": "M01AE01", "who_section": "2.1"}
+    "metadata": {
+      "atc_code": "M01AE01",
+      "who_section": "2.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "analgesic",
     "title": "Morphine",
     "content": "Strong opioid analgesic. Indications: severe acute pain, cancer pain, palliative care, MI pain. Adult dose: 5-10mg IV/IM every 4 hours; oral 10-30mg every 4 hours. Contraindications: respiratory depression, paralytic ileus, head injury without monitoring. Monitor: respiratory rate, sedation, BP. Risk: addiction, dependence, tolerance, constipation.",
-    "metadata": {"atc_code": "N02AA01", "who_section": "2.2"}
+    "metadata": {
+      "atc_code": "N02AA01",
+      "who_section": "2.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Aspirin (low-dose)",
     "content": "Antiplatelet. Indications: secondary prevention of MI/stroke, suspected ACS (load 162-325mg, then 75-100mg daily), primary prevention in selected high-risk patients. Adult dose: 75-100mg PO daily. Contraindications: active bleeding, severe asthma, children with viral illness (Reye syndrome). Monitor: bleeding signs.",
-    "metadata": {"atc_code": "B01AC06", "who_section": "10.1"}
+    "metadata": {
+      "atc_code": "B01AC06",
+      "who_section": "10.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Atorvastatin",
     "content": "HMG-CoA reductase inhibitor (statin). Indications: hyperlipidemia, primary and secondary CV prevention, post-ACS. Adult dose: 10-80mg PO daily, typically 40-80mg post-MI. Contraindications: active liver disease, pregnancy. Monitor: LFTs, CK if myalgia, lipid panel. Side effects: myalgia, rare rhabdomyolysis.",
-    "metadata": {"atc_code": "C10AA05", "who_section": "10.2"}
+    "metadata": {
+      "atc_code": "C10AA05",
+      "who_section": "10.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Lisinopril",
     "content": "ACE inhibitor. Indications: hypertension, heart failure, post-MI, diabetic nephropathy. Adult dose: 10-40mg PO daily, start 5-10mg. Contraindications: pregnancy, bilateral renal artery stenosis, hyperkalemia, history of angioedema. Monitor: BP, K, creatinine 1-2 weeks after initiation. Side effects: dry cough, hyperkalemia, angioedema.",
-    "metadata": {"atc_code": "C09AA03", "who_section": "12.3"}
+    "metadata": {
+      "atc_code": "C09AA03",
+      "who_section": "12.3"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Metoprolol",
     "content": "Beta-1 selective blocker. Indications: HTN, angina, post-MI, heart failure (succinate), AF rate control. Adult dose: tartrate 25-100mg BID; succinate 25-200mg daily. Contraindications: severe bradycardia, decompensated heart failure, second/third-degree AV block, severe asthma. Monitor: HR, BP. Avoid abrupt discontinuation.",
-    "metadata": {"atc_code": "C07AB02", "who_section": "12.1"}
+    "metadata": {
+      "atc_code": "C07AB02",
+      "who_section": "12.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Furosemide",
     "content": "Loop diuretic. Indications: heart failure, pulmonary edema, ascites, hypertension with volume overload. Adult dose: 20-80mg PO/IV, titrate to response. Contraindications: anuria, severe hypokalemia, hypovolemia. Monitor: electrolytes (K, Na, Mg), BUN, creatinine, BP. Side effects: hypokalemia, ototoxicity (rapid IV), hypotension.",
-    "metadata": {"atc_code": "C03CA01", "who_section": "16"}
+    "metadata": {
+      "atc_code": "C03CA01",
+      "who_section": "16"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "cardiovascular",
     "title": "Warfarin",
     "content": "Vitamin K antagonist anticoagulant. Indications: AF stroke prevention, VTE treatment/prevention, mechanical heart valves. Adult dose: individualized, start 5mg daily, target INR 2-3 (2.5-3.5 for mechanical mitral valve). Contraindications: pregnancy, active bleeding, recent surgery. Monitor: INR weekly until stable, then monthly. Many drug and food interactions.",
-    "metadata": {"atc_code": "B01AA03", "who_section": "10.2"}
+    "metadata": {
+      "atc_code": "B01AA03",
+      "who_section": "10.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "endocrine",
     "title": "Metformin",
     "content": "First-line oral agent for type 2 diabetes. Indications: T2DM, prediabetes, PCOS. Adult dose: start 500mg BID with meals, titrate to 1000mg BID, max 2550mg/day. Contraindications: eGFR <30, acute heart failure, severe hepatic impairment, contrast IV (hold). Monitor: B12 annually, renal function. Side effects: GI upset, rare lactic acidosis.",
-    "metadata": {"atc_code": "A10BA02", "who_section": "18.5"}
+    "metadata": {
+      "atc_code": "A10BA02",
+      "who_section": "18.5"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "endocrine",
     "title": "Insulin (regular and NPH)",
     "content": "Indications: T1DM (mandatory), T2DM uncontrolled on orals, DKA, HHS, gestational diabetes. Regular: rapid onset 30 min, peak 2-3 hr, duration 6-8 hr. NPH: onset 1-2 hr, peak 4-12 hr, duration 18-24 hr. Adult dose: individualized; typical T2DM start 0.1-0.2 units/kg/day basal. Monitor: glucose, HbA1c, hypoglycemia signs. Risk: hypoglycemia, weight gain.",
-    "metadata": {"atc_code": "A10AB01", "who_section": "18.5"}
+    "metadata": {
+      "atc_code": "A10AB01",
+      "who_section": "18.5"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "endocrine",
     "title": "Levothyroxine",
     "content": "Synthetic T4 thyroid hormone. Indications: primary and secondary hypothyroidism, myxedema coma. Adult dose: 1.6 mcg/kg/day; start lower in elderly or CVD (25-50 mcg). Take on empty stomach 30-60 min before food. Monitor: TSH 6-8 weeks after dose change, then annually. Contraindications: thyrotoxicosis. Caution: arrhythmias, osteoporosis with overtreatment.",
-    "metadata": {"atc_code": "H03AA01", "who_section": "18.8"}
+    "metadata": {
+      "atc_code": "H03AA01",
+      "who_section": "18.8"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "respiratory",
     "title": "Salbutamol (Albuterol)",
     "content": "Short-acting beta-2 agonist (SABA). Indications: acute asthma, COPD exacerbation, exercise-induced bronchospasm. Adult dose: 100-200 mcg (1-2 puffs) MDI every 4-6 hours PRN; nebulizer 2.5-5mg every 20 min in acute exacerbation. Contraindications: hypersensitivity. Monitor: HR, K, tremor. Overuse signals poor asthma control.",
-    "metadata": {"atc_code": "R03AC02", "who_section": "25.1"}
+    "metadata": {
+      "atc_code": "R03AC02",
+      "who_section": "25.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "respiratory",
     "title": "Beclomethasone (inhaled)",
     "content": "Inhaled corticosteroid. Indications: persistent asthma, COPD with frequent exacerbations. Adult dose: 200-800 mcg/day in 2 divided doses. Onset: gradual, max benefit 4-6 weeks. Contraindications: acute bronchospasm. Side effects: oral candidiasis (rinse mouth after use), hoarseness. Long-term: rare adrenal suppression, growth velocity reduction in children.",
-    "metadata": {"atc_code": "R03BA01", "who_section": "25.1"}
+    "metadata": {
+      "atc_code": "R03BA01",
+      "who_section": "25.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "gi",
     "title": "Omeprazole",
     "content": "Proton pump inhibitor (PPI). Indications: GERD, peptic ulcer, H. pylori eradication, NSAID gastropathy prophylaxis, Zollinger-Ellison. Adult dose: 20-40mg PO daily, typically 30-60 min before breakfast. Long-term risks: B12 deficiency, hypomagnesemia, increased fracture risk, C. diff infection. Avoid prolonged use without indication.",
-    "metadata": {"atc_code": "A02BC01", "who_section": "17.1"}
+    "metadata": {
+      "atc_code": "A02BC01",
+      "who_section": "17.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "gi",
     "title": "Ondansetron",
     "content": "5-HT3 receptor antagonist antiemetic. Indications: chemotherapy-induced nausea, postoperative nausea, hyperemesis gravidarum. Adult dose: 4-8mg PO/IV every 8 hours. Contraindications: long QT syndrome, concurrent apomorphine. Caution: QT prolongation, especially with electrolyte abnormalities. Pediatric: 0.15 mg/kg.",
-    "metadata": {"atc_code": "A04AA01", "who_section": "17.2"}
+    "metadata": {
+      "atc_code": "A04AA01",
+      "who_section": "17.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "neurology",
     "title": "Phenytoin",
     "content": "Antiepileptic. Indications: focal and generalized tonic-clonic seizures, status epilepticus. Adult dose: 3-5 mg/kg/day; loading 15-20 mg/kg IV. Narrow therapeutic window: 10-20 mcg/mL. Contraindications: heart block, sinus bradycardia. Monitor: levels, LFTs, CBC. Side effects: gingival hyperplasia, hirsutism, ataxia, drug interactions (CYP inducer).",
-    "metadata": {"atc_code": "N03AB02", "who_section": "5"}
+    "metadata": {
+      "atc_code": "N03AB02",
+      "who_section": "5"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "neurology",
     "title": "Diazepam",
     "content": "Benzodiazepine. Indications: status epilepticus, alcohol withdrawal, severe anxiety, muscle spasm, sedation. Adult dose: 2-10mg PO; status 5-10mg IV every 10-15 min, max 30mg. Contraindications: severe respiratory insufficiency, sleep apnea, myasthenia gravis. Risk: respiratory depression, dependence, paradoxical agitation in elderly.",
-    "metadata": {"atc_code": "N05BA01", "who_section": "5"}
+    "metadata": {
+      "atc_code": "N05BA01",
+      "who_section": "5"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "psychiatry",
     "title": "Sertraline",
     "content": "SSRI antidepressant. Indications: major depression, generalized anxiety, panic, OCD, PTSD. Adult dose: 50mg daily, titrate to 50-200mg. Onset: 2-4 weeks for full effect. Contraindications: MAOI within 14 days, concurrent pimozide. Black box: increased suicidality in young adults. Monitor: mood, suicidality. Side effects: GI, sexual dysfunction, hyponatremia.",
-    "metadata": {"atc_code": "N06AB06", "who_section": "24.2"}
+    "metadata": {
+      "atc_code": "N06AB06",
+      "who_section": "24.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "psychiatry",
     "title": "Haloperidol",
     "content": "First-generation antipsychotic. Indications: psychosis, acute agitation, delirium, Tourette syndrome. Adult dose: 0.5-5mg PO 2-3 times daily; acute agitation 2-10mg IM/IV. Contraindications: Parkinson disease, severe CNS depression. Black box: increased mortality in elderly with dementia. Monitor: extrapyramidal symptoms, QT, NMS.",
-    "metadata": {"atc_code": "N05AD01", "who_section": "24.1"}
+    "metadata": {
+      "atc_code": "N05AD01",
+      "who_section": "24.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "antiviral",
     "title": "Acyclovir",
     "content": "Antiviral against herpes simplex and varicella-zoster. Indications: HSV genital, oral, encephalitis; varicella; herpes zoster. Adult dose: HSV 400mg PO TID for 7-10 days; HSV encephalitis 10 mg/kg IV every 8 hours; zoster 800mg PO 5x/day for 7 days. Monitor: renal function (dose adjust). Side effects: nephrotoxicity (ensure hydration), neurotoxicity in elderly.",
-    "metadata": {"atc_code": "J05AB01", "who_section": "6.4.2"}
+    "metadata": {
+      "atc_code": "J05AB01",
+      "who_section": "6.4.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "anticoagulant",
     "title": "Heparin (unfractionated)",
     "content": "Anticoagulant. Indications: VTE treatment, ACS, peri-procedural bridging. Adult dose: weight-based 80 units/kg bolus then 18 units/kg/hr infusion, titrated by aPTT. Contraindications: active bleeding, HIT history, severe thrombocytopenia. Monitor: aPTT every 6 hours initially, platelets (HIT). Antidote: protamine sulfate.",
-    "metadata": {"atc_code": "B01AB01", "who_section": "10.2"}
+    "metadata": {
+      "atc_code": "B01AB01",
+      "who_section": "10.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "anticoagulant",
     "title": "Enoxaparin",
     "content": "Low-molecular-weight heparin. Indications: VTE prophylaxis and treatment, ACS. Adult dose: prophylaxis 40mg SC daily; treatment 1 mg/kg SC BID or 1.5 mg/kg daily. Contraindications: active bleeding, severe renal impairment (CrCl <30 — use UFH instead), HIT. Monitor: anti-Xa in obese, renal impairment, pregnancy. Lower HIT risk than UFH.",
-    "metadata": {"atc_code": "B01AB05", "who_section": "10.2"}
+    "metadata": {
+      "atc_code": "B01AB05",
+      "who_section": "10.2"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "corticosteroid",
     "title": "Prednisolone",
     "content": "Systemic glucocorticoid. Indications: severe asthma exacerbation, COPD exacerbation, inflammatory/autoimmune diseases, allergic reactions. Adult dose: 30-60mg PO daily; taper if >2 weeks. Side effects: hyperglycemia, HTN, osteoporosis, immunosuppression, weight gain, mood changes. Avoid abrupt discontinuation after prolonged use.",
-    "metadata": {"atc_code": "H02AB06", "who_section": "18.1"}
+    "metadata": {
+      "atc_code": "H02AB06",
+      "who_section": "18.1"
+    }
   },
   {
     "source": "who_essential_medicines",
     "category": "vaccine",
     "title": "Tetanus toxoid",
     "content": "Active immunization. Indications: routine pediatric series, adult booster every 10 years, post-exposure prophylaxis after dirty wound. Adult booster: 0.5mL IM. Wound management: TIG plus tetanus toxoid for tetanus-prone wound if last booster >5 years or unclear immunization. Contraindications: severe allergic reaction to previous dose.",
-    "metadata": {"atc_code": "J07AM01", "who_section": "19.3"}
+    "metadata": {
+      "atc_code": "J07AM01",
+      "who_section": "19.3"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "SPIRONOLACTONE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Spironolactone is an aldosterone antagonist indicated for: The treatment of NYHA Class III-IV heart failure and reduced ejection fraction to increase survival, manage edema, an Dosing: 2 DOSAGE AND ADMINISTRATION Heart Failure: Initiate treatment at 25 mg once daily ( 2.2 ). Hypertension: Initiate treatment at 25 to 100 mg daily in either single or divided doses ( 2.3 ). Edema: Init Contraindications: 4 CONTRAINDICATIONS Spironolactone is contraindicated in the patients with: Hyperkalemia Addison’s disease Concomitant use of eplerenone Spironolacton Warnings: 5 WARNINGS AND PRECAUTIONS Hyperkalemia: Monitor serum potassium within one week of initiation and regularly thereafter ( 5.1 ). Hypotension and Worse",
+    "metadata": {
+      "brand_name": "Spironolactone",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "renal",
+    "title": "SODIUM BICARBONATE",
+    "content": "Indications: INDICATIONS AND USAGE Sodium Bicarbonate Injection, USP is indicated in the treatment of metabolic acidosis which may occur in severe renal disease, uncontrolled diabetes, circulatory insufficiency du Dosing: DOSAGE AND ADMINISTRATION Sodium Bicarbonate Injection, USP is administered by the intravenous route. In cardiac arrest , a rapid intravenous dose of one to two 50 mL vials (44.6 to 100 mEq) may be gi Contraindications: CONTRAINDICATIONS Sodium Bicarbonate Injection, USP is contraindicated in patients who are losing chloride by vomiting or from continuous gastrointest Warnings: WARNINGS Solutions containing sodium ions should be used with great care, if at all, in patients with congestive heart failure, severe renal insuffici",
+    "metadata": {
+      "brand_name": "Sodium Bicarbonate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "renal",
+    "title": "SEVELAMER CARBONATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Sevelamer carbonate tablets are indicated for the control of serum phosphorus in adults and children 6 years of age and older with chronic kidney disease (CKD) on dialysis. Sev Dosing: 2 DOSAGE AND ADMINISTRATION Starting dose of sevelamer carbonate tablet is 0.8 or 1.6 grams administered orally three times per day with meals based on serum phosphorus levels for adult patients and b Contraindications: 4 CONTRAINDICATIONS Sevelamer carbonate tablets are contraindicated in patients with bowel obstruction. Sevelamer carbonate tablets are contraindicate Warnings: 5 WARNINGS AND PRECAUTIONS Serious cases of dysphagia, bowel obstruction, bleeding gastrointestinal ulcers, colitis, ulceration, necrosis, and perfora",
+    "metadata": {
+      "brand_name": "Sevelamer Carbonate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "neurology",
+    "title": "ALTEPLASE",
+    "content": "Indications: INDICATIONS AND USAGE Cathflo ® Activase ® (Alteplase) is indicated for the restoration of function to central venous access devices as assessed by the ability to withdraw blood. Dosing: DOSAGE AND ADMINISTRATION Cathflo ® Activase ® (Alteplase) is for instillation into the dysfunctional catheter at a concentration of 1 mg/mL. • Patients weighing ≥30 kg: 2 mg in 2 mL • Patients weighi Contraindications: CONTRAINDICATIONS Cathflo Activase should not be administered to patients with known hypersensitivity to Alteplase or any component of the formulation Warnings: WARNINGS None.",
+    "metadata": {
+      "brand_name": "Cathflo Activase",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "ASPIRIN",
+    "content": "Indications: Uses for the temporary relief of minor aches and pains or as recommended by your doctor. Because of its delayed action, this product will not provide fast relief of headaches or other symptoms needing Dosing: Directions drink a full glass of water with each dose adults and children 12 years and over: take 4 to 8 tablets every 4 hours not to exceed 48 tablets in 24 hours unless directed by a doctor children Warnings: Warnings Reye's syndrome : Children and teenagers who have or are recovering from chicken pox or flu-like symptoms should not use this product. When u",
+    "metadata": {
+      "brand_name": "Low Dose Aspirin",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "CLOPIDOGREL BISULFATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Clopidogrel tablets are a P2Y 12 platelet inhibitor indicated for: Acute coronary syndrome – For patients with non–ST-segment elevation ACS (unstable angina [UA]/non–ST-elevati Dosing: 2 DOSAGE AND ADMINISTRATION Acute coronary syndrome ( 2.1 ) – Initiate clopidogrel tablets with a single 300 mg oral loading dose and then continue at 75 mg once daily. – Initiating clopidogrel tablet Contraindications: 4 CONTRAINDICATIONS Active pathological bleeding, such as peptic ulcer or intracranial hemorrhage (4.1) Hypersensitivity to clopidogrel or any compone Warnings: 5 WARNINGS AND PRECAUTIONS CYP2C19 inhibitors: Avoid concomitant use of omeprazole or esomeprazole. (5.1) Bleeding: Clopidogrel increases risk of blee",
+    "metadata": {
+      "brand_name": "Clopidogrel",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "neurology",
+    "title": "SUMATRIPTAN",
+    "content": "Indications: 1 INDICATIONS AND USAGE Sumatriptan Injection, USP is indicated in adults for (1) the acute treatment of migraine, with or without aura, and (2) the acute treatment of cluster headache. Limitations of Dosing: 2 DOSAGE AND ADMINISTRATION • For subcutaneous use only (2.1) • Acute treatment of migraine: single dose of 1 to 6 mg (2.1) • Acute treatment of cluster headache: single dose of 6 mg (2.1) • Maximum d Contraindications: 4 CONTRAINDICATIONS Sumatriptan Injection is contraindicated in patients with: • Ischemic coronary artery disease (CAD) (angina pectoris, history of m Warnings: 5 WARNINGS AND PRECAUTIONS • Myocardial ischemia/infarction and Prinzmetal’s angina: Perform cardiac evaluation in patients with multiple cardiovascul",
+    "metadata": {
+      "brand_name": "Sumatriptan",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "neurology",
+    "title": "TOPIRAMATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Topiramate is indicated for: Epilepsy: initial monotherapy for the treatment of partial-onset or primary generalized tonic-clonic seizures in patients 2 years of age and older  Dosing: 2 DOSAGE AND ADMINISTRATION Topiramate initial dose, titration, and recommended maintenance dose varies by indication and age group. See Full Prescribing Information for recommended dosage, and dosing Contraindications: 4 CONTRAINDICATIONS None. None (4) Warnings: 5 WARNINGS AND PRECAUTIONS Acute myopia and secondary angle closure glaucoma: can lead to permanent visual loss; discontinue topiramate as soon as pos",
+    "metadata": {
+      "brand_name": "Topiramate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "neurology",
+    "title": "LEVETIRACETAM",
+    "content": "Indications: 1 INDICATIONS AND USAGE Levetiracetam is indicated for the treatment of partial-onset seizures in patients 1 month of age and older (1.1) Levetiracetam is indicated for adjunctive therapy for the trea Dosing: 2 DOSAGE AND ADMINISTRATION Use the oral solution for pediatric patients with body weight ≤ 20 kg ( 2.1 ) For pediatric patients, use weight-based dosing for the oral solution with a calibrated measur Contraindications: 4 CONTRAINDICATIONS Levetiracetam tablets are contraindicated in patients with a hypersensitivity to levetiracetam. Reactions have included anaphylaxi Warnings: 5 WARNINGS AND PRECAUTIONS Behavioral abnormalities including psychotic symptoms, suicidal ideation, irritability, and aggressive behavior have been o",
+    "metadata": {
+      "brand_name": "Levetiracetam",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "RISPERIDONE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Risperidone tablets are an atypical antipsychotic indicated for: Treatment of schizophrenia ( 1.1 ) As monotherapy or adjunctive therapy with lithium or valproate, for the trea Dosing: 2 DOSAGE AND ADMINISTRATION Table 1. Recommended Daily Dosage by Indication Initial Dose Titration (Increments) Target Dose Effective Dose Range Schizophrenia: adults ( 2.1 ) 2 mg 1 to 2 mg 4 to 8 mg  Contraindications: 4 CONTRAINDICATIONS Risperidone tablets are contraindicated in patients with a known hypersensitivity to either risperidone or paliperidone, or to any Warnings: 5 WARNINGS AND PRECAUTIONS Cerebrovascular events, including stroke, in elderly patients with dementia-related psychosis: Risperidone tablets are not",
+    "metadata": {
+      "brand_name": "RISPERIDONE",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "QUETIAPINE",
+    "content": "Indications: 1 INDICATIONS & USAGE Quetiapine is an atypical antipsychotic indicated for the treatment of: Schizophrenia ( 1.1 ) Bipolar I disorder manic episodes ( 1.2 ) Bipolar disorder, depressive episodes ( 1. Dosing: 2 DOSAGE & ADMINISTRATION · Quetiapine tablets, USP can be taken with or without food ( 2.1 ) Indication Initial Dose Recommended Dose Maximum Dose Schizophrenia-Adults (2.2) 25 mg twice daily 150 to  Contraindications: 4 CONTRAINDICATIONS Hypersensitivity to quetiapine or to any excipients in the quetiapine formulation. Anaphylactic reactions have been reported in pa Warnings: 5 WARNINGS AND PRECAUTIONS · Cerebrovascular Adverse Reactions: Increased incidence of cerebrovascular adverse reactions (e.g., stroke, transient isch",
+    "metadata": {
+      "brand_name": "Quetiapine",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "LITHIUM CARBONATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Lithium is a mood-stabilizing agent indicated as monotherapy for the treatment of bipolar I disorder: • Treatment of acute manic and mixed episodes in patients 7 years and olde Dosing: 2 DOSAGE AND ADMINISTRATION • Recommended starting dosage for adults and pediatric patients over 30 kg ( 2.2 ): • Capsules: 300 mg, three times daily • Recommended starting dosage for pediatric patien Contraindications: 4 CONTRAINDICATIONS Lithium is contraindicated in patients with known hypersensitivity to any inactive ingredient in the lithium carbonate capsule or  Warnings: 5 WARNINGS AND PRECAUTIONS • Lithium-Induced Polyuria: May develop during initiation of treatment. Increases risk of lithium toxicity. Educate patient",
+    "metadata": {
+      "brand_name": "lithium carbonate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "VALPROATE SODIUM",
+    "content": "Indications: 1 INDICATIONS AND USAGE Valproate sodium injection is indicated as an intravenous alternative in patients in whom oral administration of valproate products is temporarily not feasible in the following Dosing: 2 DOSAGE AND ADMINISTRATION Valproate sodium injection is intended for intravenous use only. • Epilepsy o Complex Partial Seizures in Adults and Children 10 years of age or older: Initial dose is 10 t Contraindications: 4 CONTRAINDICATIONS • Valproate sodium injection should not be administered to patients with hepatic disease or significant hepatic dysfunction [see W Warnings: 5 WARNINGS AND PRECAUTIONS • Hepatotoxicity; evaluate high risk populations and monitor serum liver tests ( 5.1 ) • Birth defects, decreased IQ, and n",
+    "metadata": {
+      "brand_name": "Valproate Sodium",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "CLONAZEPAM",
+    "content": "Indications: INDICATIONS AND USAGE Seizure Disorders: Clonazepam tablets are useful alone or as an adjunct in the treatment of the Lennox-Gastaut syndrome (petit mal variant), akinetic, and myoclonic seizures. In  Dosing: DOSAGE AND ADMINISTRATION Clonazepam is available as a tablet. The tablets should be administered with water by swallowing the tablet whole. Seizure Disorders: The use of multiple anticonvulsants may  Contraindications: CONTRAINDICATIONS Clonazepam tablets are contraindicated in patients with the following conditions: History of sensitivity to benzodiazepines Clinical Warnings: WARNINGS Risks from Concomitant Use with Opioids: Concomitant use of benzodiazepines, including clonazepam tablets, and opioids may result in profound",
+    "metadata": {
+      "brand_name": "Clonazepam",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "psychiatry",
+    "title": "FLUOXETINE HYDROCHLORIDE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Fluoxetine is indicated for the treatment of: Acute and maintenance treatment of Major Depressive Disorder [see Clinical Studies (14.1) ] . Acute and maintenance treatment of o Dosing: 2 DOSAGE AND ADMINISTRATION Indication Adult Pediatric MDD ( 2.1 ) 20 mg/day in am (initial dose) 10 to 20 mg/day (initial dose) OCD ( 2.2 ) 20 mg/day in am (initial dose) 10 mg/day (initial dose) Bul Contraindications: 4 CONTRAINDICATIONS When using fluoxetine capsules and olanzapine in combination, also refer to the Contraindications section of the package insert fo Warnings: 5 WARNINGS AND PRECAUTIONS When using fluoxetine and olanzapine in combination, also refer to the Warnings and Precautions section of the package inse",
+    "metadata": {
+      "brand_name": "Fluoxetine",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "rheumatology",
+    "title": "METHOTREXATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Methotrexate tablets are a diydrofolate reductase inhibitor indicated for the: • Treatment of adults and pediatric patients with acute lymphoblastic leukemia (ALL) as part of a Dosing: 2 DOSAGE AND ADMINISTRATION • Instruct patients and caregivers to take the recommended dosage as directed, because medication errors have led to deaths. (2.1, 5.9) • Verify pregnancy status in females Contraindications: 4 CONTRAINDICATIONS Methotrexate tablets are contraindicated in: • Pregnant women receiving methotrexate tablets for treatment of non-neoplastic disea Warnings: 5 WARNINGS AND PRECAUTIONS • Serious Infections : Monitor patients for infection during and after treatment with methotrexate. Withhold or discontinue",
+    "metadata": {
+      "brand_name": "METHOTREXATE",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "rheumatology",
+    "title": "HYDROXYCHLOROQUINE SULFATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Hydroxychloroquine sulfate tablets are an antimalarial and antirheumatic indicated for the: Treatment of uncomplicated malaria due to Plasmodium falciparum, Plasmodium malariae Dosing: 2 DOSAGE AND ADMINISTRATION Malaria in Adult and Pediatric Patients ( 2.2 ): ● Prophylaxis: Begin weekly doses 2 weeks prior to travel to the endemic area, continue weekly doses while in the endemic a Contraindications: 4 CONTRAINDICATIONS Hydroxychloroquine sulfate tablets are contraindicated in patients with known hypersensitivity to 4-aminoquinoline compounds. Pati Warnings: 5 WARNINGS AND PRECAUTIONS Cardiomyopathy and Ventricular Arrhythmias : Fatal or life-threatening cardiomyopathy and ventricular arrhythmias were repo",
+    "metadata": {
+      "brand_name": "HYDROXYCHLOROQUINE SULFATE",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "corticosteroid",
+    "title": "PREDNISONE",
+    "content": "Indications: INDICATIONS Prednisone tablets are indicated in the following conditions: 1. Endocrine Disorders Primary or secondary adrenocortical insufficiency (hydrocortisone or cortisone is the first choice; syn Dosing: DOSAGE AND ADMINISTRATION The initial dosage of prednisone may vary from 5 mg to 60 mg of prednisone per day depending on the specific disease entity being treated. In situations of less severity lowe Contraindications: CONTRAINDICATIONS Systemic fungal infections and known hypersensitivity to components. Warnings: WARNINGS In patients on corticosteroid therapy subjected to unusual stress, increased dosage of rapidly acting corticosteroids before, during, and aft",
+    "metadata": {
+      "brand_name": "PredniSONE",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "analgesic",
+    "title": "NAPROXEN",
+    "content": "Indications: 1 INDICATIONS AND USAGE Naproxen tablets and naproxen sodium tablets are indicated for: the relief of the signs and symptoms of: • rheumatoid arthritis • osteoarthritis • ankylosing spondylitis • Poly Dosing: 2 DOSAGE AND ADMINISTRATION Use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. ( 2.1 ) Rheumatoid Arthritis, Osteoarthritis, and Ankylosing Spond Contraindications: 4 CONTRAINDICATIONS Naproxen tablets and naproxen sodium tablets are contraindicated in the following patients: • Known hypersensitivity (e.g., anaphy Warnings: 5 WARNINGS AND PRECAUTIONS Hepatotoxicity : Inform patients of warning signs and symptoms of hepatotoxicity. Discontinue if abnormal liver tests persi",
+    "metadata": {
+      "brand_name": "Naproxen",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "analgesic",
+    "title": "CELECOXIB",
+    "content": "Indications: 1. INDICATIONS AND USAGE Celecoxib is indicated Celecoxib is a nonsteroidal anti-inflammatory drug indicated for: Osteoarthritis (OA) ( 1.1 ) Rheumatoid Arthritis (RA) ( 1.2 ) Juvenile Rheumatoid Arth Dosing: 2. DOSAGE AND ADMINISTRATION Use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. ( 2.1 ) OA: 200 mg once daily or 100 mg twice daily. ( 2.2 , 14.1 Contraindications: 4. CONTRAINDICATIONS Celecoxib is contraindicated in the following patients: Known hypersensitivity (e.g., anaphylactic reactions and serious skin rea Warnings: 5. WARNINGS AND PRECAUTIONS Hepatotoxicity: Inform patients of warning signs and symptoms of hepatotoxicity. Discontinue if abnormal liver tests persi",
+    "metadata": {
+      "brand_name": "CELECOXIB",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "antibiotic",
+    "title": "SULFAMETHOXAZOLE AND TRIMETHOPRIM",
+    "content": "Indications: INDICATIONS AND USAGE To reduce the development of drug-resistant bacteria and maintain the effectiveness of sulfamethoxazole and trimethoprim tablets, USP and other antibacterial drugs, sulfamethoxaz Dosing: DOSAGE AND ADMINISTRATION Sulfamethoxazole and trimethoprim tablets are contraindicated in pediatric patients less than 2 months of age. Urinary Tract Infections and Shigellosis in Adults and Pediatri Contraindications: CONTRAINDICATIONS Sulfamethoxazole and trimethoprim tablets are contraindicated in patients with a known hypersensitivity to trimethoprim or sulfonami Warnings: WARNINGS Embryofetal Toxicity Some epidemiologic studies suggest that exposure to sulfamethoxazole and trimethoprim during pregnancy may be associated",
+    "metadata": {
+      "brand_name": "Sulfamethoxazole and Trimethoprim",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "antibiotic",
+    "title": "DOXYCYCLINE",
+    "content": "Indications: INDICATIONS AND USAGE To reduce the development of drug-resistant bacteria and maintain effectiveness of doxycycline and other antibacterial drugs, doxycycline should be used only to treat or prevent  Dosing: DOSAGE AND ADMINISTRATION The usual dosage and frequency of administration of doxycycline differs from that of the other tetracyclines. Exceeding the recommended dosage may result in an increased inci Contraindications: CONTRAINDICATIONS This drug is contraindicated in persons who have shown hypersensitivity to any of the tetracyclines. Warnings: WARNINGS The use of drugs of the tetracycline class during tooth development (last half of pregnancy, infancy and childhood to the age of 8 years) may",
+    "metadata": {
+      "brand_name": "doxycycline",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "antibiotic",
+    "title": "VANCOMYCIN HYDROCHLORIDE",
+    "content": "Indications: INDICATIONS AND USAGE Vancomycin Hydrochloride for Injection, USP is indicated for the treatment of serious or severe infections caused by susceptible strains of methicillin-resistant (β-lactam-resist Dosing: DOSAGE AND ADMINISTRATION Infusion-related events are related to both the concentration and the rate of administration of vancomycin. Concentrations of no more than 5 mg/mL and rates of no more than 1 Contraindications: CONTRAINDICATIONS Vancomycin hydrochloride for injection is contraindicated in patients with known hypersensitivity to this antibiotic. Warnings: WARNINGS Infusion Reactions Rapid bolus administration (e.g., over several minutes) may be associated with exaggerated hypotension, including shock an",
+    "metadata": {
+      "brand_name": "Vancomycin Hydrochloride",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "antifungal",
+    "title": "FLUCONAZOLE",
+    "content": "Indications: INDICATIONS AND USAGE Fluconazole tablets are indicated for the treatment of: Vaginal candidiasis (vaginal yeast infections due to Candida ). Oropharyngeal and esophageal candidiasis. In open noncompa Dosing: DOSAGE AND ADMINISTRATION Dosage and Administration in Adults: Single Dose Vaginal candidiasis: The recommended dosage of fluconazole for vaginal candidiasis is 150 mg as a single oral dose. Multiple  Contraindications: CONTRAINDICATIONS Fluconazole tablets are contraindicated in patients who have shown hypersensitivity to fluconazole or to any of its excipients. Ther Warnings: WARNINGS (1) Hepatic injury: Fluconazole should be administered with caution to patients with liver dysfunction. Fluconazole has been associated with",
+    "metadata": {
+      "brand_name": "Fluconazole",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "antiviral",
+    "title": "OSELTAMIVIR PHOSPHATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Oseltamivir phosphate for oral suspension is an influenza neuraminidase inhibitor (NAI) indicated for: Treatment of acute, uncomplicated influenza A and B in patients 2 weeks o Dosing: 2 DOSAGE AND ADMINISTRATION Treatment of influenza Adults and adolescents (13 years and older): 75 mg twice daily for 5 days ( 2.2 ) Pediatric patients 1 to 12 years of age: Based on weight twice dail Contraindications: 4 CONTRAINDICATIONS Oseltamivir phosphate for oral suspension is contraindicated in patients with known serious hypersensitivity to oseltamivir or any Warnings: 5 WARNINGS AND PRECAUTIONS Serious skin/hypersensitivity reactions such as Stevens-Johnson Syndrome, toxic epidermal necrolysis and erythema multiform",
+    "metadata": {
+      "brand_name": "Oseltamivir Phosphate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "AMLODIPINE BESYLATE",
+    "content": "Indications: 1 INDICATIONS AND USAGE Amlodipine besylate tablets are calcium channel blocker and may be used alone or in combination with other antihypertensive and antianginal agents for the treatment of: •Hypert Dosing: 2 DOSAGE AND ADMINISTRATION •Adult recommended starting dose: 5 mg once daily with maximum dose 10 mg once daily. ( 2.1 ) о Small, fragile, or elderly patients, or patients with hepatic insufficiency  Contraindications: 4 CONTRAINDICATIONS Known sensitivity to amlodipine ( 4 ) Amlodipine besylate tablets are contraindicated in patients with known sensitivity to amlodi Warnings: 5 WARNINGS AND PRECAUTIONS Symptomatic hypotension is possible, particularly in patients with severe aortic stenosis. However, acute hypotension is un",
+    "metadata": {
+      "brand_name": "Amlodipine Besylate",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "RAMIPRIL",
+    "content": "Indications: 1. INDICATIONS AND USAGE • Ramipril capsules USP are indicated for the treatment of hypertension. It may be used alone or in combination with thiazide diuretics. ( 1.1 ). • Ramipril capsules USP are i Dosing: 2. DOSAGE AND ADMINISTRATION • Hypertension: Initial dose is 2.5 mg to 20 mg once daily. Adjust dosage according to blood pressure response after 2–4 weeks of treatment. The usual maintenance dose fol Contraindications: 4. CONTRAINDICATIONS Angioedema related to previous treatment with an ACE inhibitor, or a history of hereditary or idiopathic angioedema.( 4 ). Ramipr Warnings: 5. WARNINGS AND PRECAUTIONS ACE inhibitor use has been associated with the following: • Angioedema, with increased risk in patients with a prior histo",
+    "metadata": {
+      "brand_name": "Ramipril",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "DIGOXIN",
+    "content": "Indications: 1 INDICATIONS & USAGE Digoxin is a cardiac glycoside indicated for: Treatment of mild to moderate heart failure in adults. ( 1.1 ) Increasing myocardial contractility in pediatric patients with heart  Dosing: 2 DOSAGE & ADMINISTRATION Digoxin dose is based on patient-specific factors (age, lean body weight, renal function, etc.). See full prescribing information. Monitor for toxicity and therapeutic effect Contraindications: 4 CONTRAINDICATIONS Digoxin is contraindicated in patients with: Ventricular fibrillation [see Warnings and Precautions (5.1)] Known hypersensitivity  Warnings: 5 WARNINGS AND PRECAUTIONS Risk of rapid ventricular response leading to ventricular fibrillation in patients with AV accessory pathway. ( 5.1 ) Risk",
+    "metadata": {
+      "brand_name": "Digoxin",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "openfda",
+    "category": "cardiovascular",
+    "title": "NITROGLYCERIN",
+    "content": "Indications: 1 INDICATIONS AND USAGE Nitroglycerin sublingual tablets are indicated for the acute relief of an attack or acute prophylaxis of angina pectoris due to coronary artery disease. Nitroglycerin sublingua Dosing: 2 DOSAGE AND ADMINISTRATION Administer one tablet under the tongue or in the buccal pouch at the first sign of an acute anginal attack. Allow tablet to dissolve without swallowing. One additional tabl Contraindications: 4 CONTRAINDICATIONS • Use of phosphodiesterase type 5 (PDE-5) inhibitors, such as avanafil, sildenafil, tadalafil, or vardenafil, or soluble guanylate Warnings: 5 WARNINGS AND PRECAUTIONS • Tolerance: Excessive use may lead to tolerance. ( 5.1 ) • Hypotension: Severe hypotension may occur. ( 5.2 ) 5.1 Toleranc",
+    "metadata": {
+      "brand_name": "NITROGLYCERIN",
+      "source_url": "https://open.fda.gov"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "cardiovascular",
+    "title": "Angina",
+    "content": "Angina is chest pain or discomfort you feel when there is not enough blood flow to your heart muscle. Your heart muscle needs the oxygen that the blood carries. Angina may feel like pressure or a squeezing pain in your chest. It may feel like indigestion. You may also feel pain in your shoulders, arms, neck, jaw, or back. Angina is a symptom of coronary artery disease (CAD), the most common heart disease. CAD happens when a sticky substance called plaque bu",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/angina.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "cardiovascular",
+    "title": "Atrial Fibrillation",
+    "content": "What is atrial fibrillation (AFib)?Atrial fibrillation, also known as AFib or AF, is one of the most common types of arrhythmias. Arrhythmias are problems with the rate or rhythm of your heartbeat. They can cause your heart to beat too slowly, too fast, or in an irregular way.If you have AFib, your heart beats irregularly and sometimes much faster than normal. Also, your heart's upper and lower chambers do not work toget",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/atrialfibrillation.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "cardiovascular",
+    "title": "Heart Failure",
+    "content": "What is heart failure?Heart failure means that your heart can't pump enough oxygen-rich blood to meet your body's needs. Heart failure doesn't mean that your heart has stopped or is about to stop beating. But without enough blood flow, your organs may not work well, which can cause serious prob",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/heartfailure.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "cardiovascular",
+    "title": "Angina",
+    "content": "Angina is chest pain or discomfort you feel when there is not enough blood flow to your heart muscle. Your heart muscle needs the oxygen that the blood carries. Angina may feel like pressure or a squeezing pain in your chest. It may feel like indigestion. You may also feel pain in your shoulders, arms, neck, jaw, or back. Angina is a symptom of coronary</spa",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/angina.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "neurology",
+    "title": "Stroke",
+    "content": "What is a stroke?A stroke happens when there is a loss of blood flow to part of the brain. Your brain cells cannot get the oxygen and nutrients they need from blood, and they start to die within a few minutes. This can cause lasting brain damage, long-term disability, or even death.If you think that you or someone else is having a stroke, call 911 right away. Immediate treatment may save someone's life and increase the chances for successful rehabilitation",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/stroke.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "neurology",
+    "title": "Migraine",
+    "content": "What are migraines?Migraines are a recurring type of headache. They cause moderate to severe pain that is throbbing or pulsing. The pain is often on one side of your head. You may also have other symptoms, such as nausea and weakness. You may be sensitive to light and sound.What causes migraines?Researchers believe that migraine has a genetic cause. There are also a number of factors that can trigger a <span class=\"qt",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/migraine.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "neurology",
+    "title": "Seizures",
+    "content": "Seizures are symptoms of a brain problem. They happen because of sudden, abnormal electrical activity in the brain. When people think of seizures, they often think of convulsions in which a person's body shakes rapidly and uncontrollably. Not all seizures cause convulsions. There are many types of seizures&",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/seizures.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "neurology",
+    "title": "Transient Ischemic Attack",
+    "content": "A transient ischemic attack (TIA) is a stroke that lasts only a few minutes. It happens when the blood supply to part of the brain is briefly blocked. Symptoms of a TIA are like other stroke symptoms, but do not last as long. They happen suddenly, and include:Numbness or weakness, especially on one side of the bodyConfusion or trouble speaking or understanding speechTr",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/transientischemicattack.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "psychiatry",
+    "title": "Schizophrenia",
+    "content": "Schizophrenia is a serious brain illness. People who have it may hear voices that aren't there. They may think other people are trying to hurt them. Sometimes they don't make sense when they talk. The disorder makes it hard for them to keep a job or take care of themselves.Symptoms of schizophrenia usually start between ages 16 and 30. Men often develop symptoms at a younger age than women. People usually do not get schizophrenia after age 45. There are thr",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/schizophrenia.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "psychiatry",
+    "title": "Bipolar Disorder",
+    "content": "What is bipolar disorder?Bipolar disorder is a mood disorder that can cause intense mood swings:Sometimes you may feel extremely \"up,\" elated, irritable, or energized. This is called a manic episode.Other times you may feel \"down,\" sad, indifferent, or hopeless. This is called a depressive episode.You may have both manic and depress",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/bipolardisorder.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "psychiatry",
+    "title": "Depression",
+    "content": "What is depression?Depression is more than a feeling of being sad or irritable for a few days. It's a serious mood disorder. As one of the most common mental disorders in the United States, depression can affect how you think, feel, and your everyday life. You may not know why you feel this way, but even basic daily activities such as sleeping, eating, or working may become difficult. Depression often needs long-term treatment but getting",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/depression.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "psychiatry",
+    "title": "Anxiety",
+    "content": "What is anxiety?Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat, feel restless and tense, and have a rapid heartbeat. It can be a normal reaction to stress. For example, you might feel anxious when faced with a difficult problem at work, before taking a test, or before making an important decision. It can help you to cope. The anxiety",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/anxiety.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "renal",
+    "title": "Kidney Failure",
+    "content": "Healthy kidneys clean your blood by removing excess fluid, minerals, and wastes. They also make hormones that keep your bones strong and your blood healthy. But if the kidneys are damaged, they don't work properly. Harmful wastes can build up in your body. Your blood pressure may rise. Your body may retain excess fluid and not make enough red blood cells. This is called kidney failure.If your kidneys fail, you need treat",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/kidneyfailure.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "renal",
+    "title": "Chronic Kidney Disease",
+    "content": "You have two kidneys, each about the size of your fist. Their main job is to filter your blood. They remove wastes and extra water, which become urine. They also keep the body's chemicals balanced, help control blood pressure, and make hormones.Chronic kidney disease (CKD) means that your <span class=\"qt1\"&gt",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/chronickidneydisease.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "renal",
+    "title": "Potassium",
+    "content": "Potassium is a mineral that your body needs to work properly. It is a type of electrolyte. It helps your nerves to function and muscles to contract. It helps your heartbeat stay regular. It also helps move nutrients into cells and waste products out of cells. A diet rich in potassium helps to offset some of sodium's harmful effects on blood pressure.Many people get all the potassium they need from what they eat and drink. Sources of potassium in the diet include:Leafy greens, such as spinach and collardsFruit from v",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/potassium.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "rheumatology",
+    "title": "Rheumatoid Arthritis",
+    "content": "What is rheumatoid arthritis?Rheumatoid arthritis (RA) is a form of arthritis that causes pain, swelling, and stiffness in your joints. RA is an autoimmune disease. Although it is most common in the wrist and fingers, this disease can cause your immune system to attack any joint tissue. The inflammation (swelling) that comes with RA can also affect other body parts. Inflammation could cause medical issu",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/rheumatoidarthritis.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "rheumatology",
+    "title": "Lupus",
+    "content": "What is lupus?Lupus is a chronic (long-lasting) type of autoimmune disease.Autoimmune diseases happen when your immune system attacks healthy cells and tissues by mistake. This attack causes inflammation. It can also damage many parts of the body, including the joints, skin, kidneys, heart, lungs, and brain.There are several types of lupus:</p&g",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/lupus.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "rheumatology",
+    "title": "Gout",
+    "content": "What is gout?Gout is a common type of inflammatory arthritis. It causes pain, swelling, and redness in one or more joints. It usually happens as a flare, which can last for a week or two and then gets better. The flares often begin in your big toe or a lower limb.What causes gout?Gout happens when too much uric acid (urate) builds up in your body over a long time. Uric acid is a waste product your body makes when it brea",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/gout.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "infectious",
+    "title": "Pneumonia",
+    "content": "What is pneumonia?Pneumonia is an infection in one or both of the lungs. It causes the air sacs of the lungs to fill up with fluid or pus. It can range from mild to severe, depending on the type of germ causing the infection, your age, and your overall health.What causes pneumonia?Bacterial, viral, and fungal infections can cause pneumonia.Bacteria are the most common cause. Bacterial <span class=\"q",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/pneumonia.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "infectious",
+    "title": "Urinary Tract Infections",
+    "content": "The urinary system is the body's drainage system for removing wastes and extra water. It includes two kidneys, two ureters, a bladder, and a urethra. Urinary tract infections (UTIs) are the second most common type of infection</spa",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/urinarytractinfections.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "infectious",
+    "title": "Sepsis",
+    "content": "What is sepsis?Sepsis is your body's overactive and extreme response to an infection. Sepsis is a life-threatening medical emergency. Without quick treatment, it can lead to tissue damage, organ failure, and even death.What causes sepsis?Sepsis happens when an infection you already have triggers a chain reaction throughout your body. Bacterial infections are the most common cause, but",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/sepsis.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "infectious",
+    "title": "Cellulitis",
+    "content": "Cellulitis is an infection of the skin and deep underlying tissues. Group A strep (streptococcal) bacteria are the most common cause. The bacteria enter your body when you get an injury such as a bruise, burn, surgical cut, or wound.Symptoms include:Fever and chillsSwollen glands or lymph nodesA rash with painful, red, tender skin. The skin may blister and scab over.Your health care provider may take a sample or culture from you",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/cellulitis.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "endocrine",
+    "title": "Hyperglycemia",
+    "content": "What is blood glucose?Blood glucose, or blood sugar, is the main sugar found in your blood. It is your body's primary source of energy. It comes from the food you eat. Your body breaks down most of that food into glucose and releases it into your bloodstream. When your blood glucose goes up, it signals your pancreas to release insulin. Insulin is a hormone that helps the glucose get into your cells to be used for energy.For people with diabetes, your body doesn't make enough insulin, can't use it as well as it should, or both. Too much glucose stays in your blood an",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/hyperglycemia.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "endocrine",
+    "title": "Hypothyroidism",
+    "content": "What is hypothyroidism?Hypothyroidism, or underactive thyroid, happens when your thyroid gland doesn't make enough thyroid hormones to meet your body's needs.Your thyroid is a small, butterfly-shaped gland in the front of your neck. It makes hormones that control the way the body uses energy. These hormones affect nearly every organ in your body and control many of your body's most important functions. For example, they affect your breathing, heart rate, weight, digestion, and moods. Without e",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/hypothyroidism.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "endocrine",
+    "title": "Hyperthyroidism",
+    "content": "What is hyperthyroidism?Hyperthyroidism, or overactive thyroid, happens when your thyroid gland makes more thyroid hormones than your body needs.Your thyroid is a small, butterfly-shaped gland in the front of your neck. It makes hormones that control the way the body uses energy. These hormones affect nearly every organ in your body and control many of your body's most important functions. For example, they affect your breathing, heart rate, weight, digestion, and moods. If not treated, <sp",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/hyperthyroidism.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "gi",
+    "title": "Appendicitis",
+    "content": "The appendix is a small, tube-like organ attached to the first part of the large intestine. It is located in the lower right part of the abdomen. It has no known function. A blockage inside of the appendix causes appendicitis. The blockage leads to increased pressure, problems with blood flow, and inflammation. If the blockage is not treated, the appendix can burst and spread infection into the abdomen. This causes a condition called peritonitis.The main symptom is pain in the abdomen, often on the right side. It is usually sudde",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/appendicitis.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "gi",
+    "title": "Gallbladder Diseases",
+    "content": "Your gallbladder is a pear-shaped organ under your liver. It stores bile, a fluid made by your liver to digest fat. As your stomach and intestines digest food, your gallbladder releases bile through a tube called the common bile duct. The duct connects your gallbladder and liver to your small intestine.Your gallbladder is most likely to give you trouble if something blocks the flow of bile through the bile ducts. That is usually a gallstone. Gallstones form when substances in bile harden. Rarely, you can also get cancer in your gallbladder.Many ga",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/gallbladderdiseases.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "gi",
+    "title": "Gastrointestinal Bleeding",
+    "content": "Your digestive or gastrointestinal (GI) tract includes the esophagus, stomach, small intestine, large intestine or colon, rectum, and anus. Bleeding can come from any of these areas. The amount of bleeding can be so small that only a lab test can find it. Signs of bleeding in the digestive tract depend on where it is and how much bleeding there is.Signs of <span",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/gastrointestinalbleeding.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "respiratory",
+    "title": "Asthma",
+    "content": "What is asthma?Asthma is a chronic (long-term) lung disease. It affects your airways, the tubes that carry air in and out of your lungs. When you have asthma, your airways can become inflamed and narrowed. This can cause wheezing, coughing, and tightness in your chest. When these symptoms get worse than usual, it is called an asthma attack or flare-up.What causes asthma?The exact caus",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/asthma.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "respiratory",
+    "title": "COPD",
+    "content": "What is COPD (chronic obstructive pulmonary disease)?COPD (chronic obstructive pulmonary disease) is a group of lung diseases that make it hard to breathe and get worse over time.Normally, the airways and air sacs in your lungs are elastic or stretchy. When you breathe in, the airways bring air to the air sacs. The air sacs fill up with air, like a small balloon. When you breathe out, the air sacs deflate, and the air goes out. If you have COPD, less air fl",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/copd.html"
+    }
+  },
+  {
+    "source": "medlineplus",
+    "category": "respiratory",
+    "title": "Pulmonary Embolism",
+    "content": "What is a pulmonary embolism (PE)?A pulmonary embolism (PE) is a sudden blockage in a lung artery. It usually happens when a blood clot breaks loose and travels through the bloodstream to the lungs. PE is a serious condit",
+    "metadata": {
+      "source_url": "https://medlineplus.gov/pulmonaryembolism.html"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "cardiovascular",
+    "title": "Essential Hypertension",
+    "content": "The current definition of hypertension (HTN) is systolic blood pressure (SBP) values&#xa0;of 130 mm Hg or more and/or diastolic blood pressure (DBP) of more than&#xa0;80 mm Hg. Hypertension ranks among the most common chronic&#xa0;medical condition characterized by a persistent elevation in arterial pressure. Hypertension has been among the most studied topics of the previous century and has been one of the most significant comorbidities contributing to the development of stroke, myocardial infarction, heart failure, and renal failure. The definition and&#xa0;categories of hypertension&#xa0;have been evolving&#xa0;over the years, but there is a consensus that persistent BP readings of 140/90 mm Hg or more should undergo treatment with the usual therapeutic&#xa0;target of 130/80 mm Hg or less. This article will attempt to&#xa0;review the available knowledge derived from RCTs and the recent updates and guidelines on hypertension put forward by&#xa0;major societies, including those from the 8th report of the Joint National Committee (JNC-8), American College of Cardiology (ACC), American Society of Hypertension (ASH), European Society of Cardiology (ESC) and European Society of Hypertension (ESH).",
+    "metadata": {
+      "pmid": "30969681",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30969681/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "cardiovascular",
+    "title": "Stable Angina",
+    "content": "Stable angina, also known as typical angina or angina pectoris, is a symptom of myocardial ischemia. Stable angina is characterized by chest discomfort or anginal equivalent that is provoked with exertion and alleviated at rest or with nitroglycerin. This is often&#xa0;1 of the first manifestations or warning signs of underlying coronary disease. Angina affects 10 million people in the United States (US); given this, it is important to recognize the signs and symptoms and appropriately risk stratify and manage these individuals.",
+    "metadata": {
+      "pmid": "32644442",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32644442/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "cardiovascular",
+    "title": "Acute Coronary Syndrome",
+    "content": "Acute coronary syndrome (ACS) is among the most common diseases clinicians encounter in the inpatient setting. This syndrome comprises a spectrum of obstructive coronary artery disease that most commonly results from plaque rupture or erosion, exposing the lipid-rich core to the circulation and triggering platelet activation and the coagulation cascade, which leads to acute thrombotic occlusion.&#xa0;Each stage of this syndrome can be&#xa0;treated differently based on clinical presentation, but a catheter-based interventional approach is often preferred. For years, the primary treatment of ACS revolved around maximizing medical therapy with the use of antiplatelet and anticoagulation therapy, antianginal medications, and aggressive lipid-lowering and risk factor modification. In 1958, the advent of&#xa0;thrombolytics&#xa0;shifted the paradigm in the approach and treatment of ACS. First used by Fletcher and colleagues&#xa0;and later validated by trials such as ISIS, GUSTO, and GISSI, intravenous thrombolytic therapy has been shown to successfully treat acute thrombotic occlusions, particularly in ST-elevated myocardial infarctions. However, even with the improvement in survival, size of the infarct, and overall morbidity, thrombolytic therapy continued to demonstrate major bleeding issues, including intracranial hemorrhage, as well as&#xa0;issues with reinfarction. The most effective thrombolytic regimens achieve angiographic infarct-artery patency in only 50% of patients with",
+    "metadata": {
+      "pmid": "30844157",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30844157/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "neurology",
+    "title": "Ischemic Stroke",
+    "content": "Acute stroke is characterized by the sudden onset of focal neurological deficits within a vascular territory affecting the brain, retina, or spinal cord, caused by underlying cerebrovascular diseases. Stroke is prevalent across patient populations and is a leading cause of morbidity and mortality. Strokes are classified as ischemic or hemorrhagic, with hemorrhagic strokes further divided into intracerebral and subarachnoid hemorrhages. Among ischemic strokes, the Trial of Org 10172 in Acute Stroke Treatment (TOAST) classification system is commonly used to categorize subtypes, which include: Cardioembolism. Small vessel occlusion. Large artery atherosclerosis. Stroke of undetermined etiology. Stroke of other determined etiology (possible or probable, depending on the results of ancillary studies)&#xa0;. A diagnosis is considered \"probable\" when clinical findings, neuroimaging data, and diagnostic study results consistently support a specific subtype, and other potential causes have been ruled out. On the other hand, a diagnosis is labeled \"possible\" when clinical findings and neuroimaging data suggest a specific subtype, but further studies have not been conducted to confirm it. As many patients undergo limited testing, these categories enable physicians to assign the most accurate subtype diagnosis possible.",
+    "metadata": {
+      "pmid": "29763173",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29763173/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "neurology",
+    "title": "Migraine Headache",
+    "content": "Migraine is a genetically influenced complex&#xa0;neurological disorder&#xa0;characterized&#xa0;by episodes of moderate-to-severe headaches, typically unilateral and frequently accompanied by nausea and heightened sensitivity to light and sound. The word \"migraine\" is derived from the Greek word hemikrania, which was later converted into Latin as hemigranea. The French translation of the term is migraine.&#xa0; Migraine is a common cause of disability and loss of work. Migraine attacks are complex and recurrent neurological&#xa0;events that can unfold for hours to days and&#xa0;significantly&#xa0;impact&#xa0;daily activities and the quality of life of individuals. The most prevalent type of migraine, accounting for 75% of cases, is migraine without aura. Subtypes of Migraine Migraines can be classified into the following subtypes according to the Headache Classification Committee of the International Headache Society.&#xa0;: A migraine without aura: This subtype involves recurrent headache attacks lasting 4 to 72 hours. The pain is typically unilateral, pulsating&#xa0;in quality, moderate-to-severe in intensity, aggravated by physical activity, and associated with nausea, light (photophobia), and sound sensitivity (phonophobia). Migraine with aura: This subtype features&#xa0;recurrent, fully reversible attacks lasting minutes, typically presenting with 1 or more unilateral symptoms such as visual, sensory, speech and language, motor, brainstem, or retinal disturbances, usuall",
+    "metadata": {
+      "pmid": "32809622",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32809622/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "renal",
+    "title": "Acute Kidney Injury",
+    "content": "Acute kidney injury (AKI), previously called acute renal failure (ARF), denotes a sudden and often reversible reduction in kidney function, as measured by glomerular filtration rate (GFR).&#xa0;However, immediately after a renal insult, blood urea nitrogen (BUN) or creatinine (Cr) levels may be within the normal range, and the only sign of AKI may be a decline in urine output. AKI can lead to the accumulation of water, sodium, and other metabolic products.&#xa0;AKI can also result in other electrolyte disturbances. AKI is a prevalent condition, especially among hospitalized patients, and can be seen in up to 7% of hospital admissions and 30% of ICU admissions. Several criteria have been used to identify AKI, such as RIFLE, AKIN (Acute Kidney Injury Network), and KDIGO (Kidney Disease: Improving Global Outcomes) criteria. Among these, KDIGO is the most recent and most commonly used tool. According to KDIGO, AKI is the presence of&#xa0;any of&#xa0;the following: 1. Increase in serum creatinine by 0.3&#xa0;mg/dL or more (26.5 &#x3bc;mol/L or more)&#xa0;within 48 hours. 2. Increase in serum creatinine to 1.5 times or more than the baseline of the prior 7 days. 3. Urine volume less than 0.5&#xa0;mL/kg/h&#xa0;for at least 6 hours. The RIFLE criteria define 3 categories of impairment&#x2014;risk, injury, and failure&#x2014;and 2 categories of long-term renal outcomes&#x2014;loss and end-stage renal disease (ESRD). Whichever criterion shows the most impairment is used for classificat",
+    "metadata": {
+      "pmid": "28722925",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28722925/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "respiratory",
+    "title": "Community-Acquired Pneumonia",
+    "content": "Community-acquired pneumonia is a leading cause of hospitalization and mortality and incurs significant healthcare costs. As disease presentation varies from a mild illness that can be managed as an outpatient to a severe illness requiring treatment in the intensive care unit, diagnosing early and determining the appropriate level of care is important for improving outcomes.",
+    "metadata": {
+      "pmid": "28613500",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28613500/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "endocrine",
+    "title": "Diabetic Ketoacidosis",
+    "content": "Diabetic ketoacidosis (DKA) represents a critical metabolic emergency marked by hyperglycemia, acidosis, and ketonemia. Although most frequently associated with type 1 diabetes, the condition can also affect individuals with type 2 diabetes under certain circumstances. The severity of DKA stems from its rapid onset and potential to cause significant morbidity and mortality if unrecognized or untreated. The development of DKA commonly results from new-onset diabetes, underlying infections, or poor adherence to therapy. Additional stressors such as acute illness, trauma, or medication effects may also precipitate the condition. Early identification and prompt management remain essential, as timely intervention greatly improves patient outcomes.",
+    "metadata": {
+      "pmid": "32809558",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32809558/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "infectious",
+    "title": "Urinary Tract Infection",
+    "content": "The anatomy of the urinary tract undergoes significant changes during pregnancy, with hormonal and mechanical factors contributing to ureteral dilation, dilation of the renal calyces, and urinary stasis,&#xa0;all of which predispose pregnant patients to urinary tract infections (UTIs). Progesterone relaxes smooth muscles, and the gravid uterus compresses the bladder, decreasing bladder capacity. Vesicoureteral reflux, increased residual urine in the bladder, and urinary stasis&#xa0;may be seen. Any of these changes lead to an increased risk of UTI in pregnancy. Typically, UTIs in pregnancy follow a predictable natural history, starting with asymptomatic bacteriuria (ASB), which, if left untreated, may progress to symptomatic infection, such as cystitis or pyelonephritis. The patterns of spread of UTIs in pregnancy often involve ascending infection from the lower urinary tract, facilitated by reduced urethral tone and altered bladder dynamics from pregnancy changes. Understanding these aspects is crucial for healthcare professionals to effectively recognize, diagnose, and manage UTIs in pregnancy, thereby preventing complications and ensuring optimal maternal and fetal outcomes.",
+    "metadata": {
+      "pmid": "30725732",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30725732/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "psychiatry",
+    "title": "Major Depressive Disorder",
+    "content": "Major depressive disorder (MDD) has been ranked as the third cause of the burden of disease worldwide in 2008 by WHO, which has projected that this disease will rank first by 2030. It is diagnosed when an individual has a persistently low or depressed mood, anhedonia or decreased interest in pleasurable activities, feelings of guilt or worthlessness, lack of energy, poor concentration, appetite changes, psychomotor retardation or agitation, sleep disturbances, or suicidal thoughts. Per the Diagnostic and Statistical Manual of Mental Disorders, 5th Edition (DSM-5), an individual must have five of the above-mentioned symptoms, of which one must be a depressed mood or anhedonia causing social or occupational impairment, to be diagnosed with MDD. History of a manic or hypomanic episode must be ruled out to make a diagnosis of MDD. Children and adolescents with MDD may present with irritable mood. Per DSM-5, other types of depression falling under the category of depressive disorders are: Persistent depressive disorder, formerly known as dysthymia. Disruptive mood dysregulation disorder&#xa0;. Premenstrual dysphoric disorder. Substance/medication-induced depressive disorder. Depressive disorder due to another medical condition. Unspecified depressive disorder.",
+    "metadata": {
+      "pmid": "32644504",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32644504/"
+    }
+  },
+  {
+    "source": "statpearls_pubmed",
+    "category": "gi",
+    "title": "Acute Appendicitis",
+    "content": "Appendicitis is characterized by inflammation of the vermiform appendix and typically presents acutely within 24 hours. However, the presenting symptoms may be more indolent and less severe in cases with perforation with a contained abscess. Notably, acute appendicitis is the leading cause of abdominal surgery in children and the most prevalent abdominal surgical emergency worldwide.&#xa0;The significance of this condition in terms of both pediatric and general surgery underscores the need for accurate diagnosis, prompt intervention, and appropriate management. Understanding the clinical features and distinctive nature of appendicitis is vital in providing timely care and preventing complications associated with this common condition.",
+    "metadata": {
+      "pmid": "29630245",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29630245/"
+    }
   }
 ]

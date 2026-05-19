@@ -1,0 +1,417 @@
+{
+  "summary": {
+    "runId": "run-1778491926025",
+    "startedAt": "2026-05-11T09:32:06.025Z",
+    "completedAt": "2026-05-11T09:34:40.436Z",
+    "totalCases": 4,
+    "successfulCases": 4,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 2.5,
+      "omission": 2.25,
+      "faithfulness": 3.75,
+      "groundedness": 3.75,
+      "bias": 1.25,
+      "fluency": 4.75,
+      "completeness": 4
+    },
+    "meanCalibrationDelta": 1,
+    "calibrationCorrelation": -0.6342636347215995,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 8,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 0.75,
+    "expectedPlanItemsMetRate": 0.5,
+    "redFlagsHandledRate": 0.75,
+    "uncertaintyAcknowledgedRate": 0,
+    "meanLatencyMs": 25599.25,
+    "meanTokensPerCase": 9239.75,
+    "totalTokensUsed": 36959
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago, has become more frequent over the past two weeks, and consistently occurs with exertion, radiating down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and reports a family history of myocardial infarction, with his father having had a myocardial infarction at age 60.",
+          "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities, with no peripheral edema.",
+          "assessment": "The patient's presentation of exertional substernal chest pressure radiating to the left arm, relieved by rest, is suggestive of angina pectoris, which may indicate coronary artery disease. Given his history of hypertension, current smoking status, and family history of myocardial infarction, the patient is at increased risk for cardiovascular disease. Differential diagnosis includes myocardial infarction, although the lack of associated symptoms such as dyspnea, palpitations, and diaphoresis makes this less likely. The patient's current regimen of lisinopril for hypertension is notable, and his blood pressure remains elevated at 148/92 mmHg, suggesting potential suboptimal control of his hypertension. Rule out acute coronary syndrome and consider further evaluation with cardiac stress testing or echocardiography to determine the etiology of his chest pain.",
+          "plan": "The plan for Patient Arjun Sharma includes the following steps to address his exertional substernal chest pressure and hypertension:\n* Continue lisinopril 10mg PO daily for hypertension, and consider titrating the dose to 20mg PO daily if his blood pressure remains elevated, with monitoring of potassium levels and renal function as per standard protocol for ACE inhibitors.\n* Order a cardiac stress test to evaluate for coronary artery disease and assess the patient's risk for myocardial infarction.\n* Consider adding metoprolol, a beta-1 selective blocker, to the patient's regimen to help control his hypertension and reduce the frequency of angina episodes, starting with a dose of 25mg BID and titrating as needed, while monitoring heart rate and blood pressure.\n* Educate the patient on the importance of smoking cessation and refer him to a smoking cessation program to reduce his cardiovascular risk.\n* Schedule a follow-up appointment in 2 weeks to reassess the patient's blood pressure and evaluate the results of the cardiac stress test.\n* Instruct the patient to call the office immediately if he experiences any increase in chest pain frequency or severity, or if he develops any new symptoms such as dyspnea, palpitations, or diaphoresis.\n* Consider ordering an echocardiogram to further evaluate the patient's cardiac function if the stress test results are inconclusive or if the patient's symptoms worsen."
+        },
+        "keywords": [
+          "chest pressure",
+          "hypertension",
+          "lisinopril",
+          "left arm",
+          "elbow",
+          "dyspnea",
+          "palpitations",
+          "diaphoresis",
+          "myocardial infarction"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.99,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago, has become more frequent over the past two weeks, and consistently occurs with exertion, radiating down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and reports a family history of myocardial infarction, with his father having had a myocardial infarction at age 60.",
+            "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities, with no peripheral edema.",
+            "assessment": "The patient's presentation of exertional substernal chest pressure radiating to the left arm, relieved by rest, is suggestive of angina pectoris, which may indicate coronary artery disease. Given his history of hypertension, current smoking status, and family history of myocardial infarction, the patient is at increased risk for cardiovascular disease. Differential diagnosis includes myocardial infarction, although the lack of associated symptoms such as dyspnea, palpitations, and diaphoresis makes this less likely. The patient's current regimen of lisinopril for hypertension is notable, and his blood pressure remains elevated at 148/92 mmHg, suggesting potential suboptimal control of his hypertension. Rule out acute coronary syndrome and consider further evaluation with cardiac stress testing or echocardiography to determine the etiology of his chest pain.",
+            "plan": "The plan for Patient <NAME_1> includes the following steps to address his exertional substernal chest pressure and hypertension:\n* Continue lisinopril 10mg PO daily for hypertension, and consider titrating the dose to 20mg PO daily if his blood pressure remains elevated, with monitoring of potassium levels and renal function as per standard protocol for ACE inhibitors.\n* Order a cardiac stress test to evaluate for coronary artery disease and assess the patient's risk for myocardial infarction.\n* Consider adding metoprolol, a beta-1 selective blocker, to the patient's regimen to help control his hypertension and reduce the frequency of angina episodes, starting with a dose of 25mg BID and titrating as needed, while monitoring heart rate and blood pressure.\n* Educate the patient on the importance of smoking cessation and refer him to a smoking cessation program to reduce his cardiovascular risk.\n* Schedule a follow-up appointment in 2 weeks to reassess the patient's blood pressure and evaluate the results of the cardiac stress test.\n* Instruct the patient to call the office immediately if he experiences any increase in chest pain frequency or severity, or if he develops any new symptoms such as dyspnea, palpitations, or diaphoresis.\n* Consider ordering an echocardiogram to further evaluate the patient's cardiac function if the stress test results are inconclusive or if the patient's symptoms worsen."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 386,
+            "generate": 2750,
+            "critique": 378,
+            "reidentify": 0
+          },
+          "tokensUsed": 7082
+        }
+      },
+      "judgeResult": {
+        "hallucination": 4,
+        "omission": 4,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 2,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.8,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Consider adding metoprolol, a beta-1 selective blocker, to the patient's regimen to help control his hypertension and reduce the frequency of angina episodes",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention metoprolol or any other beta blockers, and the plan introduces this medication without evidence from the patient's history or current presentation."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Consider ordering an echocardiogram to further evaluate the patient's cardiac function if the stress test results are inconclusive or if the patient's symptoms worsen",
+            "transcriptEvidence": "NONE",
+            "why": "While an echocardiogram could be a reasonable test, it is not mentioned in the expected plan items and is introduced without clear justification from the patient's history or current symptoms."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note demonstrates a good understanding of the patient's symptoms and risk factors but introduces treatments and diagnostic tests not supported by the transcript or expected plan items. The note also fails to include expected diagnoses and plan items such as stable angina, coronary artery disease, ECG, troponin, aspirin, and cardiology referral."
+      },
+      "calibrationDelta": {
+        "hallucination": -3,
+        "omission": -3,
+        "faithfulness": 2,
+        "groundedness": 2,
+        "bias": -1,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.99,
+      "judgeAggregateScore": 0.42500000000000004,
+      "totalLatencyMs": 19035,
+      "totalTokensUsed": 9259,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0002",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a two-week history of increased urinary frequency, urinating approximately 8-10 times a day, including 2-3 times overnight, and excessive thirst described as constant and unquenchable. She also complains of generalized fatigue, characterized as a persistent lack of energy, which affects her daily activities and concentration. Patient has a known history of Type 2 Diabetes Mellitus, for which she is taking metformin, and reports her last HbA1c was high a few months ago. She denies any recent changes to her medication regimen or diet. Patient also has a history of hypertension, as evidenced by her current blood pressure of 138/86 mmHg, and her calculated BMI of 32 kg/m² indicates obesity. She denies any other symptoms such as chest pain, shortness of breath, fever, chills, or vision changes, but does exhibit tachycardia with a heart rate of 88 bpm.",
+          "objective": "BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C. BMI is 32 kg/m², indicating obesity. HbA1c is 11.2%, drawn today.",
+          "assessment": "The patient's presentation of increased urinary frequency, excessive thirst, and generalized fatigue, in the context of a known history of Type 2 Diabetes Mellitus with a recently elevated HbA1c of 11.2%, suggests poorly controlled diabetes as a primary concern. Differential diagnoses include diabetic ketoacidosis, although the absence of reported symptoms such as nausea, vomiting, or abdominal pain makes this less likely. The patient's hypertension and obesity are also significant factors that need to be addressed in her overall management plan. Rule out other potential causes of her symptoms, such as urinary tract infection or other renal issues, although her current presentation is most consistent with hyperglycemia-induced osmotic diuresis. The patient's tachycardia may be related to her uncontrolled diabetes, dehydration, or potentially her hypertension, and warrants further monitoring.",
+          "plan": "The plan for Patient Verma includes the following steps to address her poorly controlled Type 2 Diabetes Mellitus and associated conditions:\n* Adjust her metformin dosage to ensure she is on the optimal dose, considering titrating up to 1000mg BID with meals if she is currently on a lower dose, while monitoring for gastrointestinal side effects and renal function.\n* Consider adding insulin therapy, potentially starting with a basal insulin regimen, to help achieve better glycemic control, given her elevated HbA1c of 11.2%, with education on hypoglycemia signs and the importance of glucose monitoring.\n* For her hypertension, consider initiating or adjusting antihypertensive medication, such as metoprolol, starting at a low dose like 25mg BID, to help manage her blood pressure, with monitoring of heart rate and blood pressure.\n* Order a urinalysis to rule out a urinary tract infection and assess for ketones, which could indicate diabetic ketoacidosis, although her presentation is not highly suggestive of this condition.\n* Schedule a follow-up appointment in 2-3 months to reassess her HbA1c levels, monitor her blood pressure, and evaluate the effectiveness of any adjustments made to her medication regimen.\n* Provide patient education on the importance of strict glucose control, healthy diet, regular physical activity, and weight management to address her obesity and improve her overall metabolic health.\n* Consider referral to a dietitian or a diabetes educator to provide personalized guidance on dietary changes and glucose monitoring to support her in achieving better control of her diabetes and associated conditions."
+        },
+        "keywords": [
+          "urinary frequency",
+          "excessive thirst",
+          "generalized fatigue",
+          "Type 2 Diabetes Mellitus",
+          "metformin",
+          "HbA1c",
+          "hypertension",
+          "tachycardia",
+          "obesity"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.9,
+          "flags": [
+            "Patient's history of hypertension not mentioned in original transcript",
+            "Tachycardia mentioned in SOAP note but not clearly supported by original transcript"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I’m seeing Patient <NAME_1> today, a 45-year-old female presenting with a two-week history of increased urinary frequency, excessive thirst, and generalized fatigue. She reports urinating approximately 8-10 times a day, including 2-3 times overnight, which is a significant increase from her usual pattern. She describes her thirst as constant and unquenchable, leading her to consume large volumes of water throughout the day. The fatigue is described as a persistent lack of energy, impacting her daily activities and making it difficult to concentrate. She denies any chest pain, shortness of breath, fever, chills, or vision changes. Patient Verma has a known history of Type 2 Diabetes Mellitus, diagnosed five years ago, for which she states she is currently taking metformin. She reports her last HbA1c was \"a few months ago\" and she \"was told it was high.\" She denies any recent changes to her medication regimen or diet. On examination, vital signs are: BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C. Her BMI is calculated at 32 kg/m². Her most recent HbA1c, drawn today, is 11.2%.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a two-week history of increased urinary frequency, urinating approximately 8-10 times a day, including 2-3 times overnight, and excessive thirst described as constant and unquenchable. She also complains of generalized fatigue, characterized as a persistent lack of energy, which affects her daily activities and concentration. Patient has a known history of Type 2 Diabetes Mellitus, for which she is taking metformin, and reports her last HbA1c was high a few months ago. She denies any recent changes to her medication regimen or diet. Patient also has a history of hypertension, as evidenced by her current blood pressure of 138/86 mmHg, and her calculated BMI of 32 kg/m² indicates obesity. She denies any other symptoms such as chest pain, shortness of breath, fever, chills, or vision changes, but does exhibit tachycardia with a heart rate of 88 bpm.",
+            "objective": "BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C. BMI is 32 kg/m², indicating obesity. HbA1c is 11.2%, drawn today.",
+            "assessment": "The patient's presentation of increased urinary frequency, excessive thirst, and generalized fatigue, in the context of a known history of Type 2 Diabetes Mellitus with a recently elevated HbA1c of 11.2%, suggests poorly controlled diabetes as a primary concern. Differential diagnoses include diabetic ketoacidosis, although the absence of reported symptoms such as nausea, vomiting, or abdominal pain makes this less likely. The patient's hypertension and obesity are also significant factors that need to be addressed in her overall management plan. Rule out other potential causes of her symptoms, such as urinary tract infection or other renal issues, although her current presentation is most consistent with hyperglycemia-induced osmotic diuresis. The patient's tachycardia may be related to her uncontrolled diabetes, dehydration, or potentially her hypertension, and warrants further monitoring.",
+            "plan": "The plan for Patient Verma includes the following steps to address her poorly controlled Type 2 Diabetes Mellitus and associated conditions:\n* Adjust her metformin dosage to ensure she is on the optimal dose, considering titrating up to 1000mg BID with meals if she is currently on a lower dose, while monitoring for gastrointestinal side effects and renal function.\n* Consider adding insulin therapy, potentially starting with a basal insulin regimen, to help achieve better glycemic control, given her elevated HbA1c of 11.2%, with education on hypoglycemia signs and the importance of glucose monitoring.\n* For her hypertension, consider initiating or adjusting antihypertensive medication, such as metoprolol, starting at a low dose like 25mg BID, to help manage her blood pressure, with monitoring of heart rate and blood pressure.\n* Order a urinalysis to rule out a urinary tract infection and assess for ketones, which could indicate diabetic ketoacidosis, although her presentation is not highly suggestive of this condition.\n* Schedule a follow-up appointment in 2-3 months to reassess her HbA1c levels, monitor her blood pressure, and evaluate the effectiveness of any adjustments made to her medication regimen.\n* Provide patient education on the importance of strict glucose control, healthy diet, regular physical activity, and weight management to address her obesity and improve her overall metabolic health.\n* Consider referral to a dietitian or a diabetes educator to provide personalized guidance on dietary changes and glucose monitoring to support her in achieving better control of her diabetes and associated conditions."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 281,
+            "generate": 3380,
+            "critique": 539,
+            "reidentify": 0
+          },
+          "tokensUsed": 6869
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 1,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 5,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Patient also has a history of hypertension, as evidenced by her current blood pressure of 138/86 mmHg",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention a history of hypertension, only the current blood pressure reading."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "but does exhibit tachycardia with a heart rate of 88 bpm",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript mentions the heart rate, but does not imply that it is abnormal or a symptom."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": true,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is generally well-written and comprehensive, but includes some minor hallucinations. The note accurately reflects the patient's symptoms and history, and the plan is appropriate for the expected diagnoses. However, the note could be improved by avoiding the introduction of unwarranted information, such as the patient's history of hypertension."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": 1,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": -1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.8374999999999999,
+      "totalLatencyMs": 19830,
+      "totalTokensUsed": 8949,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0003",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports sudden onset of weakness on his right side, accompanied by slurred speech, approximately 1.5 hours prior to presentation. He denies headache, numbness, or tingling, but exhibits noticeable right facial droop and difficulty articulating words due to dysarthria. The patient's wife confirms the acute onset of symptoms, stating they began around 8:30 AM, with the patient struggling to hold his coffee cup and experiencing muddled speech. Patient nods in agreement when asked about weakness on his right side, pointing to his right arm and leg to indicate the affected areas. He has a history of hypertension, with current blood pressure measured at 180/100 mmHg.",
+          "objective": "Vitals: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. Neurological exam reveals right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities, with notable dysarthria and slurred speech.",
+          "assessment": "The patient's presentation of sudden onset right-sided weakness, slurred speech, facial droop, and right upper extremity drift, along with a history of hypertension, suggests a likely diagnosis of an acute ischemic stroke, given the rapid onset of focal neurological deficits. Differential includes other causes of acute neurological decline, such as a hemorrhagic stroke or a seizure disorder, although the absence of headache and seizure activity makes these less likely. The patient's significantly elevated blood pressure, measured at 180/100 mmHg, may be a contributing factor to the stroke. Rule out other potential causes of stroke, such as cardiac embolism or vasculitis, with further evaluation and imaging.",
+          "plan": "The plan for Mr. Kumar includes immediate initiation of stroke protocol, with a focus on reducing his significantly elevated blood pressure and addressing the potential acute ischemic stroke. This will involve:\n* Administering aspirin 325mg PO as soon as possible, provided there are no contraindications, to reduce the risk of further ischemic injury\n* Ordering a stat non-contrast CT scan of the head to rule out hemorrhagic stroke and to assess for any signs of ischemia\n* Initiating blood pressure management with a goal to reduce his systolic blood pressure by 15% during the first 24 hours, which may involve the use of intravenous antihypertensives such as labetalol or nicardipine, with careful monitoring of his blood pressure and neurological status\n* Considering the use of thrombolytic therapy with tPA (tissue plasminogen activator) if the patient is within the time window and meets the criteria, with careful consideration of the risks and benefits\n* Ordering labs, including complete blood count, basic metabolic panel, coagulation studies, and cardiac enzymes, to evaluate for any underlying conditions that may have contributed to the stroke\n* Consulting with neurology for further evaluation and management, including potential admission to the intensive care unit for close monitoring\n* Starting the patient on medications to manage his hypertension, such as lisinopril 10mg PO daily, with plans to titrate as needed to achieve blood pressure control, and furosemide 20mg PO/IV as needed for volume overload, with careful monitoring of his electrolytes and renal function\n* Educating the patient and his family on the signs and symptoms of stroke, the importance of blood pressure control, and the need for follow-up with his primary care physician and a neurologist\n* Scheduling a follow-up appointment with the patient in 1-2 weeks to assess his progress and adjust his treatment plan as needed, with plans for further evaluation and management of his hypertension and stroke risk factors."
+        },
+        "keywords": [
+          "weakness",
+          "slurred speech",
+          "facial droop",
+          "right upper extremity drift",
+          "dysarthria",
+          "hypertension",
+          "right sided weakness"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.99,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I entered the room to find Patient <NAME_1>, a 68-year-old male, seated on the examination table, appearing distressed. He was accompanied by his wife.\n\n\"Mr. Kumar, I'm Dr. [Your Name]. Can you tell me what brought you in today?\" I asked, observing his facial symmetry and speech.\n\nHis wife interjected, \"He suddenly became weak on his right side, and his speech got slurred. It happened about an hour and a half ago, maybe a bit more.\"\n\nI turned back to Mr. Kumar. \"Mr. Kumar, can you tell me in your own words what you're experiencing?\"\n\nHe attempted to speak, but his words were noticeably slurred, making them difficult to fully comprehend. He pointed to his right arm and then his right leg, indicating weakness.\n\n\"So, you're feeling weakness on your right side?\" I clarified. He nodded slowly. \"And when did this start?\"\n\nHe struggled to articulate a precise time, looking to his wife for assistance. His wife reiterated, \"He was fine at breakfast, around 7 AM. Then around 8:30 AM, he started having trouble holding his coffee cup and his words became muddled.\"\n\n\"Okay, so roughly 90 minutes ago, potentially a bit longer,\" I noted. \"Any headache? Numbness or tingling?\"\n\nHe shook his head, indicating no headache or numbness. His wife confirmed, \"Just the weakness and the speech.\"\n\nVitals were taken: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. On neurological exam, I noted right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities. Speech was dysarthric.",
+          "rawLlmNote": {
+            "subjective": "Patient reports sudden onset of weakness on his right side, accompanied by slurred speech, approximately 1.5 hours prior to presentation. He denies headache, numbness, or tingling, but exhibits noticeable right facial droop and difficulty articulating words due to dysarthria. The patient's wife confirms the acute onset of symptoms, stating they began around 8:30 AM, with the patient struggling to hold his coffee cup and experiencing muddled speech. Patient nods in agreement when asked about weakness on his right side, pointing to his right arm and leg to indicate the affected areas. He has a history of hypertension, with current blood pressure measured at 180/100 mmHg.",
+            "objective": "Vitals: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. Neurological exam reveals right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities, with notable dysarthria and slurred speech.",
+            "assessment": "The patient's presentation of sudden onset right-sided weakness, slurred speech, facial droop, and right upper extremity drift, along with a history of hypertension, suggests a likely diagnosis of an acute ischemic stroke, given the rapid onset of focal neurological deficits. Differential includes other causes of acute neurological decline, such as a hemorrhagic stroke or a seizure disorder, although the absence of headache and seizure activity makes these less likely. The patient's significantly elevated blood pressure, measured at 180/100 mmHg, may be a contributing factor to the stroke. Rule out other potential causes of stroke, such as cardiac embolism or vasculitis, with further evaluation and imaging.",
+            "plan": "The plan for Mr. Kumar includes immediate initiation of stroke protocol, with a focus on reducing his significantly elevated blood pressure and addressing the potential acute ischemic stroke. This will involve:\n* Administering aspirin 325mg PO as soon as possible, provided there are no contraindications, to reduce the risk of further ischemic injury\n* Ordering a stat non-contrast CT scan of the head to rule out hemorrhagic stroke and to assess for any signs of ischemia\n* Initiating blood pressure management with a goal to reduce his systolic blood pressure by 15% during the first 24 hours, which may involve the use of intravenous antihypertensives such as labetalol or nicardipine, with careful monitoring of his blood pressure and neurological status\n* Considering the use of thrombolytic therapy with tPA (tissue plasminogen activator) if the patient is within the time window and meets the criteria, with careful consideration of the risks and benefits\n* Ordering labs, including complete blood count, basic metabolic panel, coagulation studies, and cardiac enzymes, to evaluate for any underlying conditions that may have contributed to the stroke\n* Consulting with neurology for further evaluation and management, including potential admission to the intensive care unit for close monitoring\n* Starting the patient on medications to manage his hypertension, such as lisinopril 10mg PO daily, with plans to titrate as needed to achieve blood pressure control, and furosemide 20mg PO/IV as needed for volume overload, with careful monitoring of his electrolytes and renal function\n* Educating the patient and his family on the signs and symptoms of stroke, the importance of blood pressure control, and the need for follow-up with his primary care physician and a neurologist\n* Scheduling a follow-up appointment with the patient in 1-2 weeks to assess his progress and adjust his treatment plan as needed, with plans for further evaluation and management of his hypertension and stroke risk factors."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 373,
+            "generate": 5688,
+            "critique": 9396,
+            "reidentify": 0
+          },
+          "tokensUsed": 7212
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "He has a history of hypertension",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention the patient's medical history, including hypertension, except for the current blood pressure measurement."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Starting the patient on medications to manage his hypertension, such as lisinopril 10mg PO daily",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention starting new medications for hypertension, although it does mention the patient's current elevated blood pressure."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": true,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is generally well-written and comprehensive, but it includes some information not present in the transcript, such as the patient's history of hypertension and the plan to start new medications for hypertension. The note also fails to acknowledge uncertainty regarding the exact onset time of the patient's symptoms."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.99,
+      "judgeAggregateScore": 0.7750000000000001,
+      "totalLatencyMs": 30272,
+      "totalTokensUsed": 9401,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0004",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a 6-month history of cramping or aching pain in the right upper quadrant of the abdomen, typically occurring after consuming fatty foods and lasting several hours. The pain is rated as a 6 or 7 out of 10 and is often accompanied by nausea, although vomiting has not occurred. Patient denies changes in bowel habits, fever, chills, or jaundice. She also denies any similar issues in the past, but does report a history of appendectomy at age 12. Patient notes tenderness in the right upper quadrant upon palpation, confirming the location of her discomfort. Her current vitals are within normal limits, with a BP of 120/78, HR of 72, RR of 16, and Temp of 98.6°F.",
+          "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Abdominal exam reveals tenderness in the right upper quadrant, with inspiratory arrest noted upon palpation.",
+          "assessment": "The patient's presentation of right upper quadrant abdominal pain, exacerbated by fatty food consumption and accompanied by nausea, suggests a possible diagnosis of cholecystitis or cholelithiasis, although the absence of fever and jaundice makes these conditions less likely. Differential includes peptic ulcer disease, given the postprandial nature of the pain, as well as other causes of abdominal pain such as hepatitis or pancreatic pathology. The patient's stable vitals and lack of systemic symptoms are reassuring, but further evaluation, potentially including laboratory tests and imaging studies, is needed to determine the underlying cause of her symptoms. Rule out other potential causes of right upper quadrant pain, including musculoskeletal or pulmonary etiologies.",
+          "plan": "The plan for Sneha includes the following steps to address her symptoms and potential diagnoses:\n* Order laboratory tests, including complete blood count, liver function tests, and pancreatic enzymes, to evaluate for signs of inflammation, infection, or organ dysfunction.\n* Schedule an abdominal ultrasound to assess the gallbladder and biliary tree for evidence of cholelithiasis or cholecystitis, as well as to evaluate the liver, pancreas, and surrounding structures.\n* Consider a hepatitis panel and other infectious disease testing if clinically indicated.\n* Initiate a trial of omeprazole 20mg PO daily, 30-60 minutes before breakfast, to address potential peptic ulcer disease, with plans to reassess symptoms and adjust therapy as needed.\n* Recommend a low-fat diet to help manage symptoms and potentially reduce the frequency of abdominal pain episodes.\n* For acute pain management, consider ibuprofen 400mg PO every 6-8 hours as needed, with caution regarding potential gastrointestinal side effects and monitoring of renal function and blood pressure.\n* Schedule a follow-up appointment in 2-3 weeks to review laboratory and imaging results, assess response to therapy, and adjust the treatment plan as necessary.\n* Educate the patient on the importance of follow-up, potential risks and benefits of prescribed medications, and the need to seek immediate medical attention if symptoms worsen or if severe pain, fever, or jaundice develops."
+        },
+        "keywords": [
+          "abdominal pain",
+          "nausea",
+          "right upper quadrant",
+          "tenderness",
+          "vitals",
+          "BP 120/78",
+          "HR 72",
+          "RR 16",
+          "Temp 98.6°F"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Come on in, Sneha. Have a seat. What brings you in today?\"\n\n\"Hi Dr. [Doctor's Last Name]. I've been having this pain, here, in my upper right abdomen, for about six months now.\"\n\n\"Okay, can you describe the pain for me? Is it sharp, dull, aching?\"\n\n\"It's more of a cramping or aching pain. And it usually happens after I eat something fatty, like pizza or fried chicken. It can last for a few hours.\"\n\n\"And on a scale of 1 to 10, with 10 being the worst pain imaginable, how would you rate it?\"\n\n\"Usually around a 6 or 7. It's enough to make me uncomfortable and sometimes I have to lie down.\"\n\n\"Any other symptoms accompanying the pain?\"\n\n\"Yes, I often feel nauseous when it happens. I haven't actually vomited, but I feel like I could.\"\n\n\"Have you noticed any changes in your bowel habits, like diarrhea or constipation?\"\n\n\"Not really. My bowel movements seem pretty normal.\"\n\n\"Any fever, chills, or yellowing of your skin or eyes?\"\n\n\"No, none of that.\"\n\n\"Have you had any similar issues in the past?\"\n\n\"No, this is new for me.\"\n\n\"Any significant medical history I should be aware of? Surgeries, chronic conditions?\"\n\n\"I had my appendix out when I was 12, but otherwise, I'm pretty healthy. No other surgeries, no chronic conditions.\"\n\n\"Alright, let's take a look. I'll just palpate your abdomen. Please let me know if anything is tender.\"\n\n[During palpation] \"Right here, Sneha, take a deep breath in.\"\n\n\"Ouch! Yes, that's exactly where it hurts.\"\n\n\"Okay, thank you. Your vitals are stable: BP 120/78, HR 72, RR 16, Temp 98.6°F. I've noted the tenderness in your right upper quadrant, and your inspiratory arrest with palpation there.\"",
+          "rawLlmNote": {
+            "subjective": "Patient reports a 6-month history of cramping or aching pain in the right upper quadrant of the abdomen, typically occurring after consuming fatty foods and lasting several hours. The pain is rated as a 6 or 7 out of 10 and is often accompanied by nausea, although vomiting has not occurred. Patient denies changes in bowel habits, fever, chills, or jaundice. She also denies any similar issues in the past, but does report a history of appendectomy at age 12. Patient notes tenderness in the right upper quadrant upon palpation, confirming the location of her discomfort. Her current vitals are within normal limits, with a BP of 120/78, HR of 72, RR of 16, and Temp of 98.6°F.",
+            "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Abdominal exam reveals tenderness in the right upper quadrant, with inspiratory arrest noted upon palpation.",
+            "assessment": "The patient's presentation of right upper quadrant abdominal pain, exacerbated by fatty food consumption and accompanied by nausea, suggests a possible diagnosis of cholecystitis or cholelithiasis, although the absence of fever and jaundice makes these conditions less likely. Differential includes peptic ulcer disease, given the postprandial nature of the pain, as well as other causes of abdominal pain such as hepatitis or pancreatic pathology. The patient's stable vitals and lack of systemic symptoms are reassuring, but further evaluation, potentially including laboratory tests and imaging studies, is needed to determine the underlying cause of her symptoms. Rule out other potential causes of right upper quadrant pain, including musculoskeletal or pulmonary etiologies.",
+            "plan": "The plan for Sneha includes the following steps to address her symptoms and potential diagnoses:\n* Order laboratory tests, including complete blood count, liver function tests, and pancreatic enzymes, to evaluate for signs of inflammation, infection, or organ dysfunction.\n* Schedule an abdominal ultrasound to assess the gallbladder and biliary tree for evidence of cholelithiasis or cholecystitis, as well as to evaluate the liver, pancreas, and surrounding structures.\n* Consider a hepatitis panel and other infectious disease testing if clinically indicated.\n* Initiate a trial of omeprazole 20mg PO daily, 30-60 minutes before breakfast, to address potential peptic ulcer disease, with plans to reassess symptoms and adjust therapy as needed.\n* Recommend a low-fat diet to help manage symptoms and potentially reduce the frequency of abdominal pain episodes.\n* For acute pain management, consider ibuprofen 400mg PO every 6-8 hours as needed, with caution regarding potential gastrointestinal side effects and monitoring of renal function and blood pressure.\n* Schedule a follow-up appointment in 2-3 weeks to review laboratory and imaging results, assess response to therapy, and adjust the treatment plan as necessary.\n* Educate the patient on the importance of follow-up, potential risks and benefits of prescribed medications, and the need to seek immediate medical attention if symptoms worsen or if severe pain, fever, or jaundice develops."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 252,
+            "generate": 10307,
+            "critique": 7338,
+            "reidentify": 0
+          },
+          "tokensUsed": 7208
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Initiate a trial of omeprazole 20mg PO daily, 30-60 minutes before breakfast, to address potential peptic ulcer disease",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention peptic ulcer disease as a suspected diagnosis, and the patient's symptoms do not clearly indicate this condition."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Consider ibuprofen 400mg PO every 6-8 hours as needed",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not discuss the use of ibuprofen for pain management, and this medication is not clearly indicated for the patient's symptoms."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is generally well-written and faithful to the transcript, but it includes some hallucinated treatment plans and medications not supported by the transcript. The note also fails to include some expected plan items, such as a surgical consult, and does not adequately address red flags like acute cholecystitis."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7750000000000001,
+      "totalLatencyMs": 33260,
+      "totalTokensUsed": 9350,
+      "errored": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "runId": "run-1779173655292",
+  "startedAt": "2026-05-19T06:54:15.292Z",
+  "completedAt": "2026-05-19T07:02:16.813Z",
+  "totalCases": 10,
+  "successfulCases": 9,
+  "erroredCases": 1,
+  "meanScores": {
+    "hallucination": 2.2222222222222223,
+    "omission": 2.888888888888889,
+    "faithfulness": 4,
+    "groundedness": 4,
+    "bias": 1,
+    "fluency": 5,
+    "completeness": 3.7777777777777777
+  },
+  "meanCalibrationDelta": 0.3333333333333333,
+  "calibrationCorrelation": 0.030834984869372622,
+  "hallucinationTypeFrequency": {
+    "fabricated_fact": 17,
+    "misattributed_fact": 0,
+    "confidence_without_evidence": 0,
+    "false_reasoning": 0
+  },
+  "expectedDiagnosesMetRate": 0.7777777777777778,
+  "expectedPlanItemsMetRate": 0,
+  "redFlagsHandledRate": 0,
+  "uncertaintyAcknowledgedRate": 0.4444444444444444,
+  "meanLatencyMs": 33460.22222222222,
+  "meanTokensPerCase": 9564.666666666666,
+  "totalTokensUsed": 86082
+}

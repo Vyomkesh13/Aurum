@@ -1,0 +1,131 @@
+{
+  "summary": {
+    "runId": "run-1778926212737",
+    "startedAt": "2026-05-16T10:10:12.737Z",
+    "completedAt": "2026-05-16T10:10:48.969Z",
+    "totalCases": 1,
+    "successfulCases": 1,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 2,
+      "omission": 3,
+      "faithfulness": 4,
+      "groundedness": 4,
+      "bias": 1,
+      "fluency": 5,
+      "completeness": 4
+    },
+    "meanCalibrationDelta": 1,
+    "calibrationCorrelation": 0,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 2,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 0,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 1,
+    "uncertaintyAcknowledgedRate": 0,
+    "meanLatencyMs": 23226,
+    "meanTokensPerCase": 9478,
+    "totalTokensUsed": 9478
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at its peak, which began approximately two months ago and has increased in frequency over the past two weeks. The discomfort is exertion-related, specifically triggered by walking uphill or carrying groceries, and radiates down his left arm to his elbow, with symptoms reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. He also reports a 30 pack-year smoking history. History of other relevant medical conditions, such as heart failure or diabetic nephropathy, is not reported.",
+          "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "assessment": "The patient's presentation of exertion-related substernal chest pressure radiating down the left arm to the elbow, relieved by rest, suggests a suspected acute coronary syndrome, with myocardial infarction being a differential diagnosis that needs to be ruled out, particularly given the patient's history of hypertension, family history of myocardial infarction, and significant smoking history. The patient's current symptoms and history also raise the possibility of angina pectoris. The fact that the patient is already on lisinopril for hypertension is noted, but the current blood pressure reading of 148/92 mmHg indicates that the hypertension may not be optimally controlled. Further evaluation, including diagnostic testing such as an electrocardiogram and cardiac biomarkers, is necessary to determine the underlying cause of the patient's symptoms. Differential includes other cardiac conditions such as stable angina, and non-cardiac causes of chest pain, pending further investigation.",
+          "plan": "The plan for Patient Arjun Sharma includes:\n* Continuing lisinopril as prescribed for hypertension, with a need to monitor blood pressure closely to assess for optimal control, given the current reading of 148/92 mmHg.\n* Further diagnostic testing, including an electrocardiogram and cardiac biomarkers, to evaluate for acute coronary syndrome and myocardial infarction.\n* Consideration of additional cardiovascular risk factor management, particularly addressing the patient's significant smoking history.\n* Patient education on the importance of managing hypertension, the risks associated with smoking, and the need for follow-up to monitor symptoms and adjust the treatment plan as necessary.\n* Further history needed regarding other potential risk factors or symptoms that could influence the diagnosis and management plan, such as dietary habits, physical activity level, and any changes in symptoms since the initial presentation."
+        },
+        "keywords": [
+          "chest pressure",
+          "hypertension",
+          "lisinopril",
+          "left arm",
+          "elbow",
+          "dyspnea",
+          "palpitations",
+          "diaphoresis",
+          "myocardial infarction"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at its peak, which began approximately two months ago and has increased in frequency over the past two weeks. The discomfort is exertion-related, specifically triggered by walking uphill or carrying groceries, and radiates down his left arm to his elbow, with symptoms reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. He also reports a 30 pack-year smoking history. History of other relevant medical conditions, such as heart failure or diabetic nephropathy, is not reported.",
+            "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+            "assessment": "The patient's presentation of exertion-related substernal chest pressure radiating down the left arm to the elbow, relieved by rest, suggests a suspected acute coronary syndrome, with myocardial infarction being a differential diagnosis that needs to be ruled out, particularly given the patient's history of hypertension, family history of myocardial infarction, and significant smoking history. The patient's current symptoms and history also raise the possibility of angina pectoris. The fact that the patient is already on lisinopril for hypertension is noted, but the current blood pressure reading of 148/92 mmHg indicates that the hypertension may not be optimally controlled. Further evaluation, including diagnostic testing such as an electrocardiogram and cardiac biomarkers, is necessary to determine the underlying cause of the patient's symptoms. Differential includes other cardiac conditions such as stable angina, and non-cardiac causes of chest pain, pending further investigation.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Continuing lisinopril as prescribed for hypertension, with a need to monitor blood pressure closely to assess for optimal control, given the current reading of 148/92 mmHg.\n* Further diagnostic testing, including an electrocardiogram and cardiac biomarkers, to evaluate for acute coronary syndrome and myocardial infarction.\n* Consideration of additional cardiovascular risk factor management, particularly addressing the patient's significant smoking history.\n* Patient education on the importance of managing hypertension, the risks associated with smoking, and the need for follow-up to monitor symptoms and adjust the treatment plan as necessary.\n* Further history needed regarding other potential risk factors or symptoms that could influence the diagnosis and management plan, such as dietary habits, physical activity level, and any changes in symptoms since the initial presentation."
+          },
+          "timings": {
+            "deidentify": 2,
+            "keywords": 276,
+            "generate": 6956,
+            "critique": 398,
+            "reidentify": 0
+          },
+          "tokensUsed": 7282
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "suspected acute coronary syndrome, with myocardial infarction being a differential diagnosis",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention acute coronary syndrome or myocardial infarction as a presenting complaint or diagnosis. While the patient's symptoms and history suggest a cardiac cause, the specific mention of acute coronary syndrome and myocardial infarction as a differential diagnosis is not supported by the transcript."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "patient education on the importance of managing hypertension, the risks associated with smoking, and the need for follow-up to monitor symptoms and adjust the treatment plan as necessary",
+            "transcriptEvidence": "NONE",
+            "why": "While patient education is an important aspect of care, the specific mention of education on hypertension management, smoking risks, and follow-up is not supported by the transcript. The transcript does mention the patient's hypertension and smoking history, but does not explicitly state that the patient needs education on these topics."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is well-written and easy to follow, but lacks some important details and includes some unsupported claims. The assessment and plan sections could be improved with more specific and supported information. The note does a good job of addressing the patient's symptoms and history, but could benefit from more attention to the expected diagnoses and plan items."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7374999999999999,
+      "totalLatencyMs": 23226,
+      "totalTokensUsed": 9478,
+      "errored": false
+    }
+  ]
+}

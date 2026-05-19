@@ -1,0 +1,924 @@
+{
+  "summary": {
+    "runId": "run-1779173655292",
+    "startedAt": "2026-05-19T06:54:15.292Z",
+    "completedAt": "2026-05-19T07:02:16.813Z",
+    "totalCases": 10,
+    "successfulCases": 9,
+    "erroredCases": 1,
+    "meanScores": {
+      "hallucination": 2.2222222222222223,
+      "omission": 2.888888888888889,
+      "faithfulness": 4,
+      "groundedness": 4,
+      "bias": 1,
+      "fluency": 5,
+      "completeness": 3.7777777777777777
+    },
+    "meanCalibrationDelta": 0.3333333333333333,
+    "calibrationCorrelation": 0.030834984869372622,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 17,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 0.7777777777777778,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 0,
+    "uncertaintyAcknowledgedRate": 0.4444444444444444,
+    "meanLatencyMs": 33460.22222222222,
+    "meanTokensPerCase": 9564.666666666666,
+    "totalTokensUsed": 86082
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at its peak, which began approximately two months ago and has increased in frequency over the past two weeks. The pressure occurs with exertion, such as walking uphill or carrying groceries, and radiates down his left arm to his elbow, with symptoms reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. History of other relevant medical conditions, such as heart failure or diabetic nephropathy, is not reported.",
+          "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities, with no peripheral edema noted.",
+          "assessment": "The patient's presentation of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which occurs with exertion and radiates down the left arm to the elbow, is suggestive of angina, a symptom of coronary artery disease. The differential diagnosis includes myocardial infarction, although the lack of associated symptoms such as dyspnea, palpitations, and diaphoresis, as well as the reliable relief of symptoms with rest, makes this less likely. The patient's history of hypertension, for which he is being treated with lisinopril, and his significant family history of myocardial infarction, increase his cardiovascular risk profile. Further evaluation is needed to rule out coronary artery disease and to assess the patient's cardiac risk factors. The patient's current symptoms and presentation are consistent with a possible diagnosis of stable angina, but further testing, such as an electrocardiogram or stress test, would be necessary to confirm this diagnosis.",
+          "plan": "The plan for Patient Arjun Sharma includes:\n* Continuation of lisinopril for hypertension management, with dosage as previously prescribed, \n* Further evaluation to rule out coronary artery disease, \n* Assessment of cardiac risk factors, \n* Consideration for further testing, such as an electrocardiogram or stress test, to confirm the diagnosis of stable angina. \nGiven the patient's symptoms and presentation, it is crucial to monitor his condition closely and adjust the plan as necessary based on the results of further testing and evaluation. \nFurther history needed regarding other potential cardiac risk factors, such as diet, exercise, and stress levels, before finalizing the plan."
+        },
+        "keywords": [
+          "chest pressure",
+          "hypertension",
+          "lisinopril",
+          "left arm",
+          "elbow",
+          "dyspnea",
+          "palpitations",
+          "diaphoresis",
+          "myocardial infarction"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note mentions 'heart failure or diabetic nephropathy' as relevant medical conditions, but there is no mention of these conditions in the original transcript.",
+            "The Assessment section mentions 'myocardial infarction' as a differential diagnosis, but the transcript does not provide enough information to support this claim.",
+            "The Plan section mentions 'diet, exercise, and stress levels' as potential cardiac risk factors, but these were not discussed in the original transcript."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at its peak, which began approximately two months ago and has increased in frequency over the past two weeks. The pressure occurs with exertion, such as walking uphill or carrying groceries, and radiates down his left arm to his elbow, with symptoms reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. History of other relevant medical conditions, such as heart failure or diabetic nephropathy, is not reported.",
+            "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities, with no peripheral edema noted.",
+            "assessment": "The patient's presentation of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which occurs with exertion and radiates down the left arm to the elbow, is suggestive of angina, a symptom of coronary artery disease. The differential diagnosis includes myocardial infarction, although the lack of associated symptoms such as dyspnea, palpitations, and diaphoresis, as well as the reliable relief of symptoms with rest, makes this less likely. The patient's history of hypertension, for which he is being treated with lisinopril, and his significant family history of myocardial infarction, increase his cardiovascular risk profile. Further evaluation is needed to rule out coronary artery disease and to assess the patient's cardiac risk factors. The patient's current symptoms and presentation are consistent with a possible diagnosis of stable angina, but further testing, such as an electrocardiogram or stress test, would be necessary to confirm this diagnosis.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Continuation of lisinopril for hypertension management, with dosage as previously prescribed, \n* Further evaluation to rule out coronary artery disease, \n* Assessment of cardiac risk factors, \n* Consideration for further testing, such as an electrocardiogram or stress test, to confirm the diagnosis of stable angina. \nGiven the patient's symptoms and presentation, it is crucial to monitor his condition closely and adjust the plan as necessary based on the results of further testing and evaluation. \nFurther history needed regarding other potential cardiac risk factors, such as diet, exercise, and stress levels, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 620,
+            "generate": 5561,
+            "critique": 658,
+            "reidentify": 1
+          },
+          "tokensUsed": 7250
+        }
+      },
+      "judgeResult": {
+        "hallucination": 3,
+        "omission": 4,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 3,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Continuation of lisinopril for hypertension management, with dosage as previously prescribed",
+            "transcriptEvidence": "He states he takes lisinopril daily",
+            "why": "The transcript does not mention the dosage, so the SOAP note assumes the dosage is as previously prescribed without evidence."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "The patient's current symptoms and presentation are consistent with a possible diagnosis of stable angina",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not explicitly state that the patient's symptoms are consistent with stable angina, although it does provide information that could suggest this diagnosis."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is well-written and mostly faithful to the transcript, but it omits important information, such as the expected plan items, and does not fully address the red flags. The note also makes some assumptions without evidence, such as the dosage of lisinopril."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.6125,
+      "totalLatencyMs": 23234,
+      "totalTokensUsed": 9397,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0002",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a two-week history of increased urinary frequency, urinating approximately 8-10 times a day, including 2-3 times overnight, which is a significant increase from her usual pattern. She also complains of excessive thirst, described as constant and unquenchable, and generalized fatigue, characterized as a persistent lack of energy impacting her daily activities and concentration. Patient has a known history of Type 2 Diabetes Mellitus, for which she is currently taking metformin, and reports her last HbA1c was \"a few months ago\" and was told it was high. She denies any recent changes to her medication regimen or diet. Patient also has a history of hypertension, as evidenced by her blood pressure reading of 138/86 mmHg. History of other medical conditions, such as hyperglycemia, is not explicitly reported, but her current HbA1c of 11.2% suggests poor glucose control.",
+          "objective": "BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C, BMI 32 kg/m², HbA1c 11.2%.",
+          "assessment": "The patient's presentation of increased urinary frequency, excessive thirst, and generalized fatigue, in the context of a known history of Type 2 Diabetes Mellitus and a recently elevated HbA1c of 11.2%, suggests poor glucose control and suspected hyperglycemia. The differential diagnosis includes diabetic ketoacidosis, although the absence of reported symptoms such as chest pain, shortness of breath, fever, or vision changes makes this less likely. The patient's current symptoms and elevated HbA1c level may indicate inadequate management of her Type 2 Diabetes Mellitus, potentially warranting adjustment of her metformin regimen or consideration of additional therapeutic interventions. Hypertension is also a concern, given the patient's blood pressure reading of 138/86 mmHg. Further evaluation and monitoring are necessary to determine the optimal course of treatment and to rule out other potential complications associated with uncontrolled diabetes.",
+          "plan": "The plan for Patient Verma includes:\n* Adjusting her metformin regimen to better manage her Type 2 Diabetes Mellitus, with consideration of increasing the dosage to improve glucose control, as her current HbA1c of 11.2% indicates poor control, and she is currently taking metformin, which is a first-line oral agent for type 2 diabetes.\n* Monitoring her renal function and B12 levels annually, as these are important considerations when taking metformin.\n* Educating the patient on the importance of proper glucose control, including diet and lifestyle modifications, to help manage her symptoms of increased urinary frequency, excessive thirst, and generalized fatigue.\n* Considering additional therapeutic interventions to manage her hypertension, given her blood pressure reading of 138/86 mmHg.\n* Further evaluation and monitoring to determine the optimal course of treatment and to rule out other potential complications associated with uncontrolled diabetes, such as diabetic ketoacidosis.\n* Patient education on recognizing the signs and symptoms of diabetic ketoacidosis and hyperglycemia, and when to seek immediate medical attention.\n* Follow-up appointments to assess the effectiveness of the adjusted treatment plan and to monitor her HbA1c levels. \nFurther history needed regarding her current diet and lifestyle habits before finalizing the plan."
+        },
+        "keywords": [
+          "urinary frequency",
+          "excessive thirst",
+          "fatigue",
+          "Type 2 Diabetes Mellitus",
+          "metformin",
+          "HbA1c",
+          "hypertension",
+          "hyperglycemia"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 1,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "Patient's history of hypertension is not mentioned in the original transcript, but is included in the SOAP note",
+            "The SOAP note mentions 'history of other medical conditions, such as hyperglycemia', which is not explicitly reported in the transcript",
+            "The plan includes adjusting the metformin regimen, but the original transcript does not mention any recent changes to the medication regimen or any discussion about adjusting it"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I’m seeing Patient <NAME_1> today, a 45-year-old female presenting with a two-week history of increased urinary frequency, excessive thirst, and generalized fatigue. She reports urinating approximately 8-10 times a day, including 2-3 times overnight, which is a significant increase from her usual pattern. She describes her thirst as constant and unquenchable, leading her to consume large volumes of water throughout the day. The fatigue is described as a persistent lack of energy, impacting her daily activities and making it difficult to concentrate. She denies any chest pain, shortness of breath, fever, chills, or vision changes. Patient Verma has a known history of Type 2 Diabetes Mellitus, diagnosed five years ago, for which she states she is currently taking metformin. She reports her last HbA1c was \"a few months ago\" and she \"was told it was high.\" She denies any recent changes to her medication regimen or diet. On examination, vital signs are: BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C. Her BMI is calculated at 32 kg/m². Her most recent HbA1c, drawn today, is 11.2%.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a two-week history of increased urinary frequency, urinating approximately 8-10 times a day, including 2-3 times overnight, which is a significant increase from her usual pattern. She also complains of excessive thirst, described as constant and unquenchable, and generalized fatigue, characterized as a persistent lack of energy impacting her daily activities and concentration. Patient has a known history of Type 2 Diabetes Mellitus, for which she is currently taking metformin, and reports her last HbA1c was \"a few months ago\" and was told it was high. She denies any recent changes to her medication regimen or diet. Patient also has a history of hypertension, as evidenced by her blood pressure reading of 138/86 mmHg. History of other medical conditions, such as hyperglycemia, is not explicitly reported, but her current HbA1c of 11.2% suggests poor glucose control.",
+            "objective": "BP 138/86 mmHg, HR 88 bpm, RR 16 bpm, Temp 37.0°C, BMI 32 kg/m², HbA1c 11.2%.",
+            "assessment": "The patient's presentation of increased urinary frequency, excessive thirst, and generalized fatigue, in the context of a known history of Type 2 Diabetes Mellitus and a recently elevated HbA1c of 11.2%, suggests poor glucose control and suspected hyperglycemia. The differential diagnosis includes diabetic ketoacidosis, although the absence of reported symptoms such as chest pain, shortness of breath, fever, or vision changes makes this less likely. The patient's current symptoms and elevated HbA1c level may indicate inadequate management of her Type 2 Diabetes Mellitus, potentially warranting adjustment of her metformin regimen or consideration of additional therapeutic interventions. Hypertension is also a concern, given the patient's blood pressure reading of 138/86 mmHg. Further evaluation and monitoring are necessary to determine the optimal course of treatment and to rule out other potential complications associated with uncontrolled diabetes.",
+            "plan": "The plan for Patient Verma includes:\n* Adjusting her metformin regimen to better manage her Type 2 Diabetes Mellitus, with consideration of increasing the dosage to improve glucose control, as her current HbA1c of 11.2% indicates poor control, and she is currently taking metformin, which is a first-line oral agent for type 2 diabetes.\n* Monitoring her renal function and B12 levels annually, as these are important considerations when taking metformin.\n* Educating the patient on the importance of proper glucose control, including diet and lifestyle modifications, to help manage her symptoms of increased urinary frequency, excessive thirst, and generalized fatigue.\n* Considering additional therapeutic interventions to manage her hypertension, given her blood pressure reading of 138/86 mmHg.\n* Further evaluation and monitoring to determine the optimal course of treatment and to rule out other potential complications associated with uncontrolled diabetes, such as diabetic ketoacidosis.\n* Patient education on recognizing the signs and symptoms of diabetic ketoacidosis and hyperglycemia, and when to seek immediate medical attention.\n* Follow-up appointments to assess the effectiveness of the adjusted treatment plan and to monitor her HbA1c levels. \nFurther history needed regarding her current diet and lifestyle habits before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 323,
+            "generate": 8586,
+            "critique": 6880,
+            "reidentify": 0
+          },
+          "tokensUsed": 7186
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Patient also has a history of hypertension, as evidenced by her blood pressure reading of 138/86 mmHg.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention a history of hypertension, only the current blood pressure reading."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Hypertension is also a concern, given the patient's blood pressure reading of 138/86 mmHg.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention a history of hypertension, only the current blood pressure reading."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is well-written and mostly faithful to the transcript, but it introduces an unsubstantiated claim of hypertension and fails to fully address the expected plan items and red flags. The note also lacks a clear consideration of basal insulin as a potential addition to the patient's treatment plan."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -1,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 0
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7750000000000001,
+      "totalLatencyMs": 30542,
+      "totalTokensUsed": 9334,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0003",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports sudden onset of weakness on his right side, accompanied by slurred speech, which began approximately 1.5 hours prior to presentation. He denies headache, numbness, or tingling. Patient's wife reports that he was fine at breakfast, around 7 AM, but by 8:30 AM, he was having trouble holding his coffee cup and his words became muddled. Patient nods in agreement to having weakness on his right side and points to his right arm and leg to indicate the affected areas. He also exhibits dysarthric speech, making his words difficult to fully comprehend. Patient's past medical history, including any history of hypertension, is not reported.",
+          "objective": "Vitals: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. Neurological exam reveals right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities. Patient's speech is dysarthric.",
+          "assessment": "The patient's presentation of sudden onset right-sided weakness, slurred speech, facial droop, and decreased strength in the right upper and lower extremities, along with dysarthric speech, suggests a suspected acute ischemic stroke. The patient's elevated blood pressure, with a reading of 180/100 mmHg, is also notable and may be relevant to the underlying etiology. Differential includes other causes of acute neurological deficits, such as hemorrhagic stroke or transient ischemic attack, although the duration of symptoms exceeds the typical timeframe for a transient ischemic attack. Further evaluation, including neuroimaging, is necessary to confirm the diagnosis and determine the underlying cause of the patient's symptoms. The presence of hypertension, as indicated by the patient's elevated blood pressure, may be a contributing factor to the suspected stroke.",
+          "plan": "The plan for Mr. Kumar includes:\n* Further evaluation with neuroimaging to confirm the diagnosis of suspected acute ischemic stroke and determine the underlying cause of his symptoms\n* Management of his elevated blood pressure, with a current reading of 180/100 mmHg, to prevent further vascular damage\n* Monitoring for any changes in his neurological status, given his presentation of right-sided weakness, slurred speech, facial droop, and decreased strength in the right upper and lower extremities, as well as dysarthric speech\n* Consideration of the patient's potential history of hypertension and its possible contribution to his current condition, with further history needed regarding this topic to inform management decisions\n* Further history needed regarding the patient's past medical history, including any history of hypertension, before finalizing the plan."
+        },
+        "keywords": [
+          "weakness",
+          "slurred speech",
+          "facial droop",
+          "right upper extremity drift",
+          "decreased strength",
+          "dysarthria",
+          "hypertension",
+          "right sided weakness"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note mentions 'history of hypertension' as a potential contributing factor, but the transcript does not provide this information. It is inferred from the elevated blood pressure.",
+            "The SOAP note mentions 'other causes of acute neurological deficits, such as hemorrhagic stroke or transient ischemic attack' without direct evidence from the transcript to support these specific differentials."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I entered the room to find Patient <NAME_1>, a 68-year-old male, seated on the examination table, appearing distressed. He was accompanied by his wife.\n\n\"Mr. Kumar, I'm Dr. [Your Name]. Can you tell me what brought you in today?\" I asked, observing his facial symmetry and speech.\n\nHis wife interjected, \"He suddenly became weak on his right side, and his speech got slurred. It happened about an hour and a half ago, maybe a bit more.\"\n\nI turned back to Mr. Kumar. \"Mr. Kumar, can you tell me in your own words what you're experiencing?\"\n\nHe attempted to speak, but his words were noticeably slurred, making them difficult to fully comprehend. He pointed to his right arm and then his right leg, indicating weakness.\n\n\"So, you're feeling weakness on your right side?\" I clarified. He nodded slowly. \"And when did this start?\"\n\nHe struggled to articulate a precise time, looking to his wife for assistance. His wife reiterated, \"He was fine at breakfast, around 7 AM. Then around 8:30 AM, he started having trouble holding his coffee cup and his words became muddled.\"\n\n\"Okay, so roughly 90 minutes ago, potentially a bit longer,\" I noted. \"Any headache? Numbness or tingling?\"\n\nHe shook his head, indicating no headache or numbness. His wife confirmed, \"Just the weakness and the speech.\"\n\nVitals were taken: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. On neurological exam, I noted right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities. Speech was dysarthric.",
+          "rawLlmNote": {
+            "subjective": "Patient reports sudden onset of weakness on his right side, accompanied by slurred speech, which began approximately 1.5 hours prior to presentation. He denies headache, numbness, or tingling. Patient's wife reports that he was fine at breakfast, around 7 AM, but by 8:30 AM, he was having trouble holding his coffee cup and his words became muddled. Patient nods in agreement to having weakness on his right side and points to his right arm and leg to indicate the affected areas. He also exhibits dysarthric speech, making his words difficult to fully comprehend. Patient's past medical history, including any history of hypertension, is not reported.",
+            "objective": "Vitals: BP 180/100 mmHg, HR 78 bpm, RR 16 bpm, SpO2 98% on room air. Neurological exam reveals right facial droop, right upper extremity drift, and decreased strength in the right upper and lower extremities. Patient's speech is dysarthric.",
+            "assessment": "The patient's presentation of sudden onset right-sided weakness, slurred speech, facial droop, and decreased strength in the right upper and lower extremities, along with dysarthric speech, suggests a suspected acute ischemic stroke. The patient's elevated blood pressure, with a reading of 180/100 mmHg, is also notable and may be relevant to the underlying etiology. Differential includes other causes of acute neurological deficits, such as hemorrhagic stroke or transient ischemic attack, although the duration of symptoms exceeds the typical timeframe for a transient ischemic attack. Further evaluation, including neuroimaging, is necessary to confirm the diagnosis and determine the underlying cause of the patient's symptoms. The presence of hypertension, as indicated by the patient's elevated blood pressure, may be a contributing factor to the suspected stroke.",
+            "plan": "The plan for Mr. Kumar includes:\n* Further evaluation with neuroimaging to confirm the diagnosis of suspected acute ischemic stroke and determine the underlying cause of his symptoms\n* Management of his elevated blood pressure, with a current reading of 180/100 mmHg, to prevent further vascular damage\n* Monitoring for any changes in his neurological status, given his presentation of right-sided weakness, slurred speech, facial droop, and decreased strength in the right upper and lower extremities, as well as dysarthric speech\n* Consideration of the patient's potential history of hypertension and its possible contribution to his current condition, with further history needed regarding this topic to inform management decisions\n* Further history needed regarding the patient's past medical history, including any history of hypertension, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 365,
+            "generate": 14186,
+            "critique": 6681,
+            "reidentify": 0
+          },
+          "tokensUsed": 7636
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "The presence of hypertension, as indicated by the patient's elevated blood pressure, may be a contributing factor to the suspected stroke.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention a history of hypertension, only the current elevated blood pressure reading."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Consideration of the patient's potential history of hypertension and its possible contribution to his current condition, with further history needed regarding this topic to inform management decisions",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention a history of hypertension, only the current elevated blood pressure reading."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is well-structured and accurately reflects the patient's symptoms and examination findings. However, it includes some inferences not supported by the transcript, such as the presence of hypertension. The plan does not include expected items like stat CT head, neurology consult, or consideration of the tPA window, and does not adequately address the time-sensitive nature of the suspected stroke."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": 0,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 0
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7750000000000001,
+      "totalLatencyMs": 36429,
+      "totalTokensUsed": 9759,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0004",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a six-month history of cramping or aching pain in the upper right abdomen, typically occurring after consuming fatty foods and lasting for a few hours. The pain is rated as a 6 or 7 out of 10 and is often accompanied by nausea, although vomiting has not occurred. Patient denies changes in bowel habits, such as diarrhea or constipation, and also denies fever, chills, or yellowing of the skin or eyes. Patient has a history of appendectomy at age 12, but no other significant medical history or chronic conditions are reported. Patient experiences tenderness in the right upper quadrant of the abdomen, as noted during palpation. History of hypertension is not reported.",
+          "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Patient exhibits right upper quadrant tenderness, with reported pain upon palpation.",
+          "assessment": "The patient's presentation of cramping or aching pain in the upper right abdomen, particularly after consuming fatty foods, suggests a possible gallbladder pathology, such as cholecystitis or cholelithiasis. The absence of fever, chills, and yellowing of the skin or eyes, as well as stable vitals, makes an acute infectious or inflammatory process less likely. However, the tenderness in the right upper quadrant and the patient's history of appendectomy at age 12 do not rule out other potential causes of abdominal pain, including a possible differential diagnosis of appendicitis, although this seems less likely given the location of the pain in the upper right abdomen rather than the typical lower right abdomen. Differential includes gallbladder disease, and further evaluation, such as imaging studies, may be necessary to determine the underlying cause of the patient's symptoms. The patient's symptoms and presentation do not clearly indicate a specific diagnosis at this time, and additional testing is needed to rule out various possibilities.",
+          "plan": "The plan for Sneha includes:\n* Further evaluation to determine the underlying cause of her symptoms, potentially including imaging studies to assess the gallbladder and rule out other causes of abdominal pain, \n* Consideration of gallbladder disease as a potential diagnosis, given the patient's symptoms of cramping or aching pain in the upper right abdomen after consuming fatty foods, \n* Monitoring of the patient's symptoms and vital signs, \n* Patient education on the possible causes of her symptoms and the importance of follow-up to determine the underlying cause of her abdominal pain. \nFurther history needed regarding the patient's dietary habits and any potential triggers for her symptoms before finalizing the plan."
+        },
+        "keywords": [
+          "abdominal pain",
+          "nausea",
+          "upper right abdomen",
+          "vomiting",
+          "diarrhea",
+          "constipation",
+          "fever",
+          "yellowing of skin",
+          "appendectomy",
+          "hypertension",
+          "tachycardia",
+          "bradypnea",
+          "tachypnea",
+          "right upper quadrant tenderness"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note mentions 'History of hypertension is not reported' which is not directly supported by the transcript.",
+            "The Assessment section mentions 'appendicitis' as a possible differential diagnosis, but the location of the pain in the upper right abdomen makes this less likely, this could be considered a minor hallucination."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Come on in, Sneha. Have a seat. What brings you in today?\"\n\n\"Hi Dr. [Doctor's Last Name]. I've been having this pain, here, in my upper right abdomen, for about six months now.\"\n\n\"Okay, can you describe the pain for me? Is it sharp, dull, aching?\"\n\n\"It's more of a cramping or aching pain. And it usually happens after I eat something fatty, like pizza or fried chicken. It can last for a few hours.\"\n\n\"And on a scale of 1 to 10, with 10 being the worst pain imaginable, how would you rate it?\"\n\n\"Usually around a 6 or 7. It's enough to make me uncomfortable and sometimes I have to lie down.\"\n\n\"Any other symptoms accompanying the pain?\"\n\n\"Yes, I often feel nauseous when it happens. I haven't actually vomited, but I feel like I could.\"\n\n\"Have you noticed any changes in your bowel habits, like diarrhea or constipation?\"\n\n\"Not really. My bowel movements seem pretty normal.\"\n\n\"Any fever, chills, or yellowing of your skin or eyes?\"\n\n\"No, none of that.\"\n\n\"Have you had any similar issues in the past?\"\n\n\"No, this is new for me.\"\n\n\"Any significant medical history I should be aware of? Surgeries, chronic conditions?\"\n\n\"I had my appendix out when I was 12, but otherwise, I'm pretty healthy. No other surgeries, no chronic conditions.\"\n\n\"Alright, let's take a look. I'll just palpate your abdomen. Please let me know if anything is tender.\"\n\n[During palpation] \"Right here, Sneha, take a deep breath in.\"\n\n\"Ouch! Yes, that's exactly where it hurts.\"\n\n\"Okay, thank you. Your vitals are stable: BP 120/78, HR 72, RR 16, Temp 98.6°F. I've noted the tenderness in your right upper quadrant, and your inspiratory arrest with palpation there.\"",
+          "rawLlmNote": {
+            "subjective": "Patient reports a six-month history of cramping or aching pain in the upper right abdomen, typically occurring after consuming fatty foods and lasting for a few hours. The pain is rated as a 6 or 7 out of 10 and is often accompanied by nausea, although vomiting has not occurred. Patient denies changes in bowel habits, such as diarrhea or constipation, and also denies fever, chills, or yellowing of the skin or eyes. Patient has a history of appendectomy at age 12, but no other significant medical history or chronic conditions are reported. Patient experiences tenderness in the right upper quadrant of the abdomen, as noted during palpation. History of hypertension is not reported.",
+            "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Patient exhibits right upper quadrant tenderness, with reported pain upon palpation.",
+            "assessment": "The patient's presentation of cramping or aching pain in the upper right abdomen, particularly after consuming fatty foods, suggests a possible gallbladder pathology, such as cholecystitis or cholelithiasis. The absence of fever, chills, and yellowing of the skin or eyes, as well as stable vitals, makes an acute infectious or inflammatory process less likely. However, the tenderness in the right upper quadrant and the patient's history of appendectomy at age 12 do not rule out other potential causes of abdominal pain, including a possible differential diagnosis of appendicitis, although this seems less likely given the location of the pain in the upper right abdomen rather than the typical lower right abdomen. Differential includes gallbladder disease, and further evaluation, such as imaging studies, may be necessary to determine the underlying cause of the patient's symptoms. The patient's symptoms and presentation do not clearly indicate a specific diagnosis at this time, and additional testing is needed to rule out various possibilities.",
+            "plan": "The plan for Sneha includes:\n* Further evaluation to determine the underlying cause of her symptoms, potentially including imaging studies to assess the gallbladder and rule out other causes of abdominal pain, \n* Consideration of gallbladder disease as a potential diagnosis, given the patient's symptoms of cramping or aching pain in the upper right abdomen after consuming fatty foods, \n* Monitoring of the patient's symptoms and vital signs, \n* Patient education on the possible causes of her symptoms and the importance of follow-up to determine the underlying cause of her abdominal pain. \nFurther history needed regarding the patient's dietary habits and any potential triggers for her symptoms before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 463,
+            "generate": 14392,
+            "critique": 5670,
+            "reidentify": 0
+          },
+          "tokensUsed": 7709
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "History of hypertension is not reported.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention hypertension at all, so this statement is an unnecessary and unfounded claim."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is generally well-written and faithful to the transcript, but it lacks specific plan items and does not adequately address potential red flags. The note also includes an unnecessary and unfounded claim about hypertension."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7374999999999999,
+      "totalLatencyMs": 35627,
+      "totalTokensUsed": 9732,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0005",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a five-day history of worsening cough, productive of yellowish-green phlegm. She also complains of fever, with a reported temperature of 38.9 degrees Celsius the previous day. Patient denies chest pain but describes chest tightness and shortness of breath, particularly with exertion. Additionally, she reports general body aches and fatigue. History of asthma or other lung conditions is denied, with patient stating she has been \"pretty healthy\" prior to this illness. Patient's respiratory symptoms and history are not reported to be related to any pre-existing conditions, as she reports no prior history of similar illnesses.",
+          "objective": "Vital signs include a fever of 38.9 degrees Celsius, respiratory rate of 24 breaths per minute, and oxygen saturation of 92% on room air. Physical exam reveals crackles at the right lung base.",
+          "assessment": "The assessment suggests a respiratory infection, with differential diagnoses including community-acquired pneumonia, given the patient's symptoms of cough, phlegm production, fever, shortness of breath, and chest tightness, as well as the physical exam findings of crackles at the right lung base and decreased oxygen saturation. The patient's presentation, including a productive cough and fever, is also concerning for a bacterial or viral infection. Asthma is less likely given the patient's denial of any prior history of asthma or similar respiratory conditions, but cannot be entirely ruled out without further evaluation. The severity of the patient's condition appears to be moderate, given the presence of fever, increased respiratory rate, and decreased oxygen saturation, but further testing and evaluation are needed to determine the underlying cause and appropriate level of care.",
+          "plan": "The plan for Patient Singh includes:\n* Further evaluation and testing to determine the underlying cause of her respiratory symptoms, given the differential diagnoses of community-acquired pneumonia and possible bacterial or viral infection\n* Monitoring of her oxygen saturation and respiratory rate, as her current oxygen saturation is 92% on room air and her respiratory rate is 24 breaths per minute\n* Consideration of antibiotic therapy if bacterial pneumonia is confirmed, although the specific medication and dosage will depend on further testing and evaluation\n* Patient education on the importance of rest, hydration, and monitoring of her symptoms, as well as the need for follow-up care to assess the effectiveness of treatment and adjust the plan as needed\n* Further history needed regarding the patient's exposure to potential respiratory pathogens and any underlying health conditions that may be contributing to her symptoms, before finalizing the plan."
+        },
+        "keywords": [
+          "cough",
+          "phlegm",
+          "fever",
+          "shortness of breath",
+          "chest tightness",
+          "body aches",
+          "fatigue",
+          "crackles",
+          "lung base",
+          "oxygen saturation",
+          "respiratory rate"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 1,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "Patient's sex is assumed as female in the SOAP note, but not explicitly stated in the transcript",
+            "The phrase 'Patient's respiratory symptoms and history are not reported to be related to any pre-existing conditions' is not directly supported by the transcript",
+            "The severity of the patient's condition is subjectively described as 'moderate' without clear criteria"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Good morning, Patient Singh. My name is Dr. [Your Name]. What brings you in today?\"\n\n\"Hi, Doctor. I've been feeling pretty unwell for the past five days. I have this cough that's been getting worse, and I'm bringing up a lot of phlegm. It's yellowish-green.\"\n\n\"Okay, so a productive cough for five days. Have you had any fever?\"\n\n\"Yes, I've had a fever. I took my temperature yesterday, and it was 38.9 degrees Celsius. I also feel really short of breath, especially when I try to do anything.\"\n\n\"Shortness of breath, you said. Have you noticed any chest pain with your breathing or coughing?\"\n\n\"No, not really pain, more just a tightness and like I can't get enough air in.\"\n\n\"Any other symptoms? Headaches, muscle aches, sore throat?\"\n\n\"I've had some general body aches, and I feel very tired, but no sore throat or significant headache.\"\n\n\"Alright. Let's get some vitals and then I'll do a physical exam. Your respiratory rate is 24 breaths per minute, and your oxygen saturation is 92% on room air. On auscultation, I'm hearing crackles at the right lung base. Your heart sounds are regular, and your abdomen is soft and non-tender. Any history of asthma or other lung conditions?\"\n\n\"No, I've always been pretty healthy, never had anything like this before.\"",
+          "rawLlmNote": {
+            "subjective": "Patient reports a five-day history of worsening cough, productive of yellowish-green phlegm. She also complains of fever, with a reported temperature of 38.9 degrees Celsius the previous day. Patient denies chest pain but describes chest tightness and shortness of breath, particularly with exertion. Additionally, she reports general body aches and fatigue. History of asthma or other lung conditions is denied, with patient stating she has been \"pretty healthy\" prior to this illness. Patient's respiratory symptoms and history are not reported to be related to any pre-existing conditions, as she reports no prior history of similar illnesses.",
+            "objective": "Vital signs include a fever of 38.9 degrees Celsius, respiratory rate of 24 breaths per minute, and oxygen saturation of 92% on room air. Physical exam reveals crackles at the right lung base.",
+            "assessment": "The assessment suggests a respiratory infection, with differential diagnoses including community-acquired pneumonia, given the patient's symptoms of cough, phlegm production, fever, shortness of breath, and chest tightness, as well as the physical exam findings of crackles at the right lung base and decreased oxygen saturation. The patient's presentation, including a productive cough and fever, is also concerning for a bacterial or viral infection. Asthma is less likely given the patient's denial of any prior history of asthma or similar respiratory conditions, but cannot be entirely ruled out without further evaluation. The severity of the patient's condition appears to be moderate, given the presence of fever, increased respiratory rate, and decreased oxygen saturation, but further testing and evaluation are needed to determine the underlying cause and appropriate level of care.",
+            "plan": "The plan for Patient Singh includes:\n* Further evaluation and testing to determine the underlying cause of her respiratory symptoms, given the differential diagnoses of community-acquired pneumonia and possible bacterial or viral infection\n* Monitoring of her oxygen saturation and respiratory rate, as her current oxygen saturation is 92% on room air and her respiratory rate is 24 breaths per minute\n* Consideration of antibiotic therapy if bacterial pneumonia is confirmed, although the specific medication and dosage will depend on further testing and evaluation\n* Patient education on the importance of rest, hydration, and monitoring of her symptoms, as well as the need for follow-up care to assess the effectiveness of treatment and adjust the plan as needed\n* Further history needed regarding the patient's exposure to potential respiratory pathogens and any underlying health conditions that may be contributing to her symptoms, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 357,
+            "generate": 8919,
+            "critique": 5669,
+            "reidentify": 0
+          },
+          "tokensUsed": 6410
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "The severity of the patient's condition appears to be moderate",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not provide information about the severity of the patient's condition, and the SOAP note makes an inference without evidence."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Further history needed regarding the patient's exposure to potential respiratory pathogens and any underlying health conditions",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention the need for further history, and the SOAP note introduces this idea without evidence."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is generally well-written and faithful to the transcript, but it omits some important information, such as the expected plan items, and introduces some inferences without evidence. The note also fails to address red flags, such as hypoxemia and sepsis screen, and does not acknowledge uncertainty in the diagnosis or plan."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -2,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 0
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7374999999999999,
+      "totalLatencyMs": 29848,
+      "totalTokensUsed": 8411,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0006",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a 4-month history of social withdrawal and declining academic performance, as corroborated by his family. He also reports hearing voices, described as male and critical, telling him he is not good enough and that he should give up, occurring daily, particularly when alone. Patient denies any intent to harm himself or others, stating the voices are \"just critical, not commanding.\" He describes difficulty concentrating in classes and has stopped attending social gatherings with friends. Patient denies substance use and history of psychiatric illness is not reported for himself, although a paternal uncle has a history of unspecified psychiatric illness. Patient's history of hypotension and bradycardia is not reported, however, his current vitals show a blood pressure of 120/78 and a heart rate of 72.",
+          "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Patient appeared disheveled with poor eye contact, exhibited psychomotor slowing, and had restricted affect. Speech was coherent but sparse. No overt signs of distress were observed.",
+          "assessment": "The patient's presentation of social withdrawal, declining academic performance, and hallucinations, specifically hearing critical voices, suggests a differential diagnosis that includes psychotic disorders, such as schizophrenia, as well as depressive disorders with psychotic features. The patient's psychomotor slowing, restricted affect, and disheveled appearance are also concerning for a depressive disorder, potentially major depressive disorder with psychotic features. However, the absence of reported manic or hypomanic episodes and the presence of hallucinations suggest that a schizophrenia spectrum disorder may also be a consideration. Further evaluation is needed to determine the underlying cause of the patient's symptoms and to rule out other potential diagnoses, such as substance-induced psychotic disorder or a psychotic disorder due to another medical condition. The patient's vital signs, including blood pressure and heart rate, are within normal limits, but the presence of hypotension and bradycardia should be monitored given the potential for certain antipsychotic medications to exacerbate these conditions.",
+          "plan": "The plan for Patient Patel includes:\n* Further evaluation to determine the underlying cause of his symptoms, including a comprehensive psychiatric interview and potential diagnostic tests to rule out other potential diagnoses, such as substance-induced psychotic disorder or a psychotic disorder due to another medical condition.\n* Consideration of antipsychotic medication, such as quetiapine, to address the patient's hallucinations and potential depressive symptoms, with careful monitoring of vital signs, including blood pressure and heart rate, due to the potential for certain antipsychotic medications to exacerbate hypotension and bradycardia.\n* Monitoring for extrapyramidal symptoms, QT prolongation, and neuroleptic malignant syndrome if antipsychotic medication is initiated.\n* Patient education on the potential benefits and risks of antipsychotic medication, as well as the importance of adherence to the treatment plan.\n* Follow-up appointment to assess the patient's response to treatment and adjust the plan as necessary.\n* Further history needed regarding the patient's family history of psychiatric illness, including the paternal uncle's unspecified psychiatric illness, to better understand the patient's risk factors and inform the treatment plan."
+        },
+        "keywords": [
+          "social withdrawal",
+          "hallucinations",
+          "psychomotor slowing",
+          "hypotension",
+          "bradycardia",
+          "psychiatric illness"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": [
+            "Patient's history of hypotension and bradycardia is mentioned in the SOAP note, but not supported by the transcript",
+            "Mention of monitoring for hypotension and bradycardia in the plan is not directly supported by the transcript"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "Today I met with Patient <NAME_1>, a 22-year-old male presenting with a 4-month history of declining academic performance and social withdrawal, as reported by his family. Patient Patel himself reports hearing voices, specifically stating, \"I hear voices telling me I'm not good enough, that I should just give up.\" He denies any intent to harm himself or others, stating the voices are \"just critical, not commanding.\" He describes the voices as male, distinct from his own thoughts, and occurring daily, particularly when he is alone. He reports difficulty concentrating in classes and has stopped attending social gatherings with friends. His family noted a gradual onset, making the exact timeline of symptoms difficult to pinpoint.\n\nVitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. He appeared disheveled, with poor eye contact throughout the interview, and exhibited psychomotor slowing. Speech was coherent but sparse. Affect was restricted. No overt signs of distress were observed. He denied substance use and had no significant past medical history. Family history is notable for a paternal uncle with a history of unspecified psychiatric illness.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a 4-month history of social withdrawal and declining academic performance, as corroborated by his family. He also reports hearing voices, described as male and critical, telling him he is not good enough and that he should give up, occurring daily, particularly when alone. Patient denies any intent to harm himself or others, stating the voices are \"just critical, not commanding.\" He describes difficulty concentrating in classes and has stopped attending social gatherings with friends. Patient denies substance use and history of psychiatric illness is not reported for himself, although a paternal uncle has a history of unspecified psychiatric illness. Patient's history of hypotension and bradycardia is not reported, however, his current vitals show a blood pressure of 120/78 and a heart rate of 72.",
+            "objective": "Vitals: BP 120/78, HR 72, RR 16, Temp 98.6°F. Patient appeared disheveled with poor eye contact, exhibited psychomotor slowing, and had restricted affect. Speech was coherent but sparse. No overt signs of distress were observed.",
+            "assessment": "The patient's presentation of social withdrawal, declining academic performance, and hallucinations, specifically hearing critical voices, suggests a differential diagnosis that includes psychotic disorders, such as schizophrenia, as well as depressive disorders with psychotic features. The patient's psychomotor slowing, restricted affect, and disheveled appearance are also concerning for a depressive disorder, potentially major depressive disorder with psychotic features. However, the absence of reported manic or hypomanic episodes and the presence of hallucinations suggest that a schizophrenia spectrum disorder may also be a consideration. Further evaluation is needed to determine the underlying cause of the patient's symptoms and to rule out other potential diagnoses, such as substance-induced psychotic disorder or a psychotic disorder due to another medical condition. The patient's vital signs, including blood pressure and heart rate, are within normal limits, but the presence of hypotension and bradycardia should be monitored given the potential for certain antipsychotic medications to exacerbate these conditions.",
+            "plan": "The plan for Patient Patel includes:\n* Further evaluation to determine the underlying cause of his symptoms, including a comprehensive psychiatric interview and potential diagnostic tests to rule out other potential diagnoses, such as substance-induced psychotic disorder or a psychotic disorder due to another medical condition.\n* Consideration of antipsychotic medication, such as quetiapine, to address the patient's hallucinations and potential depressive symptoms, with careful monitoring of vital signs, including blood pressure and heart rate, due to the potential for certain antipsychotic medications to exacerbate hypotension and bradycardia.\n* Monitoring for extrapyramidal symptoms, QT prolongation, and neuroleptic malignant syndrome if antipsychotic medication is initiated.\n* Patient education on the potential benefits and risks of antipsychotic medication, as well as the importance of adherence to the treatment plan.\n* Follow-up appointment to assess the patient's response to treatment and adjust the plan as necessary.\n* Further history needed regarding the patient's family history of psychiatric illness, including the paternal uncle's unspecified psychiatric illness, to better understand the patient's risk factors and inform the treatment plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 331,
+            "generate": 13149,
+            "critique": 7624,
+            "reidentify": 0
+          },
+          "tokensUsed": 7592
+        }
+      },
+      "judgeResult": {
+        "hallucination": 3,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Patient's history of hypotension and bradycardia is not reported",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention the patient's history of hypotension and bradycardia, but the SOAP note introduces this information as if it were relevant to the patient's current condition."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "the presence of hypotension and bradycardia should be monitored given the potential for certain antipsychotic medications to exacerbate these conditions",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention the patient having a history of hypotension and bradycardia, making this concern unsubstantiated."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is generally well-written and faithful to the transcript, but it introduces unsubstantiated concerns about the patient's medical history and does not fully address the expected plan items or red flags. The note does acknowledge uncertainty regarding the patient's diagnosis and treatment plan."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7125,
+      "totalLatencyMs": 36000,
+      "totalTokensUsed": 9699,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0007",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a sore throat for the past three days, with a pain severity of 7 out of 10, worsening with swallowing. He has also been experiencing fever, with the highest recorded temperature being 39 degrees Celsius, which is partially managed with acetaminophen. Patient denies other symptoms such as cough, runny nose, or body aches, but reports feeling tired. History of recent exposure to others who are sick is not reported. Patient's tonsils are erythematous and edematous with white exudates bilaterally, and he has tender anterior cervical lymphadenopathy. A rapid strep test was performed and returned positive.",
+          "objective": "Vital signs include a fever with a highest recorded temperature of 39 degrees Celsius. Physical exam reveals erythematous and edematous tonsils with white exudates bilaterally, and tender anterior cervical lymphadenopathy. The patient's rapid strep test result is positive.",
+          "assessment": "The assessment includes a confirmed diagnosis of streptococcal pharyngitis, given the positive rapid strep test result, which is consistent with the patient's symptoms of sore throat, fever, and physical exam findings of erythematous and edematous tonsils with white exudates and tender anterior cervical lymphadenopathy. The patient's symptoms and exam findings are also consistent with a viral pharyngitis, but the positive strep test suggests a bacterial etiology. Differential diagnosis for the patient's symptoms could have included other causes of pharyngitis, but the positive strep test has helped to narrow the diagnosis. The severity of the patient's condition appears to be moderate, given the patient's reported pain severity and fever, which has been partially managed with acetaminophen.",
+          "plan": "The plan for Karthik includes the following:\n* Continuation of acetaminophen as needed for pain and fever management, with a dosage of 500-1000mg PO every 4-6 hours, not to exceed 4g/day, to help alleviate the patient's sore throat and fever symptoms.\n* Antibiotic treatment with amoxicillin, with a dosage of 500mg PO TID or 875mg BID for 7-10 days, to address the confirmed diagnosis of streptococcal pharyngitis.\n* Monitoring for potential side effects of amoxicillin, such as rash, diarrhea, or anaphylaxis, and for signs of hepatotoxicity in case of acetaminophen overdose.\n* Patient education on the importance of completing the full course of antibiotic treatment, even if symptoms improve before finishing the medication, to ensure complete eradication of the bacterial infection.\n* Follow-up is recommended to assess the patient's response to treatment and to evaluate for any potential complications, although a specific follow-up time was not discussed."
+        },
+        "keywords": [
+          "sore throat",
+          "fever",
+          "acetaminophen",
+          "tonsils",
+          "cervical lymphadenopathy",
+          "erythema",
+          "edema",
+          "strep"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Good morning, Karthik. My name is Dr. Lee. What brings you in today?\"\n\n\"Hi, Dr. Lee. Karthik has had a really sore throat for the past three days. He's also been running a fever.\"\n\n\"Okay, Karthik, can you point to where it hurts?\"\n\n*Karthik points to his throat.*\n\n\"And how severe would you say the pain is on a scale of 1 to 10, with 10 being the worst?\"\n\n\"It's about a 7, doctor. It really hurts when I swallow.\"\n\n\"I see. And regarding the fever, Mrs. Reddy, what has been the highest temperature you've recorded?\"\n\n\"It was 39 degrees Celsius last night. We've been giving him acetaminophen, which brings it down a bit, but it goes back up.\"\n\n\"Any other symptoms, like a cough, runny nose, or body aches?\"\n\n\"No, just the sore throat and fever. He's been a bit tired, but otherwise, no other complaints.\"\n\n\"Has Karthik been around anyone else who's been sick recently?\"\n\n\"Not that we know of, no.\"\n\n\"Alright, Karthik, let's take a look. Can you open wide and say 'Ahhh' for me?\"\n\n*Upon examination, I observed erythematous and edematous tonsils with white exudates bilaterally. Palpation revealed tender anterior cervical lymphadenopathy.*\n\n\"Okay, Karthik, we're just going to do a quick swab of your throat to check for strep. It might feel a little ticklish.\"\n\n*The rapid strep test was performed and returned positive.*\n\n\"Alright, Karthik, you can sit up now. We've got the results from the swab.\"",
+          "rawLlmNote": {
+            "subjective": "Patient reports a sore throat for the past three days, with a pain severity of 7 out of 10, worsening with swallowing. He has also been experiencing fever, with the highest recorded temperature being 39 degrees Celsius, which is partially managed with acetaminophen. Patient denies other symptoms such as cough, runny nose, or body aches, but reports feeling tired. History of recent exposure to others who are sick is not reported. Patient's tonsils are erythematous and edematous with white exudates bilaterally, and he has tender anterior cervical lymphadenopathy. A rapid strep test was performed and returned positive.",
+            "objective": "Vital signs include a fever with a highest recorded temperature of 39 degrees Celsius. Physical exam reveals erythematous and edematous tonsils with white exudates bilaterally, and tender anterior cervical lymphadenopathy. The patient's rapid strep test result is positive.",
+            "assessment": "The assessment includes a confirmed diagnosis of streptococcal pharyngitis, given the positive rapid strep test result, which is consistent with the patient's symptoms of sore throat, fever, and physical exam findings of erythematous and edematous tonsils with white exudates and tender anterior cervical lymphadenopathy. The patient's symptoms and exam findings are also consistent with a viral pharyngitis, but the positive strep test suggests a bacterial etiology. Differential diagnosis for the patient's symptoms could have included other causes of pharyngitis, but the positive strep test has helped to narrow the diagnosis. The severity of the patient's condition appears to be moderate, given the patient's reported pain severity and fever, which has been partially managed with acetaminophen.",
+            "plan": "The plan for Karthik includes the following:\n* Continuation of acetaminophen as needed for pain and fever management, with a dosage of 500-1000mg PO every 4-6 hours, not to exceed 4g/day, to help alleviate the patient's sore throat and fever symptoms.\n* Antibiotic treatment with amoxicillin, with a dosage of 500mg PO TID or 875mg BID for 7-10 days, to address the confirmed diagnosis of streptococcal pharyngitis.\n* Monitoring for potential side effects of amoxicillin, such as rash, diarrhea, or anaphylaxis, and for signs of hepatotoxicity in case of acetaminophen overdose.\n* Patient education on the importance of completing the full course of antibiotic treatment, even if symptoms improve before finishing the medication, to ensure complete eradication of the bacterial infection.\n* Follow-up is recommended to assess the patient's response to treatment and to evaluate for any potential complications, although a specific follow-up time was not discussed."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 649,
+            "generate": 9855,
+            "critique": 6456,
+            "reidentify": 0
+          },
+          "tokensUsed": 7036
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Monitoring for potential side effects of amoxicillin, such as rash, diarrhea, or anaphylaxis, and for signs of hepatotoxicity in case of acetaminophen overdose.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention monitoring for side effects of amoxicillin or hepatotoxicity due to acetaminophen overdose."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "with a dosage of 500-1000mg PO every 4-6 hours, not to exceed 4g/day",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not specify the exact dosage of acetaminophen."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is generally well-written and faithful to the transcript, but it includes some details not supported by the transcript, such as monitoring for side effects of amoxicillin and dosage details for acetaminophen. Additionally, the plan does not include all expected items, such as school exclusion, and does not address the red flag of rheumatic fever prevention."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7374999999999999,
+      "totalLatencyMs": 31998,
+      "totalTokensUsed": 9207,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0008",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient Nair reports a significant reduction in urine output over the last two days, with both frequency and volume decreased. The patient also complains of new-onset bilateral leg swelling, particularly around the ankles, and shortness of breath that worsens with exertion. The patient denies chest pain, palpitations, or dizziness associated with the dyspnea. Patient Nair has been taking ibuprofen three times a day for the past week for knee pain and has a history of well-controlled hypertension, for which the patient takes lisinopril. The patient denies known allergies and any history of heart or kidney issues, but notes feeling heavier, as if retaining fluid. History of diabetic nephropathy or other relevant medical conditions is not reported.",
+          "objective": "BP 150/90, HR 92, RR 20, SpO2 94% on room air. Bilateral pitting edema to the mid-shin noted on physical exam. Lungs are clear to auscultation bilaterally. Cardiac exam reveals a regular rate and rhythm, no murmurs. Patient reports oliguria, with urine output decreased to approximately once or twice a day, with only a tiny amount each time.",
+          "assessment": "The assessment suggests that Patient Nair is experiencing symptoms consistent with volume overload, as evidenced by bilateral pitting edema, shortness of breath, and reported weight gain. The patient's decreased urine output, or oliguria, may indicate acute kidney injury (AKI), although the diagnosis cannot be confirmed without further laboratory results, such as serum creatinine levels. The differential includes AKI, potentially exacerbated by the patient's recent use of ibuprofen, which can impair renal function, and the patient's history of hypertension, for which they are being treated with lisinopril. The patient's symptoms and physical examination findings also raise the possibility of heart failure, although the lungs are clear to auscultation, which may argue against pulmonary edema. Further evaluation, including laboratory tests and possibly imaging, is needed to determine the underlying cause of the patient's symptoms and to guide management.",
+          "plan": "The plan for Patient Nair includes:\n* Discontinuation of ibuprofen to avoid further potential renal impairment\n* Continuation of lisinopril for management of hypertension, with close monitoring of blood pressure, potassium levels, and renal function\n* Further laboratory tests, including serum creatinine levels, to evaluate for acute kidney injury and assess renal function\n* Monitoring of urine output and fluid status\n* Consideration of diuretic therapy, such as furosemide, if volume overload persists, to help manage edema and dyspnea\n* Patient education on the importance of monitoring urine output, weighing themselves daily, and reporting any changes in symptoms or condition\n* Further history needed regarding the patient's past medical history, including any previous episodes of kidney disease or heart failure, before finalizing the plan."
+        },
+        "keywords": [
+          "oliguria",
+          "edema",
+          "shortness of breath",
+          "hypertension",
+          "ibuprofen",
+          "lisinopril",
+          "pitting edema",
+          "dyspnea",
+          "hypoxia"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 1,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "Mention of diabetic nephropathy in the subjective section is not supported by the transcript",
+            "The assessment mentions heart failure as a possibility, but the transcript does not provide direct evidence for this"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Good morning, Patient Nair. I understand you've been experiencing some issues recently. Can you tell me in your own words what brings you in today?\"\n\n\"Doctor, I haven't been peeing much for the last two days. It's really concerning. And my legs, they're so swollen, especially around my ankles. I've also been feeling quite breathless, even just walking across the room.\"\n\n\"Thank you for sharing that, Patient Nair. To clarify, when you say 'not much,' are we talking about a significant reduction in frequency or volume, or both?\"\n\n\"Both, definitely both. I usually go several times a day, but it's been maybe once or twice, and only a tiny bit each time.\"\n\n\"Understood. And regarding the leg swelling, is it new onset, or have you experienced anything like this before?\"\n\n\"It's new. I've never had my legs swell up like this before. It started around the same time as the decreased urine.\"\n\n\"Have you noticed any changes in your weight recently?\"\n\n\"I haven't weighed myself, but I feel heavier, like I'm retaining fluid.\"\n\n\"Okay. Any chest pain, palpitations, or dizziness with the shortness of breath?\"\n\n\"No, just the breathlessness itself. It's worse when I try to do anything strenuous.\"\n\n\"I see. Are you currently taking any medications, over-the-counter or prescribed?\"\n\n\"Yes, I've been taking ibuprofen pretty regularly for some knee pain for the past week or so. Maybe three times a day.\"\n\n\"Thank you for that important detail. Any known allergies? Any history of heart problems, kidney disease, or diabetes?\"\n\n\"No known allergies. No history of heart or kidney issues. I do have well-controlled hypertension, for which I take lisinopril.\"\n\n\"Alright. Let's get some vitals. Blood pressure is 150/90, heart rate 92, respiratory rate 20, oxygen saturation 94% on room air. On examination, I note bilateral pitting edema to the mid-shin. Lungs are clear to auscultation bilaterally, no crackles or wheezes. Cardiac exam reveals a regular rate and rhythm, no murmurs. Abdomen is soft, non-tender, non-distended.\"",
+          "rawLlmNote": {
+            "subjective": "Patient Nair reports a significant reduction in urine output over the last two days, with both frequency and volume decreased. The patient also complains of new-onset bilateral leg swelling, particularly around the ankles, and shortness of breath that worsens with exertion. The patient denies chest pain, palpitations, or dizziness associated with the dyspnea. Patient Nair has been taking ibuprofen three times a day for the past week for knee pain and has a history of well-controlled hypertension, for which the patient takes lisinopril. The patient denies known allergies and any history of heart or kidney issues, but notes feeling heavier, as if retaining fluid. History of diabetic nephropathy or other relevant medical conditions is not reported.",
+            "objective": "BP 150/90, HR 92, RR 20, SpO2 94% on room air. Bilateral pitting edema to the mid-shin noted on physical exam. Lungs are clear to auscultation bilaterally. Cardiac exam reveals a regular rate and rhythm, no murmurs. Patient reports oliguria, with urine output decreased to approximately once or twice a day, with only a tiny amount each time.",
+            "assessment": "The assessment suggests that Patient Nair is experiencing symptoms consistent with volume overload, as evidenced by bilateral pitting edema, shortness of breath, and reported weight gain. The patient's decreased urine output, or oliguria, may indicate acute kidney injury (AKI), although the diagnosis cannot be confirmed without further laboratory results, such as serum creatinine levels. The differential includes AKI, potentially exacerbated by the patient's recent use of ibuprofen, which can impair renal function, and the patient's history of hypertension, for which they are being treated with lisinopril. The patient's symptoms and physical examination findings also raise the possibility of heart failure, although the lungs are clear to auscultation, which may argue against pulmonary edema. Further evaluation, including laboratory tests and possibly imaging, is needed to determine the underlying cause of the patient's symptoms and to guide management.",
+            "plan": "The plan for Patient Nair includes:\n* Discontinuation of ibuprofen to avoid further potential renal impairment\n* Continuation of lisinopril for management of hypertension, with close monitoring of blood pressure, potassium levels, and renal function\n* Further laboratory tests, including serum creatinine levels, to evaluate for acute kidney injury and assess renal function\n* Monitoring of urine output and fluid status\n* Consideration of diuretic therapy, such as furosemide, if volume overload persists, to help manage edema and dyspnea\n* Patient education on the importance of monitoring urine output, weighing themselves daily, and reporting any changes in symptoms or condition\n* Further history needed regarding the patient's past medical history, including any previous episodes of kidney disease or heart failure, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 507,
+            "generate": 20655,
+            "critique": 7571,
+            "reidentify": 0
+          },
+          "tokensUsed": 9086
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "The patient's symptoms and physical examination findings also raise the possibility of heart failure",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention any symptoms or history that would suggest heart failure, such as previous episodes of heart failure or significant cardiac history."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Consideration of diuretic therapy, such as furosemide, if volume overload persists",
+            "transcriptEvidence": "NONE",
+            "why": "While the patient does have volume overload, the transcript does not provide evidence to support the consideration of diuretic therapy specifically."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is well-written and mostly faithful to the transcript, but it includes some hallucinated information, such as the possibility of heart failure, and misses some expected plan items, such as IV fluids and nephrology consult. The note also fails to address some red flags, such as hyperkalemia and volume status."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -2,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 0
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7374999999999999,
+      "totalLatencyMs": 43977,
+      "totalTokensUsed": 11350,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0009",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of palpitations for approximately two hours, describing the sensation as a fluttering in her chest that started suddenly. She denies any associated chest pain, shortness of breath, dizziness, syncope, or diaphoresis. The patient has a history of hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin. She denies any history of prior arrhythmias, but presents with an irregular rhythm and tachycardia, with a heart rate of 130 bpm. The patient's history of thyroid disease or structural heart disease is not reported as present, but she explicitly denies these conditions. Social history and review of systems are otherwise as noted, with no recent changes in medications or new supplements reported.",
+          "objective": "BP 138/82 mmHg, HR 130 bpm with irregular rhythm, SpO2 98% on room air, temperature 98.6°F (37.0°C). Cardiovascular exam reveals an irregularly irregular rhythm with a rapid rate, no murmurs, rubs, or gallops appreciated.",
+          "assessment": "The patient's presentation of palpitations, described as a fluttering sensation in her chest, along with an irregularly irregular rhythm and a rapid heart rate of 130 bpm, suggests a possible arrhythmia. Differential includes atrial fibrillation, given the irregular rhythm and rapid rate, although this cannot be confirmed without further evaluation. The patient's history of hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin, are also relevant considerations. The presence of tachycardia and irregular rhythm, in the absence of other symptoms such as chest pain or shortness of breath, warrants further investigation to determine the underlying cause of her palpitations.",
+          "plan": "The plan for Patient Rohan Das includes:\n* Continuing her current medications, including lisinopril for hypertension and atorvastatin for hyperlipidemia, with no changes to dosage or frequency at this time\n* Further evaluation to determine the underlying cause of her palpitations, given the possible diagnosis of an arrhythmia, such as atrial fibrillation\n* Monitoring of her vital signs, including blood pressure and heart rate, to assess for any changes or improvements\n* Patient education on the importance of follow-up and potential next steps in management, depending on the results of further evaluation\n* Consideration for further testing or referral to a specialist, although specific details were not discussed at this time, and further history and evaluation are needed to determine the best course of action. \n\nFurther history needed regarding the patient's symptoms, such as duration and triggers of palpitations, and any prior evaluations or testing for arrhythmias, before finalizing the plan."
+        },
+        "keywords": [
+          "palpitations",
+          "hypertension",
+          "lisinopril",
+          "hyperlipidemia",
+          "atorvastatin",
+          "arrhythmias",
+          "tachycardia",
+          "irregular rhythm",
+          "chest"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note mentions 'the patient explicitly denies these conditions' regarding thyroid disease or structural heart disease, but the original transcript only states 'she denies any history of prior arrhythmias, thyroid disease, or structural heart disease' without emphasizing explicit denial.",
+            "The plan mentions 'further history needed regarding the patient's symptoms, such as duration and triggers of palpitations', but the original transcript already provides the duration of palpitations as 'approximately two hours'."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 60-year-old female presenting with a chief complaint of palpitations for approximately two hours. She describes the palpitations as a fluttering sensation in her chest, which started suddenly this morning. She denies any associated chest pain, shortness of breath, dizziness, syncope, or diaphoresis. She reports no recent illness, fever, or cough.\n\nRegarding her past medical history, she states she has hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin. She denies any history of prior arrhythmias, thyroid disease, or structural heart disease. She reports no recent changes in her medications or new supplements. Social history includes no smoking, occasional alcohol use, and no illicit drug use.\n\nOn examination, her general appearance is comfortable, not in acute distress. Her vital signs are as follows: Blood Pressure 138/82 mmHg, Heart Rate 130 bpm, irregular rhythm; Respiratory Rate 16 breaths per minute, Oxygen Saturation 98% on room air, and temperature 98.6°F (37.0°C). Cardiovascular exam reveals an irregularly irregular rhythm with a rapid rate, no murmurs, rubs, or gallops appreciated. Peripheral pulses are palpable and symmetrical. Lungs are clear to auscultation bilaterally. Abdominal exam is soft, non-tender, with no organomegaly. Neurological exam is grossly intact. Skin is warm and dry with no edema.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of palpitations for approximately two hours, describing the sensation as a fluttering in her chest that started suddenly. She denies any associated chest pain, shortness of breath, dizziness, syncope, or diaphoresis. The patient has a history of hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin. She denies any history of prior arrhythmias, but presents with an irregular rhythm and tachycardia, with a heart rate of 130 bpm. The patient's history of thyroid disease or structural heart disease is not reported as present, but she explicitly denies these conditions. Social history and review of systems are otherwise as noted, with no recent changes in medications or new supplements reported.",
+            "objective": "BP 138/82 mmHg, HR 130 bpm with irregular rhythm, SpO2 98% on room air, temperature 98.6°F (37.0°C). Cardiovascular exam reveals an irregularly irregular rhythm with a rapid rate, no murmurs, rubs, or gallops appreciated.",
+            "assessment": "The patient's presentation of palpitations, described as a fluttering sensation in her chest, along with an irregularly irregular rhythm and a rapid heart rate of 130 bpm, suggests a possible arrhythmia. Differential includes atrial fibrillation, given the irregular rhythm and rapid rate, although this cannot be confirmed without further evaluation. The patient's history of hypertension, for which she takes lisinopril, and hyperlipidemia, for which she takes atorvastatin, are also relevant considerations. The presence of tachycardia and irregular rhythm, in the absence of other symptoms such as chest pain or shortness of breath, warrants further investigation to determine the underlying cause of her palpitations.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Continuing her current medications, including lisinopril for hypertension and atorvastatin for hyperlipidemia, with no changes to dosage or frequency at this time\n* Further evaluation to determine the underlying cause of her palpitations, given the possible diagnosis of an arrhythmia, such as atrial fibrillation\n* Monitoring of her vital signs, including blood pressure and heart rate, to assess for any changes or improvements\n* Patient education on the importance of follow-up and potential next steps in management, depending on the results of further evaluation\n* Consideration for further testing or referral to a specialist, although specific details were not discussed at this time, and further history and evaluation are needed to determine the best course of action. \n\nFurther history needed regarding the patient's symptoms, such as duration and triggers of palpitations, and any prior evaluations or testing for arrhythmias, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 227,
+            "generate": 10897,
+            "critique": 7116,
+            "reidentify": 0
+          },
+          "tokensUsed": 6999
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 4,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 3,
+        "judgeConfidence": 0.9,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "The presence of tachycardia and irregular rhythm, in the absence of other symptoms such as chest pain or shortness of breath, warrants further investigation to determine the underlying cause of her palpitations.",
+            "transcriptEvidence": "She denies any associated chest pain, shortness of breath, dizziness, syncope, or diaphoresis.",
+            "why": "The transcript does mention the absence of other symptoms, but the SOAP note's phrase 'warrants further investigation' is an inference not directly supported by the transcript."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "Further history needed regarding the patient's symptoms, such as duration and triggers of palpitations, and any prior evaluations or testing for arrhythmias, before finalizing the plan.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not mention the need for further history regarding the patient's symptoms, although it does provide some information about the patient's symptoms."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is well-written and mostly faithful to the transcript, but it lacks important details from the expected diagnoses and plan items, such as rate control, anticoagulation assessment, and CHA2DS2-VASc. The note also fails to address red flags like stroke risk and hemodynamic stability. Overall, the note demonstrates good fluency but requires more comprehensive coverage of the patient's condition and necessary care steps."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.675,
+      "totalLatencyMs": 33487,
+      "totalTokensUsed": 9193,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0010",
+      "pipelineResult": null,
+      "judgeResult": null,
+      "calibrationDelta": null,
+      "selfReportedConfidence": 0,
+      "judgeAggregateScore": 0,
+      "totalLatencyMs": 0,
+      "totalTokensUsed": 0,
+      "errored": true,
+      "errorMessage": "429 {\"error\":{\"message\":\"Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kqd9dxcwfppas5zxna58s2t8` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98714, Requested 2202. Please try again in 13m11.424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}"
+    }
+  ]
+}
