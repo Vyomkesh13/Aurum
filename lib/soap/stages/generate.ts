@@ -14,7 +14,12 @@ import {
 import { retrieve, formatChunksForPrompt } from '@/lib/rag/retrieve'
 import type { SoapNote } from '../types'
 
-const MODEL = 'gemini-2.5-flash'
+function getModel(): string {
+  const provider = process.env.LLM_PROVIDER ?? 'gemini'
+  if (provider === 'mimo') return 'mimo-v2.5-pro'
+  if (provider === 'groq') return 'llama-3.3-70b-versatile'
+  return 'gemini-2.5-flash' // default
+}
 
 export async function generateSoap(params: {
   deidentifiedTranscript: string
@@ -51,7 +56,7 @@ export async function generateSoap(params: {
       },
     ],
     {
-      model: MODEL,
+      model: getModel(),
       systemPrompt: SUBJECTIVE_PROMPT,
       temperature: 0.3,
       maxTokens: 2000,
@@ -72,7 +77,7 @@ export async function generateSoap(params: {
       },
     ],
     {
-      model: MODEL,
+      model: getModel(),
       systemPrompt: OBJECTIVE_PROMPT,
       temperature: 0.3,
       maxTokens: 1500,
@@ -94,7 +99,7 @@ export async function generateSoap(params: {
       },
     ],
     {
-      model: MODEL,
+      model: getModel(),
       systemPrompt: ASSESSMENT_PROMPT,
       temperature: 0.3,
       maxTokens: 2000,
@@ -117,7 +122,7 @@ export async function generateSoap(params: {
       },
     ],
     {
-      model: MODEL,
+      model: getModel(),
       systemPrompt: PLAN_PROMPT,
       temperature: 0.3,
       maxTokens: 2000,

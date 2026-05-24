@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "runId": "run-1779546275698",
+    "startedAt": "2026-05-23T14:24:35.698Z",
+    "completedAt": "2026-05-23T14:27:07.716Z",
+    "totalCases": 1,
+    "successfulCases": 1,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 2,
+      "omission": 4,
+      "faithfulness": 3,
+      "groundedness": 3,
+      "bias": 1,
+      "fluency": 4,
+      "completeness": 2
+    },
+    "meanCalibrationDelta": 1,
+    "calibrationCorrelation": 0,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 0,
+      "misattributed_fact": 1,
+      "confidence_without_evidence": 1,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 1,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 0,
+    "uncertaintyAcknowledgedRate": 1,
+    "meanLatencyMs": 139013,
+    "meanTokensPerCase": 15663,
+    "totalTokensUsed": 15663
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient is a 52-year-old male presenting with a two-month history of substernal chest pressure described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at peak. He reports the discomfort is consistently provoked by exertion, such as walking uphill or carrying groceries, and radiates down his left arm to his elbow. Symptoms are reliably relieved within five minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness, and has no prior history of similar symptoms. His past medical history is significant for hypertension diagnosed ten years ago, for which he takes lisinopril daily, and he is a current smoker with a 30 pack-year history. Family history is notable for paternal myocardial infarction at age 60.",
+          "objective": "Vital signs: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac exam reveals regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all extremities with no peripheral edema.",
+          "assessment": "**Assessment**\n\nThis 52-year-old male presents with a clinical picture highly consistent with suspected stable angina pectoris, given his exertional substernal pressure with left arm radiation that is reliably relieved by rest. His significant risk factors—including a 30 pack-year smoking history, poorly controlled hypertension, and a paternal history of early myocardial infarction—further increase the pretest probability for underlying coronary artery disease. The differential diagnosis for his chest discomfort includes other cardiac and non-cardiac etiologies, though his symptom profile is classic for myocardial ischemia. Additionally, his hypertension is currently uncontrolled based on today's elevated blood pressure reading.",
+          "plan": "**Plan**\n\n- No specific plan items were explicitly discussed in the transcript. Further evaluation and management plan needed for suspected stable angina pectoris and uncontrolled hypertension."
+        },
+        "keywords": [],
+        "critique": {
+          "hallucination": 1,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.9,
+          "flags": [
+            "Omission of social history: denies illicit drug use or significant alcohol consumption",
+            "Assessment assumes 'poorly controlled hypertension' based on single BP reading, not explicitly stated in transcript"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Patient is a 52-year-old male presenting with a two-month history of substernal chest pressure described as a \"tightness\" or \"squeezing\" sensation, rated 6/10 at peak. He reports the discomfort is consistently provoked by exertion, such as walking uphill or carrying groceries, and radiates down his left arm to his elbow. Symptoms are reliably relieved within five minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness, and has no prior history of similar symptoms. His past medical history is significant for hypertension diagnosed ten years ago, for which he takes lisinopril daily, and he is a current smoker with a 30 pack-year history. Family history is notable for paternal myocardial infarction at age 60.",
+            "objective": "Vital signs: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac exam reveals regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all extremities with no peripheral edema.",
+            "assessment": "**Assessment**\n\nThis 52-year-old male presents with a clinical picture highly consistent with suspected stable angina pectoris, given his exertional substernal pressure with left arm radiation that is reliably relieved by rest. His significant risk factors—including a 30 pack-year smoking history, poorly controlled hypertension, and a paternal history of early myocardial infarction—further increase the pretest probability for underlying coronary artery disease. The differential diagnosis for his chest discomfort includes other cardiac and non-cardiac etiologies, though his symptom profile is classic for myocardial ischemia. Additionally, his hypertension is currently uncontrolled based on today's elevated blood pressure reading.",
+            "plan": "**Plan**\n\n- No specific plan items were explicitly discussed in the transcript. Further evaluation and management plan needed for suspected stable angina pectoris and uncontrolled hypertension."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 6925,
+            "generate": 52766,
+            "critique": 30164,
+            "reidentify": 0
+          },
+          "tokensUsed": 11648
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 4,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 2,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "confidence_without_evidence",
+            "section": "assessment",
+            "excerpt": "poorly controlled hypertension",
+            "transcriptEvidence": "He states he takes lisinopril daily. BP 148/92 mmHg.",
+            "why": "The transcript presents a single elevated BP reading and states the patient takes lisinopril. Characterizing the hypertension as 'poorly controlled' is a reasonable clinical inference but goes beyond what the transcript explicitly states — we have no information about prior BP readings, medication adherence, or whether the dose has been optimized."
+          },
+          {
+            "type": "misattributed_fact",
+            "section": "assessment",
+            "excerpt": "paternal history of early myocardial infarction",
+            "transcriptEvidence": "Family history is significant for a paternal history of myocardial infarction at age 60.",
+            "why": "The transcript states MI at age 60. In standard cardiovascular risk assessment, 'early' or 'premature' MI in first-degree male relatives is typically defined as age <55 (per ACC/AHA guidelines). Labeling age 60 as 'early' is a mischaracterization that inflates the risk factor significance."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The Subjective and Objective sections are accurate and well-constructed, and the Assessment correctly identifies stable angina and coronary artery disease with appropriate use of 'suspected' language. However, the Plan section is critically deficient — it is essentially empty, offering no workup (ECG, troponin), no treatment (aspirin), and no referral (cardiology), all of which are standard of care for suspected stable angina with multiple risk factors. The red flag of ruling out ACS is not explicitly addressed in either the Assessment or Plan, which represents a significant clinical safety gap."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 2,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.5375000000000001,
+      "totalLatencyMs": 139013,
+      "totalTokensUsed": 15663,
+      "errored": false
+    }
+  ]
+}

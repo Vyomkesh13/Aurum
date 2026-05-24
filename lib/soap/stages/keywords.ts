@@ -1,6 +1,13 @@
 import { getLLM } from "@/lib/llm"
 import { KEYWORD_EXTRACTION_PROMPT } from "../prompts"
 
+function getModel(): string {
+  const provider = process.env.LLM_PROVIDER ?? 'gemini'
+  if (provider === 'mimo') return 'mimo-v2.5-pro'
+  if (provider === 'groq') return 'llama-3.3-70b-versatile'
+  return 'gemini-2.5-flash'
+}
+
 export async function extractKeywords(
     deidentifiedTranscript: string
 ): Promise<{ keywords: string[]; tokensUsed: number; latencyMs: number }> {
@@ -9,7 +16,7 @@ export async function extractKeywords(
     const response = await llm.generate(
         [{ role: "user", content: deidentifiedTranscript }],
         {
-            model: "gemini-2.5-flash",
+            model: getModel(),
             systemPrompt: KEYWORD_EXTRACTION_PROMPT,
             temperature: 0.1,
             maxTokens: 200,

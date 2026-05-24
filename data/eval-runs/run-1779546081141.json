@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "runId": "run-1779546081141",
+    "startedAt": "2026-05-23T14:21:21.140Z",
+    "completedAt": "2026-05-23T14:22:04.746Z",
+    "totalCases": 1,
+    "successfulCases": 1,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 5,
+      "omission": 5,
+      "faithfulness": 1,
+      "groundedness": 1,
+      "bias": 3,
+      "fluency": 3,
+      "completeness": 1
+    },
+    "meanCalibrationDelta": 0,
+    "calibrationCorrelation": 0,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 0,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 0,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 0,
+    "uncertaintyAcknowledgedRate": 0,
+    "meanLatencyMs": 30597,
+    "meanTokensPerCase": 7115,
+    "totalTokensUsed": 7115
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Hmm, the user wants me to write the subjective section of a SOAP note based on the provided transcript and medical references. The focus keywords are about stable angina, so I need to ground the note in that context without adding extra information.",
+          "objective": "Hmm, this is a straightforward request for the Objective section of a SOAP note. The user has provided a clear transcript with observable findings, so I should extract only those without adding or inferring anything.",
+          "assessment": "Hmm, the user wants the Assessment section of a SOAP note based on the provided transcript, Objective, and Subjective sections. The key here is to synthesize only from the given data and use ICD-10-style language without confirming unconfirmed diagnoses.",
+          "plan": "Hmm, the user needs the Plan section of a SOAP note based on the provided transcript, Subjective, Objective, and Assessment sections. The key is to only include items explicitly mentioned in the transcript without adding anything extra."
+        },
+        "keywords": [],
+        "critique": {
+          "hallucination": 5,
+          "omission": 5,
+          "faithfulness": 1,
+          "groundedness": 1,
+          "bias": 3,
+          "fluency": 3,
+          "completeness": 1,
+          "confidence": 0,
+          "flags": [
+            "Critique parse failed — review required"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Hmm, the user wants me to write the subjective section of a SOAP note based on the provided transcript and medical references. The focus keywords are about stable angina, so I need to ground the note in that context without adding extra information.",
+            "objective": "Hmm, this is a straightforward request for the Objective section of a SOAP note. The user has provided a clear transcript with observable findings, so I should extract only those without adding or inferring anything.",
+            "assessment": "Hmm, the user wants the Assessment section of a SOAP note based on the provided transcript, Objective, and Subjective sections. The key here is to synthesize only from the given data and use ICD-10-style language without confirming unconfirmed diagnoses.",
+            "plan": "Hmm, the user needs the Plan section of a SOAP note based on the provided transcript, Subjective, Objective, and Assessment sections. The key is to only include items explicitly mentioned in the transcript without adding anything extra."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 4457,
+            "generate": 7362,
+            "critique": 2713,
+            "reidentify": 1
+          },
+          "tokensUsed": 5596
+        }
+      },
+      "judgeResult": {
+        "hallucination": 5,
+        "omission": 5,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 3,
+        "fluency": 3,
+        "completeness": 1,
+        "judgeConfidence": 0,
+        "hallucinationsFound": [],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "Judge parse failed — manual review required."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": 0,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 0
+      },
+      "selfReportedConfidence": 0,
+      "judgeAggregateScore": 0.050000000000000044,
+      "totalLatencyMs": 30597,
+      "totalTokensUsed": 7115,
+      "errored": false
+    }
+  ]
+}

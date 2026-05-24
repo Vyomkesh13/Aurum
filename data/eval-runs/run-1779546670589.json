@@ -1,0 +1,1095 @@
+{
+  "summary": {
+    "runId": "run-1779546670589",
+    "startedAt": "2026-05-23T14:31:10.589Z",
+    "completedAt": "2026-05-23T14:42:38.492Z",
+    "totalCases": 11,
+    "successfulCases": 11,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 2,
+      "omission": 3.090909090909091,
+      "faithfulness": 3.3636363636363638,
+      "groundedness": 3.4545454545454546,
+      "bias": 1.2727272727272727,
+      "fluency": 3.909090909090909,
+      "completeness": 2.8181818181818183
+    },
+    "meanCalibrationDelta": 1.2727272727272727,
+    "calibrationCorrelation": 0.35327390170327394,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 8,
+      "misattributed_fact": 8,
+      "confidence_without_evidence": 1,
+      "false_reasoning": 3
+    },
+    "expectedDiagnosesMetRate": 0.8181818181818182,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 0.18181818181818182,
+    "uncertaintyAcknowledgedRate": 0.9090909090909091,
+    "meanLatencyMs": 49532,
+    "meanTokensPerCase": 11005.454545454546,
+    "totalTokensUsed": 121060
+  },
+  "results": [
+    {
+      "caseId": "medqa-0010",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of persistent fatigue, describing it as a pervasive lack of energy that has impacted her daily activities for the past six months. She also notes an unintentional weight gain of approximately 8 kilograms over the same period. Additionally, she reports increased cold intolerance and chronic constipation with bowel movements occurring every 3-4 days. Patient denies any acute illness, fever, or recent travel. Her medical history is notable for a distant relative with a \"thyroid problem,\" but details are not reported. She denies any known chronic conditions, and her social history is non-contributory. Patient's symptoms also include dry skin, and she has not reported any other significant symptoms beyond those mentioned.",
+          "objective": "BP 110/70 mmHg, HR 62 bpm, RR 14 breaths/min, Temp 36.5°C, BMI 28.5 kg/m². Skin is dry, and deep tendon reflexes are 2+ bilaterally with a delayed relaxation phase noted in the Achilles reflexes.",
+          "assessment": "The patient's presentation of persistent fatigue, unintentional weight gain, cold intolerance, constipation, and dry skin, in conjunction with physical examination findings of dry skin, bradycardia, and delayed relaxation phase of deep tendon reflexes, suggests a differential diagnosis that includes hypothyroidism. The patient's family history of a distant relative with a \"thyroid problem\" further supports this consideration. However, a definitive diagnosis of hypothyroidism cannot be made without laboratory confirmation of thyroid hormone levels. The patient's symptoms and signs could also be attributed to other conditions, and further evaluation is necessary to determine the underlying cause of her presentation. Pending laboratory results and further clinical evaluation, hypothyroidism remains a suspected diagnosis.",
+          "plan": "The plan for Patient Divya Menon includes:\n* Ordering laboratory tests to confirm thyroid hormone levels, specifically to evaluate for hypothyroidism, as suggested by her symptoms and physical examination findings.\n* Considering initiation of levothyroxine therapy if laboratory results confirm hypothyroidism, with dosing to be determined based on her individual needs and according to standard treatment guidelines.\n* Providing patient education on the potential diagnosis of hypothyroidism, its treatment, and the importance of follow-up to monitor her response to therapy and adjust her treatment plan as necessary.\n* Further history needed regarding the patient's family history of \"thyroid problem\" to better understand potential genetic predispositions.\n* Monitoring of the patient's vital signs, including blood pressure and heart rate, as well as her symptoms, to assess for any changes or improvements.\n* Follow-up appointment to be scheduled after laboratory results are obtained to discuss the diagnosis, treatment plan, and any additional testing or referrals that may be necessary."
+        },
+        "keywords": [
+          "fatigue",
+          "weight gain",
+          "cold intolerance",
+          "constipation",
+          "hypothyroidism",
+          "dry skin",
+          "delayed relaxation phase",
+          "bradycardia",
+          "hypotension",
+          "BMI"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 38-year-old female presenting with a chief complaint of persistent fatigue. She reports feeling unusually tired for the past six months, describing it as a pervasive lack of energy that impacts her daily activities. Concurrently, she notes an unintentional weight gain of approximately 8 kilograms over the same period, despite no significant changes in her dietary habits or activity level.\n\nPatient Menon also reports increased cold intolerance, stating she feels cold even in environments where others are comfortable, and often needs to wear extra layers. She has also experienced a change in bowel habits, reporting chronic constipation with bowel movements occurring every 3-4 days, which is a significant departure from her usual daily pattern. She denies any acute illness, fever, or recent travel.\n\nRegarding her medical history, she denies any known chronic conditions. Surgical history is negative. She is not currently taking any regular medications or supplements. Family history is somewhat vague; she recalls a distant relative on her maternal side having a \"thyroid problem\" but cannot provide further details. Social history is non-contributory.\n\nOn physical examination today, her vitals are: BP 110/70 mmHg, HR 62 bpm, RR 14 breaths/min, Temp 36.5°C (oral). Her BMI is calculated at 28.5 kg/m². Skin appears dry. No obvious goiter or thyroid tenderness on palpation. Deep tendon reflexes are 2+ bilaterally in upper and lower extremities with a delayed relaxation phase noted in the Achilles reflexes. Cardiovascular and respiratory exams are unremarkable. Abdomen is soft, non-tender, with normal bowel sounds.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of persistent fatigue, describing it as a pervasive lack of energy that has impacted her daily activities for the past six months. She also notes an unintentional weight gain of approximately 8 kilograms over the same period. Additionally, she reports increased cold intolerance and chronic constipation with bowel movements occurring every 3-4 days. Patient denies any acute illness, fever, or recent travel. Her medical history is notable for a distant relative with a \"thyroid problem,\" but details are not reported. She denies any known chronic conditions, and her social history is non-contributory. Patient's symptoms also include dry skin, and she has not reported any other significant symptoms beyond those mentioned.",
+            "objective": "BP 110/70 mmHg, HR 62 bpm, RR 14 breaths/min, Temp 36.5°C, BMI 28.5 kg/m². Skin is dry, and deep tendon reflexes are 2+ bilaterally with a delayed relaxation phase noted in the Achilles reflexes.",
+            "assessment": "The patient's presentation of persistent fatigue, unintentional weight gain, cold intolerance, constipation, and dry skin, in conjunction with physical examination findings of dry skin, bradycardia, and delayed relaxation phase of deep tendon reflexes, suggests a differential diagnosis that includes hypothyroidism. The patient's family history of a distant relative with a \"thyroid problem\" further supports this consideration. However, a definitive diagnosis of hypothyroidism cannot be made without laboratory confirmation of thyroid hormone levels. The patient's symptoms and signs could also be attributed to other conditions, and further evaluation is necessary to determine the underlying cause of her presentation. Pending laboratory results and further clinical evaluation, hypothyroidism remains a suspected diagnosis.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Ordering laboratory tests to confirm thyroid hormone levels, specifically to evaluate for hypothyroidism, as suggested by her symptoms and physical examination findings.\n* Considering initiation of levothyroxine therapy if laboratory results confirm hypothyroidism, with dosing to be determined based on her individual needs and according to standard treatment guidelines.\n* Providing patient education on the potential diagnosis of hypothyroidism, its treatment, and the importance of follow-up to monitor her response to therapy and adjust her treatment plan as necessary.\n* Further history needed regarding the patient's family history of \"thyroid problem\" to better understand potential genetic predispositions.\n* Monitoring of the patient's vital signs, including blood pressure and heart rate, as well as her symptoms, to assess for any changes or improvements.\n* Follow-up appointment to be scheduled after laboratory results are obtained to discuss the diagnosis, treatment plan, and any additional testing or referrals that may be necessary."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 419,
+            "generate": 2691,
+            "critique": 373,
+            "reidentify": 0
+          },
+          "tokensUsed": 7039
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "Patient's symptoms also include dry skin",
+            "transcriptEvidence": "Skin appears dry. (listed under physical examination, not as a patient-reported symptom)",
+            "why": "Dry skin was documented as an objective physical examination finding, not as a symptom reported by the patient. The SOAP note incorrectly places it in the Subjective section as a patient-reported symptom, misattributing an objective finding."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "physical examination findings of dry skin, bradycardia, and delayed relaxation phase",
+            "transcriptEvidence": "HR 62 bpm",
+            "why": "The note characterizes HR 62 bpm as 'bradycardia.' Standard clinical definition of bradycardia is HR <60 bpm. A heart rate of 62 is within normal limits. This is a factual error that inflates the clinical picture to better fit the hypothyroidism narrative."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The note correctly identifies hypothyroidism as the leading differential and appropriately acknowledges diagnostic uncertainty, but it omits Hashimoto's thyroiditis as a specific diagnostic consideration (the most common cause of hypothyroidism in this demographic) and fails to mention myxedema as a red flag to monitor. The plan is vague — it references 'laboratory tests' without specifying TSH, free T4, or TPO antibodies, which are the expected workup items. Two hallucinations were found: dry skin misattributed to the subjective history (it was an exam finding), and HR 62 incorrectly labeled as bradycardia."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 2,
+        "groundedness": 2,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.6000000000000001,
+      "totalLatencyMs": 45172,
+      "totalTokensUsed": 10747,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0011",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of dark stools for approximately one week, describing the stools as black and tarry, occurring with most bowel movements. He also reports associated fatigue, which has been progressively worsening over the past few weeks. Patient denies any overt hematemesis, melena, or bright red blood per rectum, but does report the presence of dark, melenic stool on rectal examination. He has a history of chronic NSAID use, specifically ibuprofen, for management of osteoarthritis, which he takes almost daily. Patient denies any history of peptic ulcer disease or inflammatory bowel disease. He reports mild epigastric tenderness to palpation on abdominal examination.",
+          "objective": "BP 110/70 mmHg, HR 98 bpm, RR 16 bpm, Temp 98.6°F. Abdominal examination reveals mild epigastric tenderness to palpation. Rectal examination reveals dark, melenic stool. Capillary refill is sluggish at 3 seconds.",
+          "assessment": "The patient's presentation of dark, melenic stools and associated fatigue, in conjunction with a history of chronic NSAID use, specifically ibuprofen, for osteoarthritis management, raises suspicion for a gastrointestinal bleed, potentially related to peptic ulcer disease. The presence of mild epigastric tenderness on abdominal examination further supports this concern. Differential includes gastrointestinal bleeding, peptic ulcer disease, and inflammatory bowel disease, although the patient denies a history of the latter two conditions. The patient's symptoms and examination findings are consistent with melena, which is a sign of upper gastrointestinal bleeding, and given the patient's long-term NSAID use, peptic ulcer disease is a significant consideration that needs to be ruled out.",
+          "plan": "The plan for Mr. Rao includes:\n* Discontinuation of ibuprofen to prevent further potential gastrointestinal irritation and bleeding, given the suspected gastrointestinal bleed and potential peptic ulcer disease.\n* Further evaluation is needed to determine the cause of the gastrointestinal bleeding, and the patient will be scheduled for additional tests, although the specific tests were not discussed.\n* Monitoring of the patient's vital signs and abdominal examination to assess for any changes in condition.\n* Patient education on the risks of long-term NSAID use, particularly in relation to gastrointestinal bleeding and peptic ulcer disease.\n* Consideration of alternative pain management options for the patient's osteoarthritis, although specific alternatives were not discussed.\n* Given the incomplete information regarding the patient's gastrointestinal bleeding, further history and evaluation are needed to finalize the plan and determine the best course of action."
+        },
+        "keywords": [
+          "dark stools",
+          "fatigue",
+          "NSAIDs",
+          "ibuprofen",
+          "osteoarthritis",
+          "melena",
+          "peptic ulcer disease",
+          "inflammatory bowel disease",
+          "epigastric tenderness",
+          "melenic stool"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 4,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note states 'Patient denies any overt hematemesis, melena, or bright red blood per rectum, but does report the presence of dark, melenic stool on rectal examination.' This is inconsistent with the transcript, which states the patient denies overt hematemesis, melena, or bright red blood per rectum, and the presence of dark, melenic stool is from the rectal examination in the objective section, not from the patient's report.",
+            "The assessment mentions 'The patient's symptoms and examination findings are consistent with melena, which is a sign of upper gastrointestinal bleeding', but the transcript does not explicitly state that the patient's symptoms are consistent with melena, it only reports the presence of dark, melenic stool.",
+            "The plan mentions 'Further evaluation is needed to determine the cause of the gastrointestinal bleeding, and the patient will be scheduled for additional tests, although the specific tests were not discussed.' This is not directly supported by the transcript."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 50-year-old male presenting with a chief complaint of dark stools for approximately one week. He describes the stools as black and tarry, occurring with most bowel movements. He also reports associated fatigue, which he states has been progressively worsening over the past few weeks, impacting his daily activities. He denies any overt hematemesis, melena, or bright red blood per rectum. He reports no recent changes in diet or travel.\n\nRegarding his past medical history, Mr. Rao reports chronic use of over-the-counter NSAIDs for management of osteoarthritis, specifically ibuprofen, which he takes almost daily for joint pain. He estimates he has been taking it for several years. He denies any history of peptic ulcer disease, inflammatory bowel disease, or liver disease. Surgical history is unremarkable. He is a non-smoker and reports occasional alcohol consumption.\n\nOn physical examination, Mr. Rao appears pale and somewhat lethargic. His vital signs are: BP 110/70 mmHg, HR 98 bpm, RR 16 bpm, Temp 98.6°F (oral). Abdominal examination reveals mild epigastric tenderness to palpation, but no guarding or rebound. Bowel sounds are normoactive. Rectal examination reveals dark, melenic stool. Capillary refill is sluggish at 3 seconds.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of dark stools for approximately one week, describing the stools as black and tarry, occurring with most bowel movements. He also reports associated fatigue, which has been progressively worsening over the past few weeks. Patient denies any overt hematemesis, melena, or bright red blood per rectum, but does report the presence of dark, melenic stool on rectal examination. He has a history of chronic NSAID use, specifically ibuprofen, for management of osteoarthritis, which he takes almost daily. Patient denies any history of peptic ulcer disease or inflammatory bowel disease. He reports mild epigastric tenderness to palpation on abdominal examination.",
+            "objective": "BP 110/70 mmHg, HR 98 bpm, RR 16 bpm, Temp 98.6°F. Abdominal examination reveals mild epigastric tenderness to palpation. Rectal examination reveals dark, melenic stool. Capillary refill is sluggish at 3 seconds.",
+            "assessment": "The patient's presentation of dark, melenic stools and associated fatigue, in conjunction with a history of chronic NSAID use, specifically ibuprofen, for osteoarthritis management, raises suspicion for a gastrointestinal bleed, potentially related to peptic ulcer disease. The presence of mild epigastric tenderness on abdominal examination further supports this concern. Differential includes gastrointestinal bleeding, peptic ulcer disease, and inflammatory bowel disease, although the patient denies a history of the latter two conditions. The patient's symptoms and examination findings are consistent with melena, which is a sign of upper gastrointestinal bleeding, and given the patient's long-term NSAID use, peptic ulcer disease is a significant consideration that needs to be ruled out.",
+            "plan": "The plan for Mr. Rao includes:\n* Discontinuation of ibuprofen to prevent further potential gastrointestinal irritation and bleeding, given the suspected gastrointestinal bleed and potential peptic ulcer disease.\n* Further evaluation is needed to determine the cause of the gastrointestinal bleeding, and the patient will be scheduled for additional tests, although the specific tests were not discussed.\n* Monitoring of the patient's vital signs and abdominal examination to assess for any changes in condition.\n* Patient education on the risks of long-term NSAID use, particularly in relation to gastrointestinal bleeding and peptic ulcer disease.\n* Consideration of alternative pain management options for the patient's osteoarthritis, although specific alternatives were not discussed.\n* Given the incomplete information regarding the patient's gastrointestinal bleeding, further history and evaluation are needed to finalize the plan and determine the best course of action."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 346,
+            "generate": 2555,
+            "critique": 1021,
+            "reidentify": 0
+          },
+          "tokensUsed": 7033
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 4,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 1,
+        "fluency": 3,
+        "completeness": 2,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "but does report the presence of dark, melenic stool on rectal examination",
+            "transcriptEvidence": "Rectal examination reveals dark, melenic stool. — This is an objective physical exam finding, not a patient-reported symptom.",
+            "why": "Rectal exam findings are objective clinical findings performed by the clinician, not something the patient 'reports.' Placing this in the Subjective section misattributes an objective finding to the patient's own account."
+          },
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "He reports mild epigastric tenderness to palpation on abdominal examination.",
+            "transcriptEvidence": "Abdominal examination reveals mild epigastric tenderness to palpation — this is a clinician's physical exam finding, not a patient report.",
+            "why": "Epigastric tenderness on palpation is an objective physical examination finding discovered by the clinician, not something the patient self-reports. This is a misattribution of an objective finding into the subjective section."
+          }
+        ],
+        "expectedDiagnosesMet": false,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The note correctly identifies the clinical picture of NSAID-related upper GI bleed but has critical omissions: iron deficiency anemia is entirely absent despite classic signs (fatigue, pallor, tachycardia, sluggish capillary refill), and the plan fails to recommend EGD, PPI therapy, iron supplementation, or any specific diagnostic workup — rendering it clinically non-actionable. The plan repeatedly hedges with 'tests were not discussed' rather than recommending standard-of-care interventions, which is a patient safety concern. Additionally, objective exam findings (rectal exam, epigastric tenderness) are misattributed to the Subjective section, and hemodynamic red flags (tachycardia, borderline hypotension, sluggish capillary refill) and malignancy screening in a 50-year-old with GI bleeding are not addressed."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.525,
+      "totalLatencyMs": 46025,
+      "totalTokensUsed": 10637,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0012",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a severe headache that began approximately six hours ago, describing it as unilateral, localized to the right temporal region, and throbbing in nature, with a pain rating of 8/10 at its peak. She also reports significant photophobia and nausea, but denies emesis. The patient experiences similar headaches approximately once a month, often coinciding with her menstrual cycle, and notes a prodrome characterized by a visual scotoma preceding the onset of the headache by about 20-30 minutes. She denies any motor weakness, sensory changes, or speech difficulties during these episodes. She has tried over-the-counter ibuprofen with minimal relief. Her past medical history is unremarkable, and she denies any recent head trauma or fever.",
+          "objective": "BP 120/78, HR 72, RR 16, Temp 98.6°F. Neurological exam is grossly intact.",
+          "assessment": "The patient's presentation of a severe, unilateral, throbbing headache localized to the right temporal region, accompanied by photophobia, nausea, and a prodrome of visual scotoma, suggests a differential diagnosis that includes migraine with aura. The recurrent nature of these episodes, often coinciding with her menstrual cycle, further supports this consideration. However, a definitive diagnosis of migraine with aura cannot be confirmed without further evaluation, and other potential causes of headache must be ruled out. The patient's lack of response to ibuprofen may indicate a need for alternative therapeutic approaches. The differential diagnosis also includes other causes of headache, such as tension or cluster headaches, although the patient's specific symptoms and history make migraine a more likely consideration at this time.",
+          "plan": "The plan for Patient Kavya Joshi includes:\n* Considering alternative therapeutic approaches for migraine with aura, given the patient's minimal relief from over-the-counter ibuprofen, \n* Further evaluation to confirm the diagnosis of migraine with aura and rule out other potential causes of headache, \n* Patient education on migraine with aura, its management, and the importance of follow-up to monitor the effectiveness of the treatment plan and adjust as necessary. \nFurther history needed regarding the patient's response to previous treatments and any potential triggers for her headaches before finalizing the plan."
+        },
+        "keywords": [
+          "headache",
+          "photophobia",
+          "nausea",
+          "visual scotoma",
+          "ibuprofen",
+          "temporal region",
+          "menstrual cycle",
+          "BP 120/78",
+          "HR 72",
+          "RR 16",
+          "Temp 98.6°F"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 40-year-old female presenting with a chief complaint of a severe headache. She reports the headache began approximately six hours ago, describing it as unilateral, localized to the right temporal region, and throbbing in nature. She rates the pain as an 8/10 at its peak. Associated symptoms include significant photophobia, prompting her to seek a dark room, and nausea, though she denies emesis.\n\nPatient Joshi states these episodes are not new; she experiences similar headaches approximately once a month, often coinciding with her menstrual cycle, though she notes this current episode is not directly linked to her period. She consistently reports a prodrome characterized by a visual scotoma, which she describes as a \"blind spot\" in her vision, preceding the onset of the headache by about 20-30 minutes. She denies any motor weakness, sensory changes, or speech difficulties during these episodes. She has tried over-the-counter ibuprofen with minimal relief.\n\nHer past medical history is unremarkable. She denies any recent head trauma or fever. Vitals today are stable: BP 120/78, HR 72, RR 16, Temp 98.6°F. Neurological exam is grossly intact at this time.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a severe headache that began approximately six hours ago, describing it as unilateral, localized to the right temporal region, and throbbing in nature, with a pain rating of 8/10 at its peak. She also reports significant photophobia and nausea, but denies emesis. The patient experiences similar headaches approximately once a month, often coinciding with her menstrual cycle, and notes a prodrome characterized by a visual scotoma preceding the onset of the headache by about 20-30 minutes. She denies any motor weakness, sensory changes, or speech difficulties during these episodes. She has tried over-the-counter ibuprofen with minimal relief. Her past medical history is unremarkable, and she denies any recent head trauma or fever.",
+            "objective": "BP 120/78, HR 72, RR 16, Temp 98.6°F. Neurological exam is grossly intact.",
+            "assessment": "The patient's presentation of a severe, unilateral, throbbing headache localized to the right temporal region, accompanied by photophobia, nausea, and a prodrome of visual scotoma, suggests a differential diagnosis that includes migraine with aura. The recurrent nature of these episodes, often coinciding with her menstrual cycle, further supports this consideration. However, a definitive diagnosis of migraine with aura cannot be confirmed without further evaluation, and other potential causes of headache must be ruled out. The patient's lack of response to ibuprofen may indicate a need for alternative therapeutic approaches. The differential diagnosis also includes other causes of headache, such as tension or cluster headaches, although the patient's specific symptoms and history make migraine a more likely consideration at this time.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Considering alternative therapeutic approaches for migraine with aura, given the patient's minimal relief from over-the-counter ibuprofen, \n* Further evaluation to confirm the diagnosis of migraine with aura and rule out other potential causes of headache, \n* Patient education on migraine with aura, its management, and the importance of follow-up to monitor the effectiveness of the treatment plan and adjust as necessary. \nFurther history needed regarding the patient's response to previous treatments and any potential triggers for her headaches before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 306,
+            "generate": 2119,
+            "critique": 292,
+            "reidentify": 0
+          },
+          "tokensUsed": 7106
+        }
+      },
+      "judgeResult": {
+        "hallucination": 1,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is faithful to the transcript and correctly identifies migraine with aura with appropriate uncertainty language. However, the plan is critically vague — it fails to specify triptan therapy, trigger avoidance, prophylaxis consideration, or a headache diary, all of which are standard-of-care plan items. Most importantly, the note does not explicitly flag or address the need to rule out subarachnoid hemorrhage in the context of a severe acute headache, which is a significant clinical safety omission."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7625,
+      "totalLatencyMs": 35765,
+      "totalTokensUsed": 9992,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0013",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of chronic cough, hemoptysis, and unintentional weight loss. He describes a persistent, productive cough of clear to yellowish sputum for several months, with a single episode of hemoptysis approximately one week ago, characterized as \"streaks of blood\" mixed with sputum. He also reports a significant weight loss of approximately 6 kilograms over the past three months, attributed to decreased appetite. Patient denies fever, chills, night sweats, or chest pain, but reports mild dyspnea on exertion. His past medical history is notable for hypertension, managed with lisinopril. Patient admits to a history of smoking, though the extent is unclear, and denies alcohol or illicit drug use. History of other lung diseases is not reported.",
+          "objective": "Vitals: BP 138/86 mmHg, HR 88 bpm, RR 18 bpm, Temp 37.0°C, SpO2 96% on room air. Lung exam revealed scattered rhonchi bilaterally, more prominent on the right, with decreased breath sounds at the right base.",
+          "assessment": "The patient's presentation of chronic cough, hemoptysis, and unintentional weight loss, in conjunction with a history of smoking, raises suspicion for a pulmonary malignancy or other chronic lung disease. The presence of scattered rhonchi bilaterally and decreased breath sounds at the right base on lung exam, along with mild dyspnea on exertion, suggests a possible obstructive or restrictive lung process. Differential includes chronic obstructive pulmonary disease (COPD) and asthma, although the patient's age, smoking history, and hemoptysis episode may lean towards a more sinister diagnosis, such as lung cancer. The patient's use of lisinopril for hypertension is noted, but the dry cough commonly associated with this medication does not fully explain the patient's complex symptomatology. Further evaluation, including imaging and possibly pulmonary function tests, is necessary to determine the underlying cause of the patient's symptoms.",
+          "plan": "The plan for Mr. Gupta includes:\n* Further evaluation to determine the underlying cause of his symptoms, with consideration for imaging studies and possibly pulmonary function tests to assess for obstructive or restrictive lung disease, given his symptoms of chronic cough, hemoptysis, and unintentional weight loss, as well as his history of smoking and presence of scattered rhonchi bilaterally on lung exam.\n* Monitoring of his vital signs, including blood pressure, while continuing his current medication regimen of lisinopril for hypertension, with awareness of the potential side effect of dry cough, but recognizing that this does not fully explain his complex symptomatology.\n* Patient education on the importance of quitting smoking, given its potential contribution to his respiratory symptoms and the suspicion of a possible pulmonary malignancy or chronic lung disease.\n* Further history needed regarding his smoking history, including pack-years and current consumption, to better understand his risk factors for lung disease.\n* Consideration for referral to a pulmonologist for further evaluation and management of his respiratory symptoms, given the complexity of his presentation and the need for specialized care."
+        },
+        "keywords": [
+          "chronic cough",
+          "hemoptysis",
+          "weight loss",
+          "dyspnea",
+          "hypertension",
+          "lisinopril",
+          "rhonchi",
+          "lung",
+          "hypoxia",
+          "SpO2"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "Patient <NAME_1>, a 65-year-old male, presented today with a chief complaint of chronic cough, hemoptysis, and unintentional weight loss. He reports a persistent cough for \"several months,\" which he describes as productive of clear to yellowish sputum, occurring daily. He states that approximately one week ago, he experienced an episode of hemoptysis, describing it as \"streaks of blood\" mixed with sputum, occurring once. He denies any further episodes since then.\n\nMr. Gupta also reports a significant weight loss over the past three months, estimating it to be around 6 kilograms, stating his clothes feel looser. He attributes this to \"not eating much\" due to a decreased appetite. He denies fever, chills, night sweats, or chest pain. He reports mild dyspnea on exertion, stating he gets \"a bit winded\" climbing stairs, which he feels is a recent change.\n\nRegarding his social history, when questioned about smoking, Mr. Gupta initially minimized his history, stating he \"used to smoke a bit.\" Upon further probing, he admitted to smoking \"on and off for many years,\" but was vague about pack-years and current consumption, stating he \"cut down a lot recently.\" He denies alcohol or illicit drug use. His past medical history is notable only for hypertension, managed with lisinopril.\n\nOn examination, his vitals were: BP 138/86 mmHg, HR 88 bpm, RR 18 bpm, Temp 37.0°C, SpO2 96% on room air. He appeared thin but not acutely distressed. Lung auscultation revealed scattered rhonchi bilaterally, more prominent on the right, with decreased breath sounds at the right base. Cardiovascular exam was unremarkable. Abdominal exam revealed no organomegaly or tenderness. No peripheral edema was noted.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of chronic cough, hemoptysis, and unintentional weight loss. He describes a persistent, productive cough of clear to yellowish sputum for several months, with a single episode of hemoptysis approximately one week ago, characterized as \"streaks of blood\" mixed with sputum. He also reports a significant weight loss of approximately 6 kilograms over the past three months, attributed to decreased appetite. Patient denies fever, chills, night sweats, or chest pain, but reports mild dyspnea on exertion. His past medical history is notable for hypertension, managed with lisinopril. Patient admits to a history of smoking, though the extent is unclear, and denies alcohol or illicit drug use. History of other lung diseases is not reported.",
+            "objective": "Vitals: BP 138/86 mmHg, HR 88 bpm, RR 18 bpm, Temp 37.0°C, SpO2 96% on room air. Lung exam revealed scattered rhonchi bilaterally, more prominent on the right, with decreased breath sounds at the right base.",
+            "assessment": "The patient's presentation of chronic cough, hemoptysis, and unintentional weight loss, in conjunction with a history of smoking, raises suspicion for a pulmonary malignancy or other chronic lung disease. The presence of scattered rhonchi bilaterally and decreased breath sounds at the right base on lung exam, along with mild dyspnea on exertion, suggests a possible obstructive or restrictive lung process. Differential includes chronic obstructive pulmonary disease (COPD) and asthma, although the patient's age, smoking history, and hemoptysis episode may lean towards a more sinister diagnosis, such as lung cancer. The patient's use of lisinopril for hypertension is noted, but the dry cough commonly associated with this medication does not fully explain the patient's complex symptomatology. Further evaluation, including imaging and possibly pulmonary function tests, is necessary to determine the underlying cause of the patient's symptoms.",
+            "plan": "The plan for Mr. Gupta includes:\n* Further evaluation to determine the underlying cause of his symptoms, with consideration for imaging studies and possibly pulmonary function tests to assess for obstructive or restrictive lung disease, given his symptoms of chronic cough, hemoptysis, and unintentional weight loss, as well as his history of smoking and presence of scattered rhonchi bilaterally on lung exam.\n* Monitoring of his vital signs, including blood pressure, while continuing his current medication regimen of lisinopril for hypertension, with awareness of the potential side effect of dry cough, but recognizing that this does not fully explain his complex symptomatology.\n* Patient education on the importance of quitting smoking, given its potential contribution to his respiratory symptoms and the suspicion of a possible pulmonary malignancy or chronic lung disease.\n* Further history needed regarding his smoking history, including pack-years and current consumption, to better understand his risk factors for lung disease.\n* Consideration for referral to a pulmonologist for further evaluation and management of his respiratory symptoms, given the complexity of his presentation and the need for specialized care."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 279,
+            "generate": 3115,
+            "critique": 296,
+            "reidentify": 0
+          },
+          "tokensUsed": 7532
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 2,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "false_reasoning",
+            "section": "assessment",
+            "excerpt": "suggests a possible obstructive or restrictive lung process. Differential includes chronic obstructive pulmonary disease (COPD) and asthma",
+            "transcriptEvidence": "Lung auscultation revealed scattered rhonchi bilaterally, more prominent on the right, with decreased breath sounds at the right base.",
+            "why": "The unilateral decreased breath sounds at the right base suggest a focal process (mass, effusion, consolidation), not a diffuse obstructive pattern typical of COPD or asthma. Listing COPD and asthma as leading differentials mischaracterizes the exam findings. The focal, unilateral nature of the findings should have been emphasized as pointing toward a mass lesion rather than diffuse airway disease."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is generally faithful to the transcript and appropriately raises suspicion for pulmonary malignancy, but the plan is critically vague — it fails to explicitly order CT chest, does not mention staging workup or metastasis screening, and does not order basic bloodwork (CBC, CMP, LFTs). The objective section omits general appearance, cardiovascular exam, abdominal exam, and peripheral edema findings. The differential diagnosis leans too heavily toward COPD/asthma given the clearly focal, unilateral exam findings that are more consistent with a mass lesion."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": -1,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.6875,
+      "totalLatencyMs": 56542,
+      "totalTokensUsed": 11894,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0014",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a 4-month history of symmetric joint pain, primarily affecting the metacarpophalangeal (MCP) joints and wrists bilaterally, describing the pain as aching. She notes significant morning stiffness lasting greater than one hour, often improving slightly with activity. She denies any history of trauma to the affected joints and reports no fever, chills, or recent infections. Patient has tried over-the-counter ibuprofen with minimal relief. Her past medical history is otherwise unremarkable, and family history is negative for autoimmune conditions. Patient reports swelling, erythema, tenderness, and limited range of motion in the MCP joints and wrists, but history of other joint involvement is not reported.",
+          "objective": "Vital signs are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. Inspection of the hands reveals mild swelling and erythema over the MCP joints and wrists bilaterally. Palpation elicits tenderness in these areas, and there is noted warmth. Range of motion is limited and painful in flexion and extension of the MCP joints and wrists.",
+          "assessment": "The patient's presentation of symmetric joint pain, morning stiffness, and limited range of motion, particularly affecting the metacarpophalangeal joints and wrists, suggests a differential diagnosis that includes rheumatoid arthritis, given the chronic nature of the symptoms and the involvement of multiple small joints. The absence of trauma, fever, or recent infections, along with the lack of response to ibuprofen, further supports this consideration. However, gout, although typically presenting with more acute and intense symptoms, cannot be entirely ruled out without further evaluation, such as laboratory tests to assess uric acid levels. The patient's symptoms and physical examination findings, including swelling, erythema, tenderness, and warmth over the affected joints, are consistent with an inflammatory arthritis, but the specific diagnosis remains to be confirmed. A comprehensive diagnostic workup, including serologic tests and potentially imaging studies, is necessary to determine the underlying cause of the patient's symptoms.",
+          "plan": "The plan for patient Pooja Bhatt includes:\n* Continuing ibuprofen as needed for symptom management, with the understanding that its effectiveness may be limited based on the patient's report of minimal relief to date\n* Ordering laboratory tests, including uric acid levels, to help differentiate between potential diagnoses such as rheumatoid arthritis and gout\n* Considering serologic tests, such as rheumatoid factor and anti-CCP antibodies, to further evaluate for rheumatoid arthritis\n* Potentially ordering imaging studies, such as X-rays or ultrasound, to assess joint damage and inflammation\n* Referral to a rheumatologist for further evaluation and management, given the complexity of the patient's presentation and the need for specialized care\n* Patient education on the importance of follow-up appointments to monitor symptoms and adjust the treatment plan as necessary, as well as discussion of potential lifestyle modifications to help manage symptoms\n* Further history needed regarding other potential joint involvement and any changes in symptoms over time to help guide the diagnostic workup and treatment plan."
+        },
+        "keywords": [
+          "joint pain",
+          "metacarpophalangeal joints",
+          "morning stiffness",
+          "ibuprofen",
+          "MCP joints",
+          "wrist pain",
+          "swelling",
+          "erythema",
+          "tenderness",
+          "limited range of motion"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "Patient <NAME_1>, a 55-year-old female, presents today with a chief complaint of symmetric joint pain. She reports a 4-month history of pain primarily affecting the metacarpophalangeal (MCP) joints and wrists bilaterally. She describes the pain as aching and notes significant morning stiffness lasting greater than one hour, often improving slightly with activity. She denies any history of trauma to the affected joints. She reports no fever, chills, or recent infections. She has tried over-the-counter ibuprofen with minimal relief. Her past medical history is otherwise unremarkable, and she takes no regular medications. Family history is negative for autoimmune conditions.\n\nOn physical examination, vital signs are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. Inspection of the hands reveals mild swelling and erythema over the MCP joints and wrists bilaterally. Palpation elicits tenderness in these areas, and there is noted warmth. Range of motion is limited and painful in flexion and extension of the MCP joints and wrists. No obvious deformities are appreciated at this time. The remainder of the joint examination, including elbows, shoulders, knees, and ankles, is non-contributory. Skin examination is unremarkable. Cardiovascular, pulmonary, and abdominal examinations are within normal limits.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a 4-month history of symmetric joint pain, primarily affecting the metacarpophalangeal (MCP) joints and wrists bilaterally, describing the pain as aching. She notes significant morning stiffness lasting greater than one hour, often improving slightly with activity. She denies any history of trauma to the affected joints and reports no fever, chills, or recent infections. Patient has tried over-the-counter ibuprofen with minimal relief. Her past medical history is otherwise unremarkable, and family history is negative for autoimmune conditions. Patient reports swelling, erythema, tenderness, and limited range of motion in the MCP joints and wrists, but history of other joint involvement is not reported.",
+            "objective": "Vital signs are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. Inspection of the hands reveals mild swelling and erythema over the MCP joints and wrists bilaterally. Palpation elicits tenderness in these areas, and there is noted warmth. Range of motion is limited and painful in flexion and extension of the MCP joints and wrists.",
+            "assessment": "The patient's presentation of symmetric joint pain, morning stiffness, and limited range of motion, particularly affecting the metacarpophalangeal joints and wrists, suggests a differential diagnosis that includes rheumatoid arthritis, given the chronic nature of the symptoms and the involvement of multiple small joints. The absence of trauma, fever, or recent infections, along with the lack of response to ibuprofen, further supports this consideration. However, gout, although typically presenting with more acute and intense symptoms, cannot be entirely ruled out without further evaluation, such as laboratory tests to assess uric acid levels. The patient's symptoms and physical examination findings, including swelling, erythema, tenderness, and warmth over the affected joints, are consistent with an inflammatory arthritis, but the specific diagnosis remains to be confirmed. A comprehensive diagnostic workup, including serologic tests and potentially imaging studies, is necessary to determine the underlying cause of the patient's symptoms.",
+            "plan": "The plan for patient <NAME_1> includes:\n* Continuing ibuprofen as needed for symptom management, with the understanding that its effectiveness may be limited based on the patient's report of minimal relief to date\n* Ordering laboratory tests, including uric acid levels, to help differentiate between potential diagnoses such as rheumatoid arthritis and gout\n* Considering serologic tests, such as rheumatoid factor and anti-CCP antibodies, to further evaluate for rheumatoid arthritis\n* Potentially ordering imaging studies, such as X-rays or ultrasound, to assess joint damage and inflammation\n* Referral to a rheumatologist for further evaluation and management, given the complexity of the patient's presentation and the need for specialized care\n* Patient education on the importance of follow-up appointments to monitor symptoms and adjust the treatment plan as necessary, as well as discussion of potential lifestyle modifications to help manage symptoms\n* Further history needed regarding other potential joint involvement and any changes in symptoms over time to help guide the diagnostic workup and treatment plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 364,
+            "generate": 2655,
+            "critique": 400,
+            "reidentify": 0
+          },
+          "tokensUsed": 7167
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 2,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "Patient reports swelling, erythema, tenderness, and limited range of motion in the MCP joints and wrists",
+            "transcriptEvidence": "On physical examination... Inspection of the hands reveals mild swelling and erythema over the MCP joints and wrists bilaterally. Palpation elicits tenderness in these areas... Range of motion is limited and painful",
+            "why": "Swelling, erythema, tenderness, and limited ROM are objective physical examination findings documented by the clinician, not symptoms reported by the patient. Placing them in the Subjective section misattributes clinical exam findings to patient self-report."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "subjective",
+            "excerpt": "but history of other joint involvement is not reported",
+            "transcriptEvidence": "The remainder of the joint examination, including elbows, shoulders, knees, and ankles, is non-contributory.",
+            "why": "The transcript explicitly states other joints were examined and found non-contributory. The note falsely claims this history was not reported, when in fact it was assessed and documented as normal."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note captures the clinical presentation reasonably well and appropriately uses uncertainty language, but it misattributes objective exam findings to the subjective section and omits key plan items including methotrexate initiation and comprehensive baseline labs (CBC, CMP, ESR, CRP). The omission of methotrexate from the plan is a significant gap given the classic RA presentation with 4 months of symmetric inflammatory joint disease unresponsive to NSAIDs. Joint damage risk is mentioned only in passing within the imaging rationale rather than being explicitly flagged as a clinical concern in the assessment."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 2,
+        "groundedness": 2,
+        "bias": -1,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.5875000000000001,
+      "totalLatencyMs": 49614,
+      "totalTokensUsed": 11032,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0015",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a 2-day history of right ear pain, accompanied by irritability and fever, with a maximum temperature of 38.5 degrees Celsius at home. He has been pulling at his right ear frequently, but denies any ear discharge or recent trauma, and has no reported changes in hearing. History of present illness is notable for a common cold approximately two months ago. Patient's mother reports his immunizations are up to date. The patient's mother denies any other significant symptoms, and history of otitis or similar conditions is not reported.",
+          "objective": "Vital signs: temperature 38.6°C, HR 110 bpm, RR 24 bpm, SpO2 99% on room air. Otoscopic examination of the right ear reveals a markedly erythematous and bulging tympanic membrane with obscured landmarks. The left tympanic membrane appears normal, pearly gray with visible light reflex.",
+          "assessment": "The assessment of this 4-year-old male patient suggests a differential diagnosis that includes acute otitis media, given the presentation of right ear pain, fever, irritability, and the otoscopic findings of a markedly erythematous and bulging tympanic membrane with obscured landmarks. The absence of ear discharge or recent trauma, along with the patient's up-to-date immunizations, is also considered in this assessment. The patient's symptoms and examination results are consistent with a possible infection of the middle ear, but a definitive diagnosis of otitis media cannot be confirmed without further evaluation or culture results. The patient's overall clinical presentation and vital signs, including fever and elevated heart rate, support the need for antimicrobial therapy, such as amoxicillin, and symptomatic treatment with analgesics like paracetamol or ibuprofen to manage pain and fever.",
+          "plan": "The plan for this 4-year-old male patient includes:\n* Amoxicillin, as an antibiotic to treat the suspected acute otitis media, with a dosage of 25-50 mg/kg/day divided into three doses, for a duration of 7-10 days, \n* Symptomatic treatment with either paracetamol (10-15 mg/kg every 4-6 hours) or ibuprofen (dosage not specified for this patient's age and weight) to manage pain and fever, \n* Monitoring for potential side effects of the medications, such as rash, diarrhea, or hepatotoxicity, \n* Follow-up is not explicitly discussed, but the patient's response to the treatment and any changes in symptoms should be evaluated to determine the effectiveness of the therapy and to adjust the plan as necessary. \nFurther history regarding the patient's response to previous illnesses and any potential allergies to the prescribed medications is needed to finalize the plan and ensure the patient's safety."
+        },
+        "keywords": [
+          "ear pain",
+          "fever",
+          "irritability",
+          "otitis",
+          "tympanic membrane",
+          "erythema",
+          "heart rate",
+          "respiratory rate",
+          "oxygen saturation"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "dosage of ibuprofen not specified for this patient's age and weight",
+            "follow-up plan not explicitly discussed",
+            "potential allergies to prescribed medications not assessed"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 4-year-old male presenting with a 2-day history of right ear pain. His mother reports he has been irritable and had a fever at home, measured at 38.5 degrees Celsius. She denies any ear discharge or recent trauma. He has no reported changes in hearing, but has been pulling at his right ear frequently. His last illness was approximately two months ago, a common cold. Immunizations are up to date per parental report.\n\nOn examination, Suresh is alert but fussy. His temperature is 38.6°C, heart rate 110 bpm, respiratory rate 24 bpm, and oxygen saturation 99% on room air. Otoscopic examination of the right ear reveals a tympanic membrane that is markedly erythematous and bulging, with obscured landmarks. There is no evidence of perforation or purulent discharge in the external auditory canal. The left tympanic membrane appears normal, pearly gray with visible light reflex. Oropharynx is non-erythematous, and cervical lymph nodes are not enlarged. Respiratory and cardiovascular exams are unremarkable.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a 2-day history of right ear pain, accompanied by irritability and fever, with a maximum temperature of 38.5 degrees Celsius at home. He has been pulling at his right ear frequently, but denies any ear discharge or recent trauma, and has no reported changes in hearing. History of present illness is notable for a common cold approximately two months ago. Patient's mother reports his immunizations are up to date. The patient's mother denies any other significant symptoms, and history of otitis or similar conditions is not reported.",
+            "objective": "Vital signs: temperature 38.6°C, HR 110 bpm, RR 24 bpm, SpO2 99% on room air. Otoscopic examination of the right ear reveals a markedly erythematous and bulging tympanic membrane with obscured landmarks. The left tympanic membrane appears normal, pearly gray with visible light reflex.",
+            "assessment": "The assessment of this 4-year-old male patient suggests a differential diagnosis that includes acute otitis media, given the presentation of right ear pain, fever, irritability, and the otoscopic findings of a markedly erythematous and bulging tympanic membrane with obscured landmarks. The absence of ear discharge or recent trauma, along with the patient's up-to-date immunizations, is also considered in this assessment. The patient's symptoms and examination results are consistent with a possible infection of the middle ear, but a definitive diagnosis of otitis media cannot be confirmed without further evaluation or culture results. The patient's overall clinical presentation and vital signs, including fever and elevated heart rate, support the need for antimicrobial therapy, such as amoxicillin, and symptomatic treatment with analgesics like paracetamol or ibuprofen to manage pain and fever.",
+            "plan": "The plan for this 4-year-old male patient includes:\n* Amoxicillin, as an antibiotic to treat the suspected acute otitis media, with a dosage of 25-50 mg/kg/day divided into three doses, for a duration of 7-10 days, \n* Symptomatic treatment with either paracetamol (10-15 mg/kg every 4-6 hours) or ibuprofen (dosage not specified for this patient's age and weight) to manage pain and fever, \n* Monitoring for potential side effects of the medications, such as rash, diarrhea, or hepatotoxicity, \n* Follow-up is not explicitly discussed, but the patient's response to the treatment and any changes in symptoms should be evaluated to determine the effectiveness of the therapy and to adjust the plan as necessary. \nFurther history regarding the patient's response to previous illnesses and any potential allergies to the prescribed medications is needed to finalize the plan and ensure the patient's safety."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 254,
+            "generate": 2757,
+            "critique": 462,
+            "reidentify": 0
+          },
+          "tokensUsed": 6249
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "Patient reports a 2-day history of right ear pain, accompanied by irritability and fever",
+            "transcriptEvidence": "His mother reports he has been irritable and had a fever at home",
+            "why": "The patient is 4 years old; the history is provided by the mother, not the patient. The note repeatedly attributes statements to 'Patient' when they should be attributed to 'Mother' or 'Parent.'"
+          },
+          {
+            "type": "false_reasoning",
+            "section": "assessment",
+            "excerpt": "a definitive diagnosis of otitis media cannot be confirmed without further evaluation or culture results",
+            "transcriptEvidence": "Otoscopic examination of the right ear reveals a tympanic membrane that is markedly erythematous and bulging, with obscured landmarks.",
+            "why": "Acute otitis media is a clinical diagnosis based on otoscopic findings (erythematous, bulging TM with obscured landmarks plus acute onset symptoms). Cultures are not required to confirm AOM. This statement introduces unwarranted diagnostic uncertainty and reflects false reasoning about diagnostic standards."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note correctly identifies acute otitis media and includes appropriate first-line antibiotic and analgesic therapy, but it has notable gaps: mastoiditis warning signs are not addressed as a red flag, follow-up at 48-72 hours is not specified, and fluid intake counseling is absent. The false claim that cultures are needed to confirm AOM introduces inappropriate diagnostic uncertainty, and the consistent misattribution of parental history to the 4-year-old patient is a documentation accuracy concern."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.6000000000000001,
+      "totalLatencyMs": 41974,
+      "totalTokensUsed": 9581,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0016",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a syncopal episode at home earlier today with no prodromal symptoms prior to loss of consciousness. He denies experiencing dizziness, palpitations, chest pain, or dyspnea preceding the event. Family members witnessed convulsions, described as generalized shaking movements lasting approximately one minute, though the patient denies any tongue biting, incontinence, or post-ictal confusion. Patient states he felt \"normal\" almost immediately upon regaining consciousness. He denies any recent illness, fever, or changes in medication, and has no history of similar episodes. Patient's medical history is significant for hypertension, for which he is well-controlled on lisinopril, with no known seizure disorder.",
+          "objective": "BP 130/80 mmHg, HR 72 bpm, RR 16, SpO2 98% on room air. Capillary refill <2 seconds. Cardiac auscultation reveals regular S1/S2, no murmurs, rubs, or gallops. Lungs clear to auscultation bilaterally. Neurological exam is non-focal; alert and oriented x3, cranial nerves intact, motor strength 5/5 bilaterally, sensation intact, reflexes symmetric. ECG shows normal sinus rhythm with no acute ischemic changes or conduction abnormalities.",
+          "assessment": "The patient's presentation of a syncopal episode with witnessed convulsions suggests a possible seizure disorder, although the absence of post-ictal confusion and the patient's rapid return to normal consciousness are atypical. Differential includes a primary seizure disorder, which would be a new diagnosis for this patient, as well as other potential causes of syncope such as cardiac or neurologic etiologies. The patient's history of hypertension, well-controlled on lisinopril, is noted, but there is no clear indication that this contributed to the current episode. Further evaluation is needed to determine the underlying cause of the patient's symptoms, and to rule out other potential diagnoses such as a cardiac arrhythmia or other neurologic conditions. The patient's lack of known seizure disorder and the absence of any recent changes in medication or illness make a thorough investigation into the etiology of the seizure-like activity crucial.",
+          "plan": "The plan for Patient Nisha Kapoor includes:\n* Further evaluation to determine the underlying cause of the patient's symptoms, including the witnessed convulsions and syncopal episode, with consideration of a possible seizure disorder, cardiac, or neurologic etiologies\n* Monitoring of the patient's blood pressure, given their history of hypertension, which is currently well-controlled on lisinopril\n* No changes to the patient's current medication regimen, including lisinopril, are planned at this time\n* The patient will require follow-up to assess for any further episodes and to review the results of any additional testing that may be ordered to investigate the cause of the syncopal episode and convulsions\n* Further history is needed regarding the patient's syncopal episode, including any potential triggers or preceding symptoms, before finalizing the plan and determining the best course of action for ongoing management and treatment."
+        },
+        "keywords": [
+          "syncopal episode",
+          "convulsions",
+          "hypertension",
+          "lisinopril",
+          "dizziness",
+          "palpitations",
+          "chest pain",
+          "dyspnea",
+          "seizure disorder",
+          "hypertension"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 75-year-old male presenting to the ED following a syncopal episode at home earlier today. Patient reports no prodromal symptoms prior to loss of consciousness. He denies dizziness, palpitations, chest pain, or dyspnea preceding the event. Family members present at the scene report witnessing convulsions, though the exact duration is unclear. They describe generalized shaking movements lasting approximately \"a minute or so\" before spontaneous resolution. Patient denies any tongue biting, incontinence, or post-ictal confusion, stating he felt \"normal\" almost immediately upon regaining consciousness. He denies any recent illness, fever, or changes in medication. No history of similar episodes. Medical history is significant for hypertension, well-controlled on lisinopril. No known cardiac history or seizure disorder. Social history: lives independently, non-smoker, occasional alcohol use. On examination, vital signs are stable: BP 130/80 mmHg, HR 72 bpm, RR 16, SpO2 98% on room air. Capillary refill <2 seconds. Cardiac auscultation reveals regular S1/S2, no murmurs, rubs, or gallops. Lungs clear to auscultation bilaterally. Neurological exam is non-focal; alert and oriented x3, cranial nerves intact, motor strength 5/5 bilaterally, sensation intact, reflexes symmetric. An ECG performed in the ED shows normal sinus rhythm with no acute ischemic changes or conduction abnormalities.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a syncopal episode at home earlier today with no prodromal symptoms prior to loss of consciousness. He denies experiencing dizziness, palpitations, chest pain, or dyspnea preceding the event. Family members witnessed convulsions, described as generalized shaking movements lasting approximately one minute, though the patient denies any tongue biting, incontinence, or post-ictal confusion. Patient states he felt \"normal\" almost immediately upon regaining consciousness. He denies any recent illness, fever, or changes in medication, and has no history of similar episodes. Patient's medical history is significant for hypertension, for which he is well-controlled on lisinopril, with no known seizure disorder.",
+            "objective": "BP 130/80 mmHg, HR 72 bpm, RR 16, SpO2 98% on room air. Capillary refill <2 seconds. Cardiac auscultation reveals regular S1/S2, no murmurs, rubs, or gallops. Lungs clear to auscultation bilaterally. Neurological exam is non-focal; alert and oriented x3, cranial nerves intact, motor strength 5/5 bilaterally, sensation intact, reflexes symmetric. ECG shows normal sinus rhythm with no acute ischemic changes or conduction abnormalities.",
+            "assessment": "The patient's presentation of a syncopal episode with witnessed convulsions suggests a possible seizure disorder, although the absence of post-ictal confusion and the patient's rapid return to normal consciousness are atypical. Differential includes a primary seizure disorder, which would be a new diagnosis for this patient, as well as other potential causes of syncope such as cardiac or neurologic etiologies. The patient's history of hypertension, well-controlled on lisinopril, is noted, but there is no clear indication that this contributed to the current episode. Further evaluation is needed to determine the underlying cause of the patient's symptoms, and to rule out other potential diagnoses such as a cardiac arrhythmia or other neurologic conditions. The patient's lack of known seizure disorder and the absence of any recent changes in medication or illness make a thorough investigation into the etiology of the seizure-like activity crucial.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Further evaluation to determine the underlying cause of the patient's symptoms, including the witnessed convulsions and syncopal episode, with consideration of a possible seizure disorder, cardiac, or neurologic etiologies\n* Monitoring of the patient's blood pressure, given their history of hypertension, which is currently well-controlled on lisinopril\n* No changes to the patient's current medication regimen, including lisinopril, are planned at this time\n* The patient will require follow-up to assess for any further episodes and to review the results of any additional testing that may be ordered to investigate the cause of the syncopal episode and convulsions\n* Further history is needed regarding the patient's syncopal episode, including any potential triggers or preceding symptoms, before finalizing the plan and determining the best course of action for ongoing management and treatment."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 347,
+            "generate": 2953,
+            "critique": 297,
+            "reidentify": 0
+          },
+          "tokensUsed": 6971
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 4,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 2,
+        "fluency": 4,
+        "completeness": 2,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "plan",
+            "excerpt": "Further history is needed regarding the patient's syncopal episode, including any potential triggers or preceding symptoms, before finalizing the plan",
+            "transcriptEvidence": "Patient reports no prodromal symptoms prior to loss of consciousness. He denies dizziness, palpitations, chest pain, or dyspnea preceding the event.",
+            "why": "The history regarding triggers and preceding symptoms was already obtained and documented in the Subjective section — the patient explicitly denied prodromal symptoms. The plan requests information that was already gathered, suggesting the AI failed to integrate its own documented history into the plan."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is reasonably faithful to the transcript in its Subjective and Objective sections and acknowledges diagnostic uncertainty, but the Assessment under-prioritizes cardiac syncope and arrhythmia for a 75-year-old — these should be leading differentials, not afterthoughts. The most critical failure is the Plan, which is entirely non-specific: it omits telemetry admission, echocardiogram, orthostatic blood pressures, and EEG, all of which are standard-of-care workup items for elderly syncope with convulsive features. The plan also redundantly requests history that was already obtained, indicating poor internal consistency."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -3,
+        "faithfulness": 2,
+        "groundedness": 2,
+        "bias": -1,
+        "fluency": 1,
+        "completeness": 3
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.5250000000000001,
+      "totalLatencyMs": 58958,
+      "totalTokensUsed": 11651,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0017",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a 2-day history of dysuria, characterized as a burning sensation during urination, urinary urgency with a frequent and compelling need to void, and suprapubic discomfort described as a constant dull ache. She denies any associated fever, chills, nausea, vomiting, or flank pain. Patient's history of urinary tract infections is not reported as recurrent. She is taking oral contraceptives and has no history of pregnancy, being G0P0. Her last menstrual period was 2 weeks ago. Patient reports no recent sexual activity. The presence of leukocyte esterase and nitrites in her urine is consistent with a urinary tract infection, but history of previous UTIs is noted as not recurrent.",
+          "objective": "Vital signs are stable: temperature 98.6°F, HR 78 bpm, BP 118/72 mmHg, respiratory rate 16 bpm. Abdominal examination reveals mild suprapubic tenderness to palpation. Urine dipstick shows positive leukocyte esterase and positive nitrites.",
+          "assessment": "The patient's presentation of dysuria, urinary urgency, and suprapubic discomfort, along with the presence of leukocyte esterase and nitrites on urine dipstick, suggests a urinary tract infection. The absence of fever, chills, nausea, vomiting, or flank pain, and the lack of costovertebral angle tenderness, makes pyelonephritis less likely. Differential includes uncomplicated lower urinary tract infection, given the patient's symptoms and stable vital signs. The patient's use of oral contraceptives and lack of pregnancy history are noted, but do not appear to be directly contributing to her current symptoms. Further evaluation and consideration of antibiotic treatment, such as nitrofurantoin, may be warranted pending confirmation of the diagnosis and assessment of renal function.",
+          "plan": "The plan for Patient Tarun Mehta includes:\n* Considering antibiotic treatment, such as nitrofurantoin 100mg PO BID for 5-7 days, pending confirmation of the diagnosis and assessment of renal function, to address the suspected uncomplicated lower urinary tract infection.\n* Monitoring for potential side effects of nitrofurantoin, including pulmonary fibrosis with long-term use, and being aware of contraindications such as G6PD deficiency and severe renal impairment.\n* Patient education on the importance of completing the full course of antibiotics as prescribed and recognizing signs of worsening infection or potential complications.\n* Follow-up will be determined based on the patient's response to treatment and the results of any further diagnostic tests, with the goal of confirming resolution of the infection and addressing any ongoing symptoms or concerns."
+        },
+        "keywords": [
+          "dysuria",
+          "urinary urgency",
+          "suprapubic discomfort",
+          "urinary tract infection",
+          "leukocyte esterase",
+          "nitrites",
+          "suprapubic pain",
+          "oral contraceptives",
+          "UTIs"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 30-year-old female presenting with a 2-day history of dysuria, urinary urgency, and suprapubic discomfort. She describes the dysuria as a burning sensation during urination, and the urgency as a frequent, compelling need to void, often producing only small amounts of urine. The suprapubic pain is constant and described as a dull ache. She denies any associated fever, chills, nausea, vomiting, or flank pain. She reports no recent sexual activity and no history of recurrent UTIs. She is G0P0 and uses oral contraceptives. Her last menstrual period was 2 weeks ago. On examination, vital signs are stable: temperature 98.6°F, heart rate 78 bpm, blood pressure 118/72 mmHg, respiratory rate 16 bpm. Abdominal examination reveals mild suprapubic tenderness to palpation, but no rebound or guarding. Costovertebral angle tenderness is absent bilaterally. A urine dipstick performed in clinic shows positive leukocyte esterase and positive nitrites.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a 2-day history of dysuria, characterized as a burning sensation during urination, urinary urgency with a frequent and compelling need to void, and suprapubic discomfort described as a constant dull ache. She denies any associated fever, chills, nausea, vomiting, or flank pain. Patient's history of urinary tract infections is not reported as recurrent. She is taking oral contraceptives and has no history of pregnancy, being G0P0. Her last menstrual period was 2 weeks ago. Patient reports no recent sexual activity. The presence of leukocyte esterase and nitrites in her urine is consistent with a urinary tract infection, but history of previous UTIs is noted as not recurrent.",
+            "objective": "Vital signs are stable: temperature 98.6°F, HR 78 bpm, BP 118/72 mmHg, respiratory rate 16 bpm. Abdominal examination reveals mild suprapubic tenderness to palpation. Urine dipstick shows positive leukocyte esterase and positive nitrites.",
+            "assessment": "The patient's presentation of dysuria, urinary urgency, and suprapubic discomfort, along with the presence of leukocyte esterase and nitrites on urine dipstick, suggests a urinary tract infection. The absence of fever, chills, nausea, vomiting, or flank pain, and the lack of costovertebral angle tenderness, makes pyelonephritis less likely. Differential includes uncomplicated lower urinary tract infection, given the patient's symptoms and stable vital signs. The patient's use of oral contraceptives and lack of pregnancy history are noted, but do not appear to be directly contributing to her current symptoms. Further evaluation and consideration of antibiotic treatment, such as nitrofurantoin, may be warranted pending confirmation of the diagnosis and assessment of renal function.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Considering antibiotic treatment, such as nitrofurantoin 100mg PO BID for 5-7 days, pending confirmation of the diagnosis and assessment of renal function, to address the suspected uncomplicated lower urinary tract infection.\n* Monitoring for potential side effects of nitrofurantoin, including pulmonary fibrosis with long-term use, and being aware of contraindications such as G6PD deficiency and severe renal impairment.\n* Patient education on the importance of completing the full course of antibiotics as prescribed and recognizing signs of worsening infection or potential complications.\n* Follow-up will be determined based on the patient's response to treatment and the results of any further diagnostic tests, with the goal of confirming resolution of the infection and addressing any ongoing symptoms or concerns."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 334,
+            "generate": 2404,
+            "critique": 381,
+            "reidentify": 0
+          },
+          "tokensUsed": 6527
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "The presence of leukocyte esterase and nitrites in her urine is consistent with a urinary tract infection",
+            "transcriptEvidence": "NONE — the dipstick result is objective clinical data reported by the clinician, not a statement made by the patient. Placing clinical interpretation of lab findings in the Subjective section misattributes this reasoning to the patient's report.",
+            "why": "Urine dipstick results are objective findings belonging in the Objective section. Stating the clinical interpretation ('consistent with UTI') in the Subjective section conflates the clinician's diagnostic reasoning with the patient's own account."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "plan",
+            "excerpt": "Monitoring for potential side effects of nitrofurantoin, including pulmonary fibrosis with long-term use, and being aware of contraindications such as G6PD deficiency and severe renal impairment.",
+            "transcriptEvidence": "NONE — the transcript makes no mention of drug side effects, pulmonary fibrosis, G6PD deficiency, or renal impairment. While clinically accurate, these details are fabricated additions not present in the source encounter.",
+            "why": "Although these are real pharmacological facts, the SOAP note is generated from a transcript and should not introduce clinical details not discussed in the encounter. This inflates the note with information that was never part of the clinical conversation."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The note correctly identifies uncomplicated UTI and appropriately rules out pyelonephritis, but it omits 'increase fluids' from the plan — a standard and expected recommendation for UTI management. The Objective section is incomplete, missing 'no rebound or guarding' and 'CVA tenderness absent bilaterally' (the latter is mentioned only in the Assessment). The note also inappropriately places dipstick interpretation in the Subjective section and adds unsubstantiated pharmacological details to the Plan. Overall, the clinical reasoning is sound but the note suffers from misplacement of data and unnecessary hedging ('pending confirmation') given the classic presentation with confirmatory dipstick findings."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.7375,
+      "totalLatencyMs": 56421,
+      "totalTokensUsed": 10876,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0018",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports experiencing significant nausea and vomiting for the past 12 hours, accompanied by diffuse abdominal pain described as a constant, cramping sensation. She also reports feeling increasingly short of breath, noting that her breathing feels \"fast and deep.\" Patient has a known history of Type 1 Diabetes Mellitus, diagnosed at age 12, and admits to having been lax with her monitoring and insulin doses over the past few days. She denies any recent illness, fever, or exposure to sick contacts, and also denies alcohol or illicit drug use. Patient's history of hypoglycemia and acidosis is not reported, but she does report her current symptoms and recent deviation from her typical insulin regimen. Patient's symptoms of nausea, vomiting, abdominal pain, and shortness of breath are reported, but the duration of her shortness of breath is not specified beyond it increasing.",
+          "objective": "Vital signs: Temp 98.6°F, HR 110 bpm, RR 30 breaths/min, BP 100/60 mmHg, SpO2 98% on room air. Capillary blood glucose 480 mg/dL. Urine dipstick positive for ketones 4+. Arterial blood gas pH 7.21. Physical exam reveals dry mucous membranes, fruity odor on breath, and mild diffuse abdominal tenderness. Patient exhibits Kussmaul respirations, characterized by deep and rapid breathing.",
+          "assessment": "The patient's presentation of nausea, vomiting, abdominal pain, and shortness of breath, in combination with her known history of Type 1 Diabetes Mellitus and recent laxity in insulin management, suggests a differential diagnosis that includes diabetic ketoacidosis (DKA). The presence of ketones 4+ in the urine, elevated capillary blood glucose of 480 mg/dL, and arterial blood gas pH of 7.21 support this suspicion, as these findings are consistent with the metabolic derangements seen in DKA. The patient's Kussmaul respirations and fruity odor on her breath further support this diagnosis. However, the severity of the condition and the presence of any potential precipitating factors, such as underlying infection, cannot be determined from the available history. Differential diagnosis also includes other causes of acute abdomen and metabolic disturbances, but DKA is the most likely consideration given the patient's clinical presentation and laboratory results.",
+          "plan": "The plan for Patient Krishnan includes:\n* Administering insulin to manage her elevated blood glucose level of 480 mg/dL, with the dosage and frequency to be determined based on her individual needs and response to treatment\n* Aggressive fluid replacement to address dehydration and support blood pressure, as evidenced by her dry mucous membranes and low blood pressure of 100/60 mmHg\n* Monitoring of her vital signs, blood glucose levels, and urine ketones to assess the effectiveness of treatment and guide adjustments to her care\n* Further evaluation to determine the severity of her condition and identify any potential precipitating factors, such as underlying infection, that may have contributed to the development of diabetic ketoacidosis (DKA)\n* Patient education on the importance of strict insulin management and monitoring, particularly during periods of illness or stress, to prevent future episodes of DKA\n* Consideration of potential complications, such as hypoglycemia and acidosis, and measures to prevent or manage these conditions, including close monitoring of her blood glucose levels and adjustment of her insulin dosage as needed. \nFurther history is needed regarding the patient's recent deviation from her typical insulin regimen and any potential stressors or precipitating factors that may have contributed to her current condition."
+        },
+        "keywords": [
+          "nausea",
+          "vomiting",
+          "abdominal pain",
+          "shortness of breath",
+          "Type 1 Diabetes Mellitus",
+          "insulin",
+          "ketones",
+          "Kussmaul respirations",
+          "hypoglycemia",
+          "acidosis"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "Patient's history of hypoglycemia and acidosis is not reported in the original transcript, but mentioned in the SOAP note",
+            "The duration of the patient's shortness of breath is not specified in the original transcript beyond it increasing",
+            "The SOAP note mentions 'potential precipitating factors, such as underlying infection', but this is not directly supported by the original transcript"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1>, a 25-year-old female, presenting to the ED with acute onset of symptoms. She reports experiencing significant nausea and vomiting for the past 12 hours, accompanied by diffuse abdominal pain, which she describes as a constant, cramping sensation. She states she has vomited approximately five times since yesterday evening and has been unable to keep any food or liquids down. She also reports feeling increasingly short of breath, noting that her breathing feels \"fast and deep.\"\n\nPatient Krishnan has a known history of Type 1 Diabetes Mellitus, diagnosed at age 12. She states she typically manages her diabetes with insulin injections but admits to having been \"a bit lax\" with her monitoring and insulin doses over the past few days due to feeling unwell. She denies any recent illness, fever, or exposure to sick contacts. She denies alcohol or illicit drug use.\n\nOn initial assessment, her vital signs are: Temperature 98.6°F, Heart Rate 110 bpm, Respiratory Rate 30 breaths/min, Blood Pressure 100/60 mmHg, Oxygen Saturation 98% on room air. Her capillary blood glucose was 480 mg/dL. Urine dipstick revealed ketones 4+. Arterial blood gas results show a pH of 7.21. Physical examination reveals dry mucous membranes and a fruity odor on her breath. Her abdomen is soft, with mild diffuse tenderness to palpation, but no rebound or guarding. Her breathing is deep and rapid, consistent with Kussmaul respirations.",
+          "rawLlmNote": {
+            "subjective": "Patient reports experiencing significant nausea and vomiting for the past 12 hours, accompanied by diffuse abdominal pain described as a constant, cramping sensation. She also reports feeling increasingly short of breath, noting that her breathing feels \"fast and deep.\" Patient has a known history of Type 1 Diabetes Mellitus, diagnosed at age 12, and admits to having been lax with her monitoring and insulin doses over the past few days. She denies any recent illness, fever, or exposure to sick contacts, and also denies alcohol or illicit drug use. Patient's history of hypoglycemia and acidosis is not reported, but she does report her current symptoms and recent deviation from her typical insulin regimen. Patient's symptoms of nausea, vomiting, abdominal pain, and shortness of breath are reported, but the duration of her shortness of breath is not specified beyond it increasing.",
+            "objective": "Vital signs: Temp 98.6°F, HR 110 bpm, RR 30 breaths/min, BP 100/60 mmHg, SpO2 98% on room air. Capillary blood glucose 480 mg/dL. Urine dipstick positive for ketones 4+. Arterial blood gas pH 7.21. Physical exam reveals dry mucous membranes, fruity odor on breath, and mild diffuse abdominal tenderness. Patient exhibits Kussmaul respirations, characterized by deep and rapid breathing.",
+            "assessment": "The patient's presentation of nausea, vomiting, abdominal pain, and shortness of breath, in combination with her known history of Type 1 Diabetes Mellitus and recent laxity in insulin management, suggests a differential diagnosis that includes diabetic ketoacidosis (DKA). The presence of ketones 4+ in the urine, elevated capillary blood glucose of 480 mg/dL, and arterial blood gas pH of 7.21 support this suspicion, as these findings are consistent with the metabolic derangements seen in DKA. The patient's Kussmaul respirations and fruity odor on her breath further support this diagnosis. However, the severity of the condition and the presence of any potential precipitating factors, such as underlying infection, cannot be determined from the available history. Differential diagnosis also includes other causes of acute abdomen and metabolic disturbances, but DKA is the most likely consideration given the patient's clinical presentation and laboratory results.",
+            "plan": "The plan for Patient Krishnan includes:\n* Administering insulin to manage her elevated blood glucose level of 480 mg/dL, with the dosage and frequency to be determined based on her individual needs and response to treatment\n* Aggressive fluid replacement to address dehydration and support blood pressure, as evidenced by her dry mucous membranes and low blood pressure of 100/60 mmHg\n* Monitoring of her vital signs, blood glucose levels, and urine ketones to assess the effectiveness of treatment and guide adjustments to her care\n* Further evaluation to determine the severity of her condition and identify any potential precipitating factors, such as underlying infection, that may have contributed to the development of diabetic ketoacidosis (DKA)\n* Patient education on the importance of strict insulin management and monitoring, particularly during periods of illness or stress, to prevent future episodes of DKA\n* Consideration of potential complications, such as hypoglycemia and acidosis, and measures to prevent or manage these conditions, including close monitoring of her blood glucose levels and adjustment of her insulin dosage as needed. \nFurther history is needed regarding the patient's recent deviation from her typical insulin regimen and any potential stressors or precipitating factors that may have contributed to her current condition."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 330,
+            "generate": 3103,
+            "critique": 546,
+            "reidentify": 0
+          },
+          "tokensUsed": 7886
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 4,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "false_reasoning",
+            "section": "assessment",
+            "excerpt": "the severity of the condition and the presence of any potential precipitating factors, such as underlying infection, cannot be determined from the available history",
+            "transcriptEvidence": "pH of 7.21, capillary blood glucose was 480 mg/dL, ketones 4+, HR 110 bpm, RR 30 breaths/min, BP 100/60 mmHg, Kussmaul respirations, fruity odor on breath, dry mucous membranes",
+            "why": "The transcript provides substantial objective data (pH 7.21, glucose 480, ketones 4+, hemodynamic compromise, Kussmaul respirations) that clearly indicates moderate-to-severe DKA. Claiming severity 'cannot be determined' mischaracterizes the available evidence. Additionally, the patient denies fever and sick contacts, making underlying infection less likely as a precipitant, yet the note implies this is an open question without acknowledging the negative history."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "subjective",
+            "excerpt": "Patient's history of hypoglycemia and acidosis is not reported",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript makes no mention of any prior history of hypoglycemia or acidosis. Introducing these concepts — even as noted absences — is unwarranted and could mislead a reader into thinking these are relevant historical items that should have been explored, when the transcript provides no basis for this."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note accurately captures the clinical presentation and correctly identifies DKA as the primary diagnosis with appropriate supporting evidence. However, the plan is clinically incomplete: it fails to specify an insulin drip protocol, omits electrolyte monitoring entirely (especially potassium, which is critical in DKA management), and does not address the red flags of hypokalemia and cerebral edema. The claim that severity 'cannot be determined' despite clear objective data (pH 7.21, hemodynamic compromise) represents a significant reasoning error that could delay appropriate escalation of care."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": -1,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.7,
+      "totalLatencyMs": 50649,
+      "totalTokensUsed": 11926,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0019",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient Agarwal reports a 12-hour history of lower abdominal pain, initially diffuse in the periumbilical region, which then localized to the right lower quadrant over the last 6 hours. He rates the pain as 7/10 in severity and also reports anorexia, having had no desire to eat since the pain began, and a subjective low-grade fever. He denies nausea, vomiting, diarrhea, or constipation. Patient's past medical history is not significant, and he takes no regular medications. Associated symptoms include tenderness to palpation at McBurney's point and rebound tenderness in the right lower quadrant, as elicited on physical examination. History of other relevant conditions is not reported.",
+          "objective": "Vital signs: Temperature 37.8°C, HR 92 bpm, BP 128/78 mmHg, RR 16 bpm, SpO2 99% on room air. Abdominal exam reveals tenderness to palpation at McBurney's point with guarding and rebound tenderness in the right lower quadrant, with normoactive bowel sounds. Lab results show a white blood cell count of 14.0 x 10^9/L with neutrophilic predominance.",
+          "assessment": "The assessment suggests acute appendicitis as a differential diagnosis, given the patient's presentation of lower abdominal pain that migrated from the periumbilical region to the right lower quadrant, tenderness at McBurney's point, rebound tenderness, and an elevated white blood cell count with neutrophilic predominance. The patient's symptoms, including anorexia and subjective low-grade fever, are also consistent with this diagnosis. However, a definitive diagnosis cannot be made without further evaluation, such as imaging studies. The differential diagnosis also includes other causes of acute abdominal pain, but the clinical presentation and laboratory findings are most suggestive of appendicitis at this time. Further testing and evaluation are needed to confirm the diagnosis and guide management.",
+          "plan": "The plan for patient Agarwal includes:\n* Ordering imaging studies to confirm the diagnosis of acute appendicitis, as the clinical presentation and laboratory findings are suggestive of this condition, but a definitive diagnosis cannot be made without further evaluation.\n* Administering paracetamol (acetaminophen) 500-1000mg PO every 4-6 hours, as needed, for pain and fever management, given the patient's subjective report of low-grade fever and abdominal pain rated as 7/10 in severity.\n* Considering surgical consultation for potential appendectomy, given the high suspicion of acute appendicitis, which is a surgical emergency.\n* Monitoring the patient's vital signs and abdominal examination closely for any signs of worsening condition or peritonitis, such as increasing pain, fever, or rebound tenderness.\n* Providing patient education on the possible diagnosis of appendicitis, the need for further testing, and the potential need for surgical intervention.\n* Further history needed regarding the patient's symptoms and potential allergies or contraindications to medications, such as paracetamol, before finalizing the plan."
+        },
+        "keywords": [
+          "lower abdominal pain",
+          "anorexia",
+          "fever",
+          "periumbilical region",
+          "right lower quadrant",
+          "nausea",
+          "vomiting",
+          "diarrhea",
+          "constipation",
+          "McBurney's point",
+          "rebound tenderness",
+          "white blood cell count",
+          "neutrophilic predominance"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 1,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.9,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Patient Agarwal, Harsh, a 29-year-old male, presents to the emergency department with a chief complaint of lower abdominal pain for approximately 12 hours. He describes the pain as initially diffuse in the periumbilical region, which then migrated and localized to the right lower quadrant over the last 6 hours. He rates the pain as a 7/10 in severity currently. Associated symptoms include anorexia, reporting no desire to eat since the pain began, and a subjective low-grade fever, though he has not taken his temperature at home. He denies nausea, vomiting, diarrhea, or constipation. He reports no significant past medical history and takes no regular medications. Surgical history is negative.\n\nOn physical examination, vital signs were recorded: Temperature 37.8°C, Heart Rate 92 bpm, Blood Pressure 128/78 mmHg, Respiratory Rate 16 bpm, Oxygen Saturation 99% on room air. Abdominal examination reveals tenderness to palpation at McBurney's point with guarding. Rebound tenderness is also elicited in the right lower quadrant. Bowel sounds are present and normoactive. The remainder of the physical exam is unremarkable. A complete blood count was performed, revealing a white blood cell count of 14.0 x 10^9/L with neutrophilic predominance.\"",
+          "rawLlmNote": {
+            "subjective": "Patient Agarwal reports a 12-hour history of lower abdominal pain, initially diffuse in the periumbilical region, which then localized to the right lower quadrant over the last 6 hours. He rates the pain as 7/10 in severity and also reports anorexia, having had no desire to eat since the pain began, and a subjective low-grade fever. He denies nausea, vomiting, diarrhea, or constipation. Patient's past medical history is not significant, and he takes no regular medications. Associated symptoms include tenderness to palpation at McBurney's point and rebound tenderness in the right lower quadrant, as elicited on physical examination. History of other relevant conditions is not reported.",
+            "objective": "Vital signs: Temperature 37.8°C, HR 92 bpm, BP 128/78 mmHg, RR 16 bpm, SpO2 99% on room air. Abdominal exam reveals tenderness to palpation at McBurney's point with guarding and rebound tenderness in the right lower quadrant, with normoactive bowel sounds. Lab results show a white blood cell count of 14.0 x 10^9/L with neutrophilic predominance.",
+            "assessment": "The assessment suggests acute appendicitis as a differential diagnosis, given the patient's presentation of lower abdominal pain that migrated from the periumbilical region to the right lower quadrant, tenderness at McBurney's point, rebound tenderness, and an elevated white blood cell count with neutrophilic predominance. The patient's symptoms, including anorexia and subjective low-grade fever, are also consistent with this diagnosis. However, a definitive diagnosis cannot be made without further evaluation, such as imaging studies. The differential diagnosis also includes other causes of acute abdominal pain, but the clinical presentation and laboratory findings are most suggestive of appendicitis at this time. Further testing and evaluation are needed to confirm the diagnosis and guide management.",
+            "plan": "The plan for patient Agarwal includes:\n* Ordering imaging studies to confirm the diagnosis of acute appendicitis, as the clinical presentation and laboratory findings are suggestive of this condition, but a definitive diagnosis cannot be made without further evaluation.\n* Administering paracetamol (acetaminophen) 500-1000mg PO every 4-6 hours, as needed, for pain and fever management, given the patient's subjective report of low-grade fever and abdominal pain rated as 7/10 in severity.\n* Considering surgical consultation for potential appendectomy, given the high suspicion of acute appendicitis, which is a surgical emergency.\n* Monitoring the patient's vital signs and abdominal examination closely for any signs of worsening condition or peritonitis, such as increasing pain, fever, or rebound tenderness.\n* Providing patient education on the possible diagnosis of appendicitis, the need for further testing, and the potential need for surgical intervention.\n* Further history needed regarding the patient's symptoms and potential allergies or contraindications to medications, such as paracetamol, before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 252,
+            "generate": 2652,
+            "critique": 294,
+            "reidentify": 0
+          },
+          "tokensUsed": 7085
+        }
+      },
+      "judgeResult": {
+        "hallucination": 2,
+        "omission": 3,
+        "faithfulness": 3,
+        "groundedness": 4,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "misattributed_fact",
+            "section": "subjective",
+            "excerpt": "Associated symptoms include tenderness to palpation at McBurney's point and rebound tenderness in the right lower quadrant, as elicited on physical examination.",
+            "transcriptEvidence": "Abdominal examination reveals tenderness to palpation at McBurney's point with guarding. Rebound tenderness is also elicited in the right lower quadrant.",
+            "why": "Physical examination findings (McBurney's point tenderness and rebound tenderness) are placed in the Subjective section as 'associated symptoms.' These are objective clinician-elicited findings, not patient-reported symptoms. This is a misattribution of objective data into the subjective section, which is a clinically significant structural error that could mislead downstream readers about the source and reliability of these findings."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note correctly identifies acute appendicitis with appropriate clinical reasoning and acknowledges diagnostic uncertainty well. However, three critical plan items are missing: NPO status, IV fluid resuscitation, and empiric antibiotics — all standard of care for suspected appendicitis with surgical candidacy. Additionally, physical examination findings were incorrectly placed in the Subjective section, which is a structural misattribution that compromises the note's clinical integrity."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -2,
+        "faithfulness": 2,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 2
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.6499999999999999,
+      "totalLatencyMs": 39384,
+      "totalTokensUsed": 10354,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0020",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient Riya Saxena is a 55-year-old female who presents with a one-year history of progressive memory loss, as reported by her husband, characterized by frequent misplacement of items, forgetfulness of recent conversations, and occasional word-finding difficulties. The patient, however, denies any significant memory issues, confusion, or difficulty with daily tasks, stating \"My memory is fine. I just have a lot on my mind these days.\" She reports no symptoms of cognitive impairment or dementia. History of dementia or previous cognitive function assessments, aside from the current Montreal Cognitive Assessment, is not reported. The patient's husband describes these changes as a noticeable decline from her baseline cognitive function, but the patient's own history on this topic is limited to her denial of symptoms. The patient's past medical history related to stroke or transient ischemic attack is not reported.",
+          "objective": "Vitals: BP 128/78, HR 72, RR 16, Temp 98.6°F. Patient is alert and oriented to person, place, and time. Cranial nerves II-XII are intact. Motor strength is 5/5 bilaterally in all extremities. Sensation is intact to light touch and pinprick. Reflexes are 2+ and symmetric. No focal neurological deficits were noted. Montreal Cognitive Assessment (MoCA) score is 22/30, indicating mild cognitive impairment.",
+          "assessment": "The patient's presentation of progressive memory loss, as reported by her husband, combined with her own denial of symptoms, suggests a complex cognitive profile. The Montreal Cognitive Assessment score of 22/30 indicates mild cognitive impairment, which may be indicative of an underlying neurological condition, such as early-stage dementia or vascular cognitive impairment. However, the etiology of her cognitive changes cannot be determined from the available history and further workup is warranted to rule out potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack. Differential diagnosis includes mild cognitive impairment, early-stage dementia, and other conditions that may cause cognitive decline, pending further evaluation and diagnostic testing.",
+          "plan": "The plan for Patient Riya Saxena includes:\n* Further workup to investigate the etiology of her cognitive changes, as the current assessment suggests mild cognitive impairment with a Montreal Cognitive Assessment score of 22/30, but the exact cause remains unclear.\n* Consideration of potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack, although no specific tests or referrals were discussed at this time.\n* Patient education on the importance of follow-up and further evaluation to determine the underlying cause of her cognitive decline, as her denial of symptoms may impact her understanding of the need for ongoing assessment.\n* Further history needed regarding the patient's past medical history, including any potential history of stroke or transient ischemic attack, as well as any previous cognitive function assessments, to inform the development of a comprehensive plan."
+        },
+        "keywords": [
+          "memory loss",
+          "cognitive impairment",
+          "dementia",
+          "confusion",
+          "Montreal Cognitive Assessment",
+          "mild cognitive impairment",
+          "cranial nerves",
+          "motor strength",
+          "reflexes",
+          "cognitive function"
+        ],
+        "critique": {
+          "hallucination": 2,
+          "omission": 2,
+          "faithfulness": 4,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.8,
+          "flags": [
+            "The SOAP note mentions 'early-stage dementia' as a potential diagnosis, but the transcript does not provide sufficient evidence to support this claim.",
+            "The SOAP note mentions 'cerebrovascular diseases such as ischemic stroke or transient ischemic attack' as potential causes, but the transcript does not provide any evidence to support this claim.",
+            "The SOAP note mentions 'other conditions that may cause cognitive decline' as part of the differential diagnosis, but does not specify what these conditions are or provide evidence to support their inclusion."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1> today, a 55-year-old female, accompanied by her husband. Her husband reports a one-year history of progressive memory loss, noting she frequently misplaces items, forgets recent conversations, and occasionally struggles with word-finding. He describes these changes as a noticeable decline from her baseline cognitive function.\n\nWhen I asked Patient Saxena about these concerns, she stated, \"My memory is fine. I just have a lot on my mind these days.\" She denied any significant memory issues, confusion, or difficulty with daily tasks. She maintained good eye contact throughout the interview and her affect was congruent with her denial.\n\nVitals today are stable: BP 128/78, HR 72, RR 16, Temp 98.6°F. On physical exam, she is alert and oriented to person, place, and time. Cranial nerves II-XII are intact. Motor strength is 5/5 bilaterally in all extremities. Sensation is intact to light touch and pinprick. Reflexes are 2+ and symmetric. No focal neurological deficits were noted. A Montreal Cognitive Assessment (MoCA) was administered, yielding a score of 22/30. This score indicates mild cognitive impairment. Further workup is warranted to investigate the etiology of her cognitive changes.",
+          "rawLlmNote": {
+            "subjective": "Patient <NAME_1> is a 55-year-old female who presents with a one-year history of progressive memory loss, as reported by her husband, characterized by frequent misplacement of items, forgetfulness of recent conversations, and occasional word-finding difficulties. The patient, however, denies any significant memory issues, confusion, or difficulty with daily tasks, stating \"My memory is fine. I just have a lot on my mind these days.\" She reports no symptoms of cognitive impairment or dementia. History of dementia or previous cognitive function assessments, aside from the current Montreal Cognitive Assessment, is not reported. The patient's husband describes these changes as a noticeable decline from her baseline cognitive function, but the patient's own history on this topic is limited to her denial of symptoms. The patient's past medical history related to stroke or transient ischemic attack is not reported.",
+            "objective": "Vitals: BP 128/78, HR 72, RR 16, Temp 98.6°F. Patient is alert and oriented to person, place, and time. Cranial nerves II-XII are intact. Motor strength is 5/5 bilaterally in all extremities. Sensation is intact to light touch and pinprick. Reflexes are 2+ and symmetric. No focal neurological deficits were noted. Montreal Cognitive Assessment (MoCA) score is 22/30, indicating mild cognitive impairment.",
+            "assessment": "The patient's presentation of progressive memory loss, as reported by her husband, combined with her own denial of symptoms, suggests a complex cognitive profile. The Montreal Cognitive Assessment score of 22/30 indicates mild cognitive impairment, which may be indicative of an underlying neurological condition, such as early-stage dementia or vascular cognitive impairment. However, the etiology of her cognitive changes cannot be determined from the available history and further workup is warranted to rule out potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack. Differential diagnosis includes mild cognitive impairment, early-stage dementia, and other conditions that may cause cognitive decline, pending further evaluation and diagnostic testing.",
+            "plan": "The plan for Patient <NAME_1> includes:\n* Further workup to investigate the etiology of her cognitive changes, as the current assessment suggests mild cognitive impairment with a Montreal Cognitive Assessment score of 22/30, but the exact cause remains unclear.\n* Consideration of potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack, although no specific tests or referrals were discussed at this time.\n* Patient education on the importance of follow-up and further evaluation to determine the underlying cause of her cognitive decline, as her denial of symptoms may impact her understanding of the need for ongoing assessment.\n* Further history needed regarding the patient's past medical history, including any potential history of stroke or transient ischemic attack, as well as any previous cognitive function assessments, to inform the development of a comprehensive plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 561,
+            "generate": 2950,
+            "critique": 636,
+            "reidentify": 0
+          },
+          "tokensUsed": 7389
+        }
+      },
+      "judgeResult": {
+        "hallucination": 3,
+        "omission": 3,
+        "faithfulness": 3,
+        "groundedness": 3,
+        "bias": 1,
+        "fluency": 4,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [
+          {
+            "type": "fabricated_fact",
+            "section": "subjective",
+            "excerpt": "The patient's past medical history related to stroke or transient ischemic attack is not reported.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript never mentions stroke, TIA, or any inquiry into cerebrovascular history. This falsely implies that stroke/TIA history was specifically sought during the encounter but not obtained, fabricating a clinical action that did not occur."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "assessment",
+            "excerpt": "further workup is warranted to rule out potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack",
+            "transcriptEvidence": "Further workup is warranted to investigate the etiology of her cognitive changes.",
+            "why": "The transcript states workup is needed to investigate etiology but never specifies cerebrovascular disease, stroke, or TIA as differentials. The AI fabricates a specific cerebrovascular focus that was not part of the clinical discussion."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "plan",
+            "excerpt": "Consideration of potential causes, including cerebrovascular diseases such as ischemic stroke or transient ischemic attack, although no specific tests or referrals were discussed at this time.",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript never mentions stroke or TIA as considerations. This repeats the fabricated cerebrovascular focus from the Assessment into the Plan, compounding the hallucination across sections."
+          },
+          {
+            "type": "fabricated_fact",
+            "section": "plan",
+            "excerpt": "Further history needed regarding the patient's past medical history, including any potential history of stroke or transient ischemic attack, as well as any previous cognitive function assessments",
+            "transcriptEvidence": "NONE",
+            "why": "The transcript does not indicate that stroke/TIA history was identified as a gap or that it was discussed. This fabricates a clinical priority that was never raised during the encounter."
+          },
+          {
+            "type": "confidence_without_evidence",
+            "section": "subjective",
+            "excerpt": "She reports no symptoms of cognitive impairment or dementia.",
+            "transcriptEvidence": "She denied any significant memory issues, confusion, or difficulty with daily tasks.",
+            "why": "The patient specifically denied memory issues, confusion, and difficulty with daily tasks. The AI broadens this into a categorical denial of 'cognitive impairment or dementia,' which is a more sweeping clinical conclusion than what the patient actually stated."
+          }
+        ],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note captures the core clinical narrative faithfully and acknowledges uncertainty about etiology, but it fabricates a recurring cerebrovascular disease focus (stroke/TIA) that appears nowhere in the transcript, introducing it across three of four sections. More critically, the Plan is vague and fails to include specific recommended workup items (B12, TSH, MRI brain, neuropsychological evaluation) that represent standard-of-care for mild cognitive impairment, and reversible causes are not explicitly addressed as red flags. The note also omits the transcript's behavioral observations (good eye contact, congruent affect) that are clinically relevant to the cognitive assessment."
+      },
+      "calibrationDelta": {
+        "hallucination": -1,
+        "omission": -1,
+        "faithfulness": 1,
+        "groundedness": 1,
+        "bias": 0,
+        "fluency": 1,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.8,
+      "judgeAggregateScore": 0.5375000000000001,
+      "totalLatencyMs": 64348,
+      "totalTokensUsed": 12370,
+      "errored": false
+    }
+  ]
+}

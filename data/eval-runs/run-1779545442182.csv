@@ -1,0 +1,8 @@
+case_id,errored,judge_hallucination,judge_omission,judge_faithfulness,judge_groundedness,judge_bias,judge_fluency,judge_completeness,judge_aggregate_score,self_reported_confidence,cal_delta_faithfulness,cal_delta_hallucination,expected_diagnoses_met,expected_plan_items_met,red_flags_handled,uncertainty_acknowledged,hallucinations_count,latency_ms,tokens_used,feedback
+medqa-0001,true,,,,,,,,,,,,,,,,,,,{
+    "error": {
+        "code": "400",
+        "message": "Param Incorrect",
+        "param": "Not supported model gemini-2.5-flash"
+    }
+}

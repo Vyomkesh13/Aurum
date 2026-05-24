@@ -1,15 +1,20 @@
 /**
- * Independent judge — Pro model evaluating Flash output.
+ * Independent judge — MiMo-V2.5-Pro evaluating pipeline output.
  * Adversarially framed to reduce self-enhancement bias.
  * Med-HALT hallucination typing.
  */
- 
-import { GroqProvider } from '@/lib/llm/groq'
+
+import { MiMoProvider } from '@/lib/llm/mimo'
 import type { SoapNote } from '@/lib/soap'
 import type { EvalCase, JudgeResult, Hallucination, HallucinationType } from './types'
- 
-const JUDGE_MODEL = 'llama-3.3-70b-versatile'
- 
+
+const JUDGE_MODEL = 'mimo-v2.5-pro'
+let _judgeProvider: MiMoProvider | null = null
+function getJudgeProvider(): MiMoProvider {
+  if (!_judgeProvider) _judgeProvider = new MiMoProvider()
+  return _judgeProvider
+}
+
 const JUDGE_PROMPT = `You are a senior physician auditing a clinical AI system's output. You did not generate this SOAP note — you are reviewing another system's work for clinical safety and quality. Be skeptical and rigorous. Your goal is to find problems, not to validate.
 
 You will receive:
@@ -75,40 +80,39 @@ Output ONLY valid JSON, no markdown, no preamble:
   "uncertaintyAcknowledged": <bool>,
   "feedback": "<2-3 sentences of overall assessment>"
 }`
- 
+
 export async function judgeSoap(params: {
   evalCase: EvalCase
   soapNote: SoapNote
 }): Promise<{ judgeResult: JudgeResult; tokensUsed: number; latencyMs: number }> {
   const { evalCase, soapNote } = params
-  const llm = new GroqProvider()
- 
+
   const userMessage = `ORIGINAL TRANSCRIPT:
 ${evalCase.transcript}
- 
+
 GENERATED SOAP NOTE:
 [Subjective]
 ${soapNote.subjective}
- 
+
 [Objective]
 ${soapNote.objective}
- 
+
 [Assessment]
 ${soapNote.assessment}
- 
+
 [Plan]
 ${soapNote.plan}
- 
+
 GROUND TRUTH:
 - Expected diagnoses: ${evalCase.expectedDiagnoses.join(', ')}
 - Expected plan items: ${evalCase.expectedPlanItems.join(', ')}
 - Red flags to handle: ${evalCase.redFlags.join(', ')}
 - Known ambiguities: ${evalCase.knownAmbiguities.length ? evalCase.knownAmbiguities.join(', ') : 'none'}
 - Uncertainty injected: ${evalCase.uncertaintyInjected ? 'YES — model should acknowledge uncertainty' : 'no'}
- 
+
 Audit this SOAP note rigorously.`
- 
-  const response = await llm.generate(
+
+  const response = await getJudgeProvider().generate(
     [{ role: 'user', content: userMessage }],
     {
       model: JUDGE_MODEL,
@@ -117,22 +121,22 @@ Audit this SOAP note rigorously.`
       maxTokens: 4000,
     }
   )
- 
+
   const judgeResult = parseJudgeResult(response.content)
- 
+
   return {
     judgeResult,
     tokensUsed: response.inputTokens + response.outputTokens,
     latencyMs: response.latencyMs,
   }
 }
- 
+
 function parseJudgeResult(raw: string): JudgeResult {
   let cleaned = raw.trim()
   if (cleaned.startsWith('```')) {
     cleaned = cleaned.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '')
   }
- 
+
   try {
     const parsed = JSON.parse(cleaned)
     return {
@@ -171,7 +175,7 @@ function parseJudgeResult(raw: string): JudgeResult {
     }
   }
 }
- 
+
 const VALID_TYPES: HallucinationType[] = [
   'fabricated_fact',
   'misattributed_fact',
@@ -179,7 +183,7 @@ const VALID_TYPES: HallucinationType[] = [
   'false_reasoning',
 ]
 const VALID_SECTIONS = ['subjective', 'objective', 'assessment', 'plan'] as const
- 
+
 function parseHallucinations(arr: unknown): Hallucination[] {
   if (!Array.isArray(arr)) return []
   return arr
@@ -196,13 +200,13 @@ function parseHallucinations(arr: unknown): Hallucination[] {
       why: typeof h.why === 'string' ? h.why : '',
     }))
 }
- 
+
 function clampInt(v: unknown, min: number, max: number, fallback: number): number {
   const n = typeof v === 'number' ? v : Number(v)
   if (Number.isNaN(n)) return fallback
   return Math.max(min, Math.min(max, Math.round(n)))
 }
- 
+
 function clampFloat(v: unknown, min: number, max: number, fallback: number): number {
   const n = typeof v === 'number' ? v : Number(v)
   if (Number.isNaN(n)) return fallback

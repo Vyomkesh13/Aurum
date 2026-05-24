@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "runId": "run-1779547867789",
+    "startedAt": "2026-05-23T14:51:07.788Z",
+    "completedAt": "2026-05-23T14:52:07.365Z",
+    "totalCases": 1,
+    "successfulCases": 1,
+    "erroredCases": 0,
+    "meanScores": {
+      "hallucination": 1,
+      "omission": 2,
+      "faithfulness": 4,
+      "groundedness": 5,
+      "bias": 1,
+      "fluency": 5,
+      "completeness": 3
+    },
+    "meanCalibrationDelta": 1,
+    "calibrationCorrelation": 0,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 0,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 1,
+    "expectedPlanItemsMetRate": 0,
+    "redFlagsHandledRate": 1,
+    "uncertaintyAcknowledgedRate": 1,
+    "meanLatencyMs": 46567,
+    "meanTokensPerCase": 11229,
+    "totalTokensUsed": 11229
+  },
+  "results": [
+    {
+      "caseId": "medqa-0001",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago, has become more frequent over the past two weeks, and consistently occurs with exertion, specifically when walking uphill or carrying groceries, radiating down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. History of other symptoms or conditions not reported.",
+          "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "assessment": "The patient's presentation of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which occurs with exertion and radiates down the left arm to the elbow, is concerning for angina pectoris, a symptom of coronary artery disease. The fact that the symptoms are reliably relieved within 5 minutes of resting is consistent with this diagnosis. Given the patient's history of hypertension, current smoking status, and family history of myocardial infarction, the risk of coronary artery disease is increased. Rule out acute coronary syndrome (ACS) — stat ECG and troponin are required urgently to evaluate for myocardial infarction. The patient's current medication, lisinopril, is appropriate for hypertension management, but the blood pressure reading of 148/92 mmHg suggests that the hypertension may not be optimally controlled. Differential diagnosis includes other causes of chest pain, such as musculoskeletal or gastrointestinal disorders, but the exertional nature of the symptoms and radiation to the arm make angina a more likely consideration.",
+          "plan": "The plan for this patient includes:\n* Medication: Continue lisinopril as prescribed for hypertension management, with consideration for adjusting the dosage or adding additional antihypertensive medications to achieve better blood pressure control.\n* Diagnostic tests: \n  * Stat ECG to evaluate for signs of myocardial infarction or ischemia\n  * Troponin level to rule out acute coronary syndrome\n  * Further cardiac workup, including possible stress testing or coronary angiography, to evaluate for coronary artery disease\n  * Consider ordering a complete blood count, basic metabolic panel, and lipid profile to assess for other risk factors for coronary artery disease\n* Referrals: Consider referral to a cardiologist for further evaluation and management of suspected coronary artery disease\n* Follow-up: Schedule a follow-up appointment to review the results of the diagnostic tests and to reassess the patient's symptoms and blood pressure control\n* Patient education: Educate the patient on the importance of smoking cessation, lifestyle modifications to reduce the risk of coronary artery disease, and the need for close follow-up to monitor for signs of cardiac disease. \nFurther history is needed regarding the patient's smoking cessation plans and any other potential risk factors for coronary artery disease before finalizing the plan."
+        },
+        "keywords": [
+          "chest pressure",
+          "hypertension",
+          "lisinopril",
+          "myocardial infarction",
+          "dyspnea",
+          "substernal chest",
+          "left arm",
+          "elbow",
+          "hypertension"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 2,
+          "faithfulness": 5,
+          "groundedness": 4,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 4,
+          "confidence": 0.9,
+          "flags": [
+            "No mention of the patient's current smoking cessation plans or willingness to quit",
+            "No detailed inquiry about the patient's diet, physical activity, or other lifestyle factors that could influence cardiovascular risk",
+            "The SOAP note assumes the patient's symptoms are due to angina pectoris without fully considering other potential causes of chest pain, although it does mention differential diagnosis"
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "I am seeing Patient <NAME_1>, a 52-year-old male, presenting with a chief complaint of substernal chest pressure. He describes the pressure as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago and has become more frequent over the past two weeks. He reports that the pressure consistently occurs with exertion, specifically when walking uphill or carrying groceries, and radiates down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. He has no prior history of similar symptoms.\n\nHis past medical history includes hypertension, diagnosed approximately 10 years ago, for which he states he takes lisinopril daily. He is a current smoker, reporting a 30 pack-year history, smoking one pack per day for 30 years. He denies illicit drug use or significant alcohol consumption. Family history is significant for a paternal history of myocardial infarction at age 60.\n\nOn physical examination, vital signs are: BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+          "rawLlmNote": {
+            "subjective": "Patient reports a chief complaint of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which he rates 6/10 at its peak. The discomfort began approximately two months ago, has become more frequent over the past two weeks, and consistently occurs with exertion, specifically when walking uphill or carrying groceries, radiating down his left arm to his elbow. He states the symptoms are reliably relieved within 5 minutes of resting. He denies associated dyspnea, palpitations, diaphoresis, nausea, or dizziness. Patient has a history of hypertension, for which he takes lisinopril daily, and a family history significant for a paternal history of myocardial infarction at age 60. History of other symptoms or conditions not reported.",
+            "objective": "BP 148/92 mmHg, HR 78 bpm, RR 16 bpm, Temp 98.6°F, SpO2 98% on room air. Cardiac auscultation reveals a regular rate and rhythm, S1/S2 present, no murmurs, rubs, or gallops. Lungs are clear to auscultation bilaterally with no adventitious sounds. Peripheral pulses are 2+ and symmetric in all four extremities. There is no peripheral edema.",
+            "assessment": "The patient's presentation of substernal chest pressure, described as a \"tightness\" or \"squeezing\" sensation, which occurs with exertion and radiates down the left arm to the elbow, is concerning for angina pectoris, a symptom of coronary artery disease. The fact that the symptoms are reliably relieved within 5 minutes of resting is consistent with this diagnosis. Given the patient's history of hypertension, current smoking status, and family history of myocardial infarction, the risk of coronary artery disease is increased. Rule out acute coronary syndrome (ACS) — stat ECG and troponin are required urgently to evaluate for myocardial infarction. The patient's current medication, lisinopril, is appropriate for hypertension management, but the blood pressure reading of 148/92 mmHg suggests that the hypertension may not be optimally controlled. Differential diagnosis includes other causes of chest pain, such as musculoskeletal or gastrointestinal disorders, but the exertional nature of the symptoms and radiation to the arm make angina a more likely consideration.",
+            "plan": "The plan for this patient includes:\n* Medication: Continue lisinopril as prescribed for hypertension management, with consideration for adjusting the dosage or adding additional antihypertensive medications to achieve better blood pressure control.\n* Diagnostic tests: \n  * Stat ECG to evaluate for signs of myocardial infarction or ischemia\n  * Troponin level to rule out acute coronary syndrome\n  * Further cardiac workup, including possible stress testing or coronary angiography, to evaluate for coronary artery disease\n  * Consider ordering a complete blood count, basic metabolic panel, and lipid profile to assess for other risk factors for coronary artery disease\n* Referrals: Consider referral to a cardiologist for further evaluation and management of suspected coronary artery disease\n* Follow-up: Schedule a follow-up appointment to review the results of the diagnostic tests and to reassess the patient's symptoms and blood pressure control\n* Patient education: Educate the patient on the importance of smoking cessation, lifestyle modifications to reduce the risk of coronary artery disease, and the need for close follow-up to monitor for signs of cardiac disease. \nFurther history is needed regarding the patient's smoking cessation plans and any other potential risk factors for coronary artery disease before finalizing the plan."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 295,
+            "generate": 2844,
+            "critique": 6637,
+            "reidentify": 0
+          },
+          "tokensUsed": 7812
+        }
+      },
+      "judgeResult": {
+        "hallucination": 1,
+        "omission": 2,
+        "faithfulness": 4,
+        "groundedness": 5,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 3,
+        "judgeConfidence": 0.85,
+        "hallucinationsFound": [],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": true,
+        "feedback": "The SOAP note is clinically well-written, faithful to the transcript, and correctly identifies stable angina/coronary artery disease with appropriate ACS rule-out. However, aspirin — a critical immediate intervention for suspected ACS — is absent from the Plan, which is a clinically significant omission. Additionally, the patient's 30 pack-year smoking history is not documented in the Subjective section despite being referenced in the Assessment, representing an organizational gap."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": 0,
+        "faithfulness": 1,
+        "groundedness": -1,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.9,
+      "judgeAggregateScore": 0.8625,
+      "totalLatencyMs": 46567,
+      "totalTokensUsed": 11229,
+      "errored": false
+    }
+  ]
+}

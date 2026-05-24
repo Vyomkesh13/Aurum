@@ -8,7 +8,12 @@ import { getLLM } from '@/lib/llm'
 import { CRITIQUE_PROMPT } from '../prompts'
 import type { CritiqueScores, SoapNote } from '../types'
 
-const MODEL = 'gemini-2.5-flash'
+function getModel(): string {
+  const provider = process.env.LLM_PROVIDER ?? 'gemini'
+  if (provider === 'mimo') return 'mimo-v2.5-pro'
+  if (provider === 'groq') return 'llama-3.3-70b-versatile'
+  return 'gemini-2.5-flash'
+}
 
 export async function critiqueSoap(params: {
   deidentifiedTranscript: string
@@ -28,7 +33,7 @@ export async function critiqueSoap(params: {
   const response = await llm.generate(
     [{ role: 'user', content: userMessage }],
     {
-      model: MODEL,
+      model: getModel(),
       systemPrompt: CRITIQUE_PROMPT,
       temperature: 0.1,    // critique should be near-deterministic
       maxTokens: 4000,

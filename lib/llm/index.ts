@@ -7,6 +7,7 @@
 import type { LLMProvider } from './provider'
 import { GeminiProvider } from './gemini'
 import { GroqProvider } from './groq'
+import { MiMoProvider } from './mimo'
 
 export type { LLMMessage, LLMOptions, LLMResponse } from './types'
 export { LLMError } from './types'
@@ -19,6 +20,8 @@ export function getLLM(): LLMProvider {
     const choice = (process.env.LLM_PROVIDER ?? 'gemini').toLowerCase()
     if (choice === 'groq') {
       providerInstance = new GroqProvider()
+    } else if (choice === 'mimo') {
+      providerInstance = new MiMoProvider()
     } else {
       providerInstance = new GeminiProvider()
     }
