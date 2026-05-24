@@ -1,0 +1,224 @@
+{
+  "summary": {
+    "runId": "run-1779616385896",
+    "startedAt": "2026-05-24T09:53:05.896Z",
+    "completedAt": "2026-05-24T09:56:48.533Z",
+    "totalCases": 3,
+    "successfulCases": 2,
+    "erroredCases": 1,
+    "meanScores": {
+      "hallucination": 1,
+      "omission": 2,
+      "faithfulness": 5,
+      "groundedness": 5,
+      "bias": 1,
+      "fluency": 5,
+      "completeness": 4
+    },
+    "meanCalibrationDelta": -1.5,
+    "calibrationCorrelation": 0,
+    "hallucinationTypeFrequency": {
+      "fabricated_fact": 0,
+      "misattributed_fact": 0,
+      "confidence_without_evidence": 0,
+      "false_reasoning": 0
+    },
+    "expectedDiagnosesMetRate": 1,
+    "expectedPlanItemsMetRate": 0.5,
+    "redFlagsHandledRate": 0.5,
+    "uncertaintyAcknowledgedRate": 0.5,
+    "meanLatencyMs": 77385,
+    "meanTokensPerCase": 11314,
+    "totalTokensUsed": 22628
+  },
+  "results": [
+    {
+      "caseId": "medqa-0018",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient is a 25-year-old female with a history of Type 1 Diabetes Mellitus, diagnosed at age 12, presenting with acute onset symptoms. She reports significant nausea and vomiting for the past 12 hours, occurring approximately five times, with inability to keep down food or liquids. She also reports diffuse abdominal pain, described as a constant, cramping sensation, and increasing shortness of breath, noting her breathing feels \"fast and deep.\" Patient states she typically manages her diabetes with insulin injections but admits to being lax with monitoring and insulin doses recently due to feeling unwell. She denies recent illness, fever, sick contacts, alcohol, or illicit drug use.",
+          "objective": "T 98.6°F, HR 110 bpm, RR 30 breaths/min, BP 100/60 mmHg, SpO2 98%. Capillary blood glucose 480 mg/dL. Urine ketones 4+. ABG pH 7.21. Physical exam reveals dry mucous membranes, fruity odor on breath, mild diffuse abdominal tenderness, and Kussmaul respirations.",
+          "assessment": "25-year-old female with Type 1 Diabetes Mellitus presenting with acute diabetic ketoacidosis (DKA), a critical metabolic emergency. This is evidenced by severe hyperglycemia (BG 480 mg/dL), significant ketonuria (4+), metabolic acidosis (pH 7.21), and clinical findings of nausea, vomiting, abdominal pain, Kussmaul respirations, fruity breath, and dehydration. Given the potential for significant morbidity and mortality, prompt and aggressive management is urgently required.",
+          "plan": "**Plan:**\n*   **Admission:** Inpatient admission for management of severe diabetic ketoacidosis (DKA).\n*   **IV Fluids:** Initiate intravenous fluid resuscitation with isotonic saline to correct dehydration.\n*   **Insulin Therapy:** Start continuous intravenous regular insulin infusion to address hyperglycemia and acidosis.\n*   **Monitoring:**\n    *   Frequent capillary blood glucose monitoring.\n    *   Serial serum electrolyte monitoring, especially potassium, with replacement as indicated.\n    *   Repeat arterial or venous blood gas to assess resolution of acidosis.\n    *   Cardiac monitoring due to potential electrolyte shifts.\n*   **Diagnostic Workup:** Further investigation to identify potential precipitating factors for DKA, including complete blood count and cultures as clinically indicated to rule out underlying infection.\n*   **Patient Education:** Reinforce DKA prevention strategies, sick day management protocols, and the critical importance of consistent insulin adherence."
+        },
+        "keywords": [
+          "nausea",
+          "vomiting",
+          "abdominal pain",
+          "cramping sensation",
+          "short of breath",
+          "Type 1 Diabetes Mellitus",
+          "insulin injections",
+          "T 98.6°F",
+          "HR 110 bpm",
+          "RR 30 breaths/min",
+          "BP 100/60 mmHg",
+          "SpO2 98%",
+          "capillary blood glucose 480 mg/dL",
+          "ketones 4+",
+          "pH 7.21",
+          "dry mucous membranes",
+          "fruity odor on breath",
+          "diffuse tenderness",
+          "Kussmaul respirations"
+        ],
+        "critique": {
+          "hallucination": 1,
+          "omission": 2,
+          "faithfulness": 5,
+          "groundedness": 5,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 5,
+          "confidence": 0.95,
+          "flags": []
+        },
+        "trace": {
+          "deidentifiedTranscript": "I'm seeing Patient <NAME_1>, a 25-year-old female, presenting to the ED with acute onset of symptoms. She reports experiencing significant nausea and vomiting for the past 12 hours, accompanied by diffuse abdominal pain, which she describes as a constant, cramping sensation. She states she has vomited approximately five times since yesterday evening and has been unable to keep any food or liquids down. She also reports feeling increasingly short of breath, noting that her breathing feels \"fast and deep.\"\n\nPatient Krishnan has a known history of Type 1 Diabetes Mellitus, diagnosed at age 12. She states she typically manages her diabetes with insulin injections but admits to having been \"a bit lax\" with her monitoring and insulin doses over the past few days due to feeling unwell. She denies any recent illness, fever, or exposure to sick contacts. She denies alcohol or illicit drug use.\n\nOn initial assessment, her vital signs are: Temperature 98.6°F, Heart Rate 110 bpm, Respiratory Rate 30 breaths/min, Blood Pressure 100/60 mmHg, Oxygen Saturation 98% on room air. Her capillary blood glucose was 480 mg/dL. Urine dipstick revealed ketones 4+. Arterial blood gas results show a pH of 7.21. Physical examination reveals dry mucous membranes and a fruity odor on her breath. Her abdomen is soft, with mild diffuse tenderness to palpation, but no rebound or guarding. Her breathing is deep and rapid, consistent with Kussmaul respirations.",
+          "rawLlmNote": {
+            "subjective": "Patient is a 25-year-old female with a history of Type 1 Diabetes Mellitus, diagnosed at age 12, presenting with acute onset symptoms. She reports significant nausea and vomiting for the past 12 hours, occurring approximately five times, with inability to keep down food or liquids. She also reports diffuse abdominal pain, described as a constant, cramping sensation, and increasing shortness of breath, noting her breathing feels \"fast and deep.\" Patient states she typically manages her diabetes with insulin injections but admits to being lax with monitoring and insulin doses recently due to feeling unwell. She denies recent illness, fever, sick contacts, alcohol, or illicit drug use.",
+            "objective": "T 98.6°F, HR 110 bpm, RR 30 breaths/min, BP 100/60 mmHg, SpO2 98%. Capillary blood glucose 480 mg/dL. Urine ketones 4+. ABG pH 7.21. Physical exam reveals dry mucous membranes, fruity odor on breath, mild diffuse abdominal tenderness, and Kussmaul respirations.",
+            "assessment": "25-year-old female with Type 1 Diabetes Mellitus presenting with acute diabetic ketoacidosis (DKA), a critical metabolic emergency. This is evidenced by severe hyperglycemia (BG 480 mg/dL), significant ketonuria (4+), metabolic acidosis (pH 7.21), and clinical findings of nausea, vomiting, abdominal pain, Kussmaul respirations, fruity breath, and dehydration. Given the potential for significant morbidity and mortality, prompt and aggressive management is urgently required.",
+            "plan": "**Plan:**\n*   **Admission:** Inpatient admission for management of severe diabetic ketoacidosis (DKA).\n*   **IV Fluids:** Initiate intravenous fluid resuscitation with isotonic saline to correct dehydration.\n*   **Insulin Therapy:** Start continuous intravenous regular insulin infusion to address hyperglycemia and acidosis.\n*   **Monitoring:**\n    *   Frequent capillary blood glucose monitoring.\n    *   Serial serum electrolyte monitoring, especially potassium, with replacement as indicated.\n    *   Repeat arterial or venous blood gas to assess resolution of acidosis.\n    *   Cardiac monitoring due to potential electrolyte shifts.\n*   **Diagnostic Workup:** Further investigation to identify potential precipitating factors for DKA, including complete blood count and cultures as clinically indicated to rule out underlying infection.\n*   **Patient Education:** Reinforce DKA prevention strategies, sick day management protocols, and the critical importance of consistent insulin adherence."
+          },
+          "timings": {
+            "deidentify": 1,
+            "keywords": 1718,
+            "generate": 24480,
+            "critique": 18323,
+            "reidentify": 1
+          },
+          "tokensUsed": 7557
+        }
+      },
+      "judgeResult": {
+        "hallucination": 1,
+        "omission": 2,
+        "faithfulness": 5,
+        "groundedness": 5,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.92,
+        "hallucinationsFound": [],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": true,
+        "redFlagsHandled": false,
+        "uncertaintyAcknowledged": false,
+        "feedback": "The SOAP note is highly faithful to the transcript with no hallucinations, excellent clinical writing, and a well-structured plan that covers IV fluids, insulin drip, electrolyte monitoring, and trigger identification. However, the note fails to mention cerebral edema risk — a critical red flag in DKA management, particularly in a young patient — and while hypokalemia risk is partially addressed through electrolyte monitoring and cardiac monitoring, it is not explicitly flagged as a dangerous complication. The omission of cerebral edema represents a clinically significant gap in the safety assessment."
+      },
+      "calibrationDelta": {
+        "hallucination": 0,
+        "omission": 0,
+        "faithfulness": 0,
+        "groundedness": 0,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": 1
+      },
+      "selfReportedConfidence": 0.95,
+      "judgeAggregateScore": 0.9375,
+      "totalLatencyMs": 79428,
+      "totalTokensUsed": 10582,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0019",
+      "pipelineResult": {
+        "note": {
+          "subjective": "Patient is a 29-year-old male presenting with a chief complaint of lower abdominal pain for approximately 12 hours. He describes the pain as initially diffuse in the periumbilical region, which then migrated and localized to the right lower quadrant over the last 6 hours, currently rated 7/10 in severity. Associated symptoms include anorexia and a subjective low-grade fever. Patient denies nausea, vomiting, diarrhea, or constipation. He reports no significant past medical history, takes no regular medications, and has a negative surgical history.",
+          "objective": "T 37.8°C, HR 92 bpm, BP 128/78 mmHg, RR 16 bpm, SpO2 99% RA. Abdominal exam reveals tenderness to palpation at McBurney's point with guarding and rebound tenderness in the RLQ; bowel sounds normoactive. Remainder of exam unremarkable. Labs show WBC 14.0 x 10^9/L with neutrophilic predominance.",
+          "assessment": "Suspected acute appendicitis in a 29-year-old male presenting with a 12-hour history of migratory periumbilical to right lower quadrant abdominal pain, anorexia, low-grade fever (37.8°C), and significant right lower quadrant tenderness, guarding, and rebound tenderness at McBurney's point. Laboratory findings of leukocytosis (WBC 14.0 x 10^9/L) with neutrophilic predominance further support this diagnosis. Given the high suspicion and potential for perforation, urgent surgical consultation is required. Differential diagnoses include Meckel diverticulum or inflammatory bowel disease.",
+          "plan": "**Plan:**\n\n*   **Diagnosis:** Suspected acute appendicitis.\n*   **Diagnostics:**\n    *   Order CT abdomen/pelvis with IV contrast to confirm diagnosis and rule out other etiologies.\n    *   Order urinalysis to rule out genitourinary causes of right lower quadrant pain.\n*   **Management:**\n    *   Keep patient NPO in anticipation of potential surgical intervention.\n    *   Initiate IV fluids for hydration.\n    *   Administer analgesia for pain control.\n*   **Consults:**\n    *   Urgent surgical consultation for evaluation and management of suspected appendicitis.\n*   **Monitoring:**\n    *   Monitor vital signs closely.\n    *   Perform serial abdominal examinations.\n*   **Patient Education:**\n    *   Educated patient on the suspected diagnosis, the need for further testing, and potential surgical intervention.\n    *   Explained NPO status and its rationale."
+        },
+        "keywords": [
+          "lower abdominal pain",
+          "periumbilical pain",
+          "right lower quadrant pain",
+          "anorexia",
+          "low-grade fever",
+          "tenderness to palpation",
+          "McBurney's point",
+          "guarding",
+          "rebound tenderness",
+          "leukocytosis",
+          "neutrophilic predominance"
+        ],
+        "critique": {
+          "hallucination": 4,
+          "omission": 1,
+          "faithfulness": 2,
+          "groundedness": 2,
+          "bias": 1,
+          "fluency": 5,
+          "completeness": 2,
+          "confidence": 0.4,
+          "flags": [
+            "Differential diagnoses (Meckel diverticulum, inflammatory bowel disease) are not mentioned in the original transcript.",
+            "Multiple diagnostic orders (CT abdomen/pelvis, urinalysis) are not mentioned in the original transcript.",
+            "Multiple management steps (NPO, IV fluids, analgesia, monitoring, patient education) are not mentioned in the original transcript."
+          ]
+        },
+        "trace": {
+          "deidentifiedTranscript": "\"Patient Agarwal, Harsh, a 29-year-old male, presents to the emergency department with a chief complaint of lower abdominal pain for approximately 12 hours. He describes the pain as initially diffuse in the periumbilical region, which then migrated and localized to the right lower quadrant over the last 6 hours. He rates the pain as a 7/10 in severity currently. Associated symptoms include anorexia, reporting no desire to eat since the pain began, and a subjective low-grade fever, though he has not taken his temperature at home. He denies nausea, vomiting, diarrhea, or constipation. He reports no significant past medical history and takes no regular medications. Surgical history is negative.\n\nOn physical examination, vital signs were recorded: Temperature 37.8°C, Heart Rate 92 bpm, Blood Pressure 128/78 mmHg, Respiratory Rate 16 bpm, Oxygen Saturation 99% on room air. Abdominal examination reveals tenderness to palpation at McBurney's point with guarding. Rebound tenderness is also elicited in the right lower quadrant. Bowel sounds are present and normoactive. The remainder of the physical exam is unremarkable. A complete blood count was performed, revealing a white blood cell count of 14.0 x 10^9/L with neutrophilic predominance.\"",
+          "rawLlmNote": {
+            "subjective": "Patient is a 29-year-old male presenting with a chief complaint of lower abdominal pain for approximately 12 hours. He describes the pain as initially diffuse in the periumbilical region, which then migrated and localized to the right lower quadrant over the last 6 hours, currently rated 7/10 in severity. Associated symptoms include anorexia and a subjective low-grade fever. Patient denies nausea, vomiting, diarrhea, or constipation. He reports no significant past medical history, takes no regular medications, and has a negative surgical history.",
+            "objective": "T 37.8°C, HR 92 bpm, BP 128/78 mmHg, RR 16 bpm, SpO2 99% RA. Abdominal exam reveals tenderness to palpation at McBurney's point with guarding and rebound tenderness in the RLQ; bowel sounds normoactive. Remainder of exam unremarkable. Labs show WBC 14.0 x 10^9/L with neutrophilic predominance.",
+            "assessment": "Suspected acute appendicitis in a 29-year-old male presenting with a 12-hour history of migratory periumbilical to right lower quadrant abdominal pain, anorexia, low-grade fever (37.8°C), and significant right lower quadrant tenderness, guarding, and rebound tenderness at McBurney's point. Laboratory findings of leukocytosis (WBC 14.0 x 10^9/L) with neutrophilic predominance further support this diagnosis. Given the high suspicion and potential for perforation, urgent surgical consultation is required. Differential diagnoses include Meckel diverticulum or inflammatory bowel disease.",
+            "plan": "**Plan:**\n\n*   **Diagnosis:** Suspected acute appendicitis.\n*   **Diagnostics:**\n    *   Order CT abdomen/pelvis with IV contrast to confirm diagnosis and rule out other etiologies.\n    *   Order urinalysis to rule out genitourinary causes of right lower quadrant pain.\n*   **Management:**\n    *   Keep patient NPO in anticipation of potential surgical intervention.\n    *   Initiate IV fluids for hydration.\n    *   Administer analgesia for pain control.\n*   **Consults:**\n    *   Urgent surgical consultation for evaluation and management of suspected appendicitis.\n*   **Monitoring:**\n    *   Monitor vital signs closely.\n    *   Perform serial abdominal examinations.\n*   **Patient Education:**\n    *   Educated patient on the suspected diagnosis, the need for further testing, and potential surgical intervention.\n    *   Explained NPO status and its rationale."
+          },
+          "timings": {
+            "deidentify": 0,
+            "keywords": 1151,
+            "generate": 24365,
+            "critique": 13923,
+            "reidentify": 0
+          },
+          "tokensUsed": 8855
+        }
+      },
+      "judgeResult": {
+        "hallucination": 1,
+        "omission": 2,
+        "faithfulness": 5,
+        "groundedness": 5,
+        "bias": 1,
+        "fluency": 5,
+        "completeness": 4,
+        "judgeConfidence": 0.92,
+        "hallucinationsFound": [],
+        "expectedDiagnosesMet": true,
+        "expectedPlanItemsMet": false,
+        "redFlagsHandled": true,
+        "uncertaintyAcknowledged": true,
+        "feedback": "This is an excellent SOAP note that faithfully reproduces the transcript content with strong clinical reasoning and appropriate use of 'suspected' language. The primary deficiency is the omission of antibiotics from the plan, which is a standard-of-care component for suspected acute appendicitis with concern for perforation. The differential diagnoses (Meckel diverticulum, IBD) are not in the transcript but represent reasonable clinical differentials for RLQ pain and are appropriately framed as differentials rather than diagnoses."
+      },
+      "calibrationDelta": {
+        "hallucination": 3,
+        "omission": -1,
+        "faithfulness": -3,
+        "groundedness": -3,
+        "bias": 0,
+        "fluency": 0,
+        "completeness": -2
+      },
+      "selfReportedConfidence": 0.4,
+      "judgeAggregateScore": 0.9375,
+      "totalLatencyMs": 75342,
+      "totalTokensUsed": 12046,
+      "errored": false
+    },
+    {
+      "caseId": "medqa-0020",
+      "pipelineResult": null,
+      "judgeResult": null,
+      "calibrationDelta": null,
+      "selfReportedConfidence": 0,
+      "judgeAggregateScore": 0,
+      "totalLatencyMs": 0,
+      "totalTokensUsed": 0,
+      "errored": true,
+      "errorMessage": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 41.724729154s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"41s\"}]}}"
+    }
+  ]
+}

@@ -36,7 +36,7 @@ export async function critiqueSoap(params: {
       model: getModel(),
       systemPrompt: CRITIQUE_PROMPT,
       temperature: 0.1,    // critique should be near-deterministic
-      maxTokens: 4000,
+      maxTokens: 6000,
     }
   )
 

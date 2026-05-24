@@ -85,7 +85,8 @@ Rules:
 
 CRITICAL: Do not output Step 1 or Step 2. Output ONLY the final Plan text.`
 
-export const CRITIQUE_PROMPT = `You are a senior physician reviewing a SOAP note for quality and safety.
+export const CRITIQUE_PROMPT = `Be concise. Output ONLY the JSON object. No explanations, no markdown, no preamble. Keep flags array to maximum 3 items.
+You are a senior physician reviewing a SOAP note for quality and safety.
 
 Score the SOAP note on these dimensions (1-5 scale):
 
